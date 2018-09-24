@@ -1,0 +1,14 @@
+default:
+  autoload:
+    '': %paths.base%/app/tests/acceptance/bootstrap
+  suites:
+    default:
+      paths:
+          default: %paths.base%/app/tests/acceptance/features
+  extensions:
+    Behat\MinkExtension:
+      base_url: http://localhost/mailAll
+      selenium2: ~
+      sessions:
+        default:
+          goutte: ~

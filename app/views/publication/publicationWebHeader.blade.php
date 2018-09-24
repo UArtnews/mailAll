@@ -1,0 +1,1 @@
+<span class="publicationWebHeader">{{ isset($tweakables['publication-web-header']) ? str_replace('**DATE**',date('F j, Y', strtotime($publication->publish_date)), $tweakables['publication-web-header']) : str_replace('**DATE**',date('F j, Y', strtotime($publication->publish_date)), $default_tweakables['publication-web-header']) }}</span>

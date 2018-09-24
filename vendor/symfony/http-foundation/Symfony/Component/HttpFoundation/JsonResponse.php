@@ -31,7 +31,7 @@ class JsonResponse extends Response
      * Constructor.
      *
      * @param mixed   $data    The response data
-     * @param integer $status  The response status code
+     * @param int     $status  The response status code
      * @param array   $headers An array of response headers
      */
     public function __construct($data = null, $status = 200, $headers = array())
@@ -45,7 +45,7 @@ class JsonResponse extends Response
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public static function create($data = null, $status = 200, $headers = array())
     {
@@ -111,7 +111,7 @@ class JsonResponse extends Response
             // Not using application/javascript for compatibility reasons with older browsers.
             $this->headers->set('Content-Type', 'text/javascript');
 
-            return $this->setContent(sprintf('%s(%s);', $this->callback, $this->data));
+            return $this->setContent(sprintf('/**/%s(%s);', $this->callback, $this->data));
         }
 
         // Only set the header when there is none or when it equals 'text/javascript' (from a previous update with callback)
