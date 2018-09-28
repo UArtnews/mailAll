@@ -5,15 +5,9 @@
             <div class="btn-group ">
                 <button class="btn btn-success" data-toggle="modal" data-target="#addFromCartModal{{ $publication->id }}">Add From Cart</button>
                 <button class="btn btn-warning" data-toggle="modal" data-target="#addPendingSubmissionsModal{{ $publication->id }}">Submitted Articles</button>
-                @if($instance->id == 6 || $instance->id == 6)
-                <button class="btn btn-primary" onclick="addIssuedArticlesToCart('{{ $publication->id }}')">Add Dated Articles To Cart</button>
-                @endif
             </div>
             @else
                 <button class="btn btn-success pull-left" data-toggle="modal" data-target="#addFromCartModal{{ $publication->id }}">Add Article From Cart</button>
-                @if($instance->id == 6 || $instance->id == 10)
-                <button class="btn btn-primary" onclick="addIssuedArticlesToCart('{{ $publication->id }}')">Add Dated Articles To Cart</button>
-                @endif
             @endif
 
         </div>
