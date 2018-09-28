@@ -62,7 +62,9 @@
         .logo-image:hover {
             box-shadow: 0 0 30px rgba(255,255,255,.6);
         }
-
+        .panel-footer {
+           text-align: center;
+        }
     </style>
 
 </head>

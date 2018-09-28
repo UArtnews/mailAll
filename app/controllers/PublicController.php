@@ -233,29 +233,22 @@ class PublicController extends \BaseController {
     public function showArchive($instanceName){
         //Fetch Instance out of DB
         $instance = Instance::where('name',strtolower(urldecode($instanceName)))->firstOrFail();
-       
-        
-        
 
         //Get some pubs
         $publications = Publication::where('instance_id',$instance->id)->published()->orderBy('publish_date','DESC')->paginate(15);
 
         if(count($publications) > 0){
-            //Fetch Article out of DB
-           // $article = Article::where('instance_id',$instance->id)->firstOrFail();
-            
+
             $data = array(
                 'instance'		=> $instance,
                 'instanceId'	=> $instance->id,
-                'instanceName'	=> $instance->name,                
+                'instanceName'	=> $instance->name,
                 'tweakables'               => reindexArray($instance->tweakables()->get(), 'parameter', 'value'),
                 'default_tweakables'       => reindexArray(DefaultTweakable::all(), 'parameter', 'value'),
                 'tweakables_types'         => reindexArray(DefaultTweakable::all(), 'parameter', 'type'),
                 'default_tweakables_names' => reindexArray(DefaultTweakable::all(), 'parameter', 'display_name'),
             );
 
-            
-            
             //Setup dropdowns for searching
             $data['years'] = array('--' => '--');
 
@@ -301,7 +294,6 @@ class PublicController extends \BaseController {
             $data['publications'] = $publications;
 
         }
-        //print_r($data['publications']);
         return View::make('public.archive')->with($data);
     }
 

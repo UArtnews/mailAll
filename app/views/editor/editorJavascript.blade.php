@@ -320,7 +320,7 @@
     //  Ajax off the results (save the publication)     //
     //////////////////////////////////////////////////////
 
-    function moveArticle(idNum, direction, thisSelector){
+     function moveArticle(idNum, direction, thisSelector){
         thisObject = $(thisSelector);
         //Target and insert depending on direction
         //UPDATE RTN
@@ -344,7 +344,6 @@
             publication_id = thisObject.closest('.contentDiv').attr('id').replace('publication','');
             savePublicationOrder(publication_id);
         }
-
     }
 
     function saveImage(elem){

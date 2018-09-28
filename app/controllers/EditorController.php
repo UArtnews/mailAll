@@ -239,6 +239,7 @@ class EditorController extends \BaseController
     ////////////////////////////////////////////////
     public function images($subAction, $data){
         $data['images'] = Image::where('instance_id', $data['instance']->id)->orderBy('created_at', 'DESC')->paginate(8);
+        //->get();
 
         return View::make('editor.imageEditor', $data);
     }
@@ -427,7 +428,7 @@ class EditorController extends \BaseController
                 ->where(function($query){
                         $query->Where('title', 'LIKE', '%' . Input::get('search') . '%')
                             ->orWhere('filename', 'LIKE', '%' . Input::get('search') . '%');
-                })->orderBy('updated_at')->paginate(8);
+                    })->orderBy('updated_at')->get();
         }
         $data['searchVal'] = Input::get('search');
         return View::make('editor.searchResults', $data);

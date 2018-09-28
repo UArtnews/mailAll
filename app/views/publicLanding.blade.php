@@ -6,10 +6,8 @@
 
     <link async rel="StyleSheet" href="{{ URL::to('css/bootstrap.css') }}" type="text/css" />
     <script type="text/javascript">
-        //document.write("    \");
+        document.write("    \<script src='//code.jquery.com/jquery-latest.min.js' type='text/javascript'>\<\/script>");
     </script>
-    <script src='https://code.jquery.com/jquery-latest.min.js' type='text/javascript'></script>
-
 
     <style>
 
@@ -64,18 +62,21 @@
         .logo-image:hover {
             box-shadow: 0 0 30px rgba(255,255,255,.6);
         }
+        #viewarchives{
+            cursor: pointer;
+            height: 15px;
+            width:500px;
+           margin: 15px 0px 15px 0px;
+            
+        }
         #archives {
             display:none;
-        }
-        #viewarchives {
-            height: 30px;
-            width:500px;
         }
     </style>
 
 </head>
 <body>
-    <div class="row">
+ <div class="row">
         <div class="col-xs-10 col-xs-offset-1">
             <br/>
             <br/>
@@ -115,6 +116,5 @@
         }
      });
     </script>
-
 </body>
 </html>

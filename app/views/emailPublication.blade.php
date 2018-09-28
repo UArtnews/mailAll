@@ -2,39 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width"/>
     @if(!$isEmail)
         @include('emailStyle')
     @endif
-    
-<style type="text/css">  
-
-/*
-* Richard T. Newsome Updates
-* Used the em to adjust font to be larger in different clients
-*/
-    *{font-size: 1.013em !important;}
-    a{font-size: 1em !important;}
-    h1,h2,h3{font-size: 1.4em !important;}
-    h4,h5{font-size: .9em !important;
-          line-height: 116% !important;
-    }
-    img.img-responsive{
-        width:98%;
-    }
-        @media only screen and (min-width:480px){
-            *{font-size: 1em !important;}
-            a{font-size: 1em !important;}
-            h1,h2,h3{font-size: 1.4em !important;}
-            h4,h5{font-size: .9em !important;
-                  line-height: 116% !important;
-            }
-        }
-</style>
-
 </head>
-<body class="colorPanel" style="font-size: 160%;">
-
+<body class="colorPanel">
     <table class="colorPanel" width="100%" align="center">
         <tr>
             <td>

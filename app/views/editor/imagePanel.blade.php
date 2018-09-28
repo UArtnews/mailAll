@@ -54,7 +54,6 @@
             </div>
         </div>
     @endforeach
-    
         </div>
         <div id="imageThumbs">
             <div class="row">
@@ -84,21 +83,14 @@
                 @endif
 
                 @endforeach
-                
             </div>
         </div>
     </div>
-    <div class="panel-footer text-center" id="imagesPanelFoot">
+    <div class="panel-footer" id="imagesPanelFoot">
         @if(count($images) == 0)
             No Images Found
         @endif
-       {{ $images->links() }}
-        <!--  @if(!isset($isSearch))
-            
-        @endif-->
-      
-        
-        
+               {{ $images->links() }}
     </div>
 </div>
 <div class="modal fade" id="uploadModal">

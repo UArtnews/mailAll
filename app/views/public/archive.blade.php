@@ -23,9 +23,6 @@
                 <tr>
                     <th>Publish Date</th>
                     <th>Type</th>
-                    <th>Instance</th>
-                    <th>Date Created</th>
-                    <th>Date Updated</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -37,9 +34,6 @@
                         </a>
                     </td>
                     <td>{{ucfirst($publication->type)}}</td>
-                    <td>{{$instanceName}}</td>
-                    <td>{{$publication->created_at}}</td>
-                    <td>{{$publication->updated_at}}</td>
                 </tr>
                 @endforeach
                 </tbody>

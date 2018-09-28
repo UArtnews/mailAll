@@ -27,4 +27,7 @@
     .btn {
         margin-bottom:1em;
     }
+   .panel-footer {
+           text-align: center;
+        }
 </style>

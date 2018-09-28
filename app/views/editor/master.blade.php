@@ -17,6 +17,9 @@
 		.cke_source {
 			white-space: pre-wrap !important;
 		}
+		.panel-footer {
+           text-align: center;
+        }
 	</style>
 
     @include('editor.editorJavascript')
