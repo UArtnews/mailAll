@@ -1,3 +1,46 @@
+## v1.1.29 (2015-04-26)
+
+- fix ucwords to be functionally the same as in-built PHP version
+- fix iconv_set_encoding deprecation notice in PHP 5.6.0
+- remove legacy test for HHVM/PHP7
+
+## v1.1.28 (2015-01-12)
+
+- fix mbstring shim for html-entities
+
+## v1.1.27 (2015-01-11)
+
+- update to Unicode 7.0
+- fix iconv shim compat layer
+
+## v1.1.26 (2014-11-08)
+
+- tweak composer.json
+
+## v1.1.25 (2014-08-05)
+
+- update travis matrix
+- add composer branch alias
+
+## v1.1.24 (2014-06-17)
+
+- update tests for latest HHVM fixes
+- move legacy GRAPHEME_CLUSTER_RX version to Intl shim
+
+## v1.1.23 (2014-05-22)
+
+- enable tests for PHP 5.6
+- remove HHVM from allowed failures
+
+## v1.1.22 (2014-05-06)
+
+- fix #19: don't call ini_set() when not required and gain compat with PHP5.6
+
+## v1.1.21 (2014-03-26)
+
+- fix #18 u::wordwrap() now relies on native behavior
+
+## v1.1.20 (2014-03-01)
 ## v1.1.19 (2014-03-01)
 
 - fix mb_regex_encoding() being disabled on some hosting providers

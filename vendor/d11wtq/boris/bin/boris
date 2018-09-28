@@ -13,4 +13,4 @@ $config->apply($boris);
 $options = new \Boris\CLIOptionsHandler();
 $options->handle($boris);
 
-$boris->start();
+$boris->start(); 

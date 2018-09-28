@@ -133,7 +133,7 @@ class Command
      * Override this to check for x or y and return false if the command can not
      * run properly under the current conditions.
      *
-     * @return Boolean
+     * @return bool
      */
     public function isEnabled()
     {
@@ -158,7 +158,7 @@ class Command
      * @param InputInterface  $input  An InputInterface instance
      * @param OutputInterface $output An OutputInterface instance
      *
-     * @return null|integer null or 0 if everything went fine, or an error code
+     * @return null|int     null or 0 if everything went fine, or an error code
      *
      * @throws \LogicException When this abstract method is not implemented
      * @see    setCode()
@@ -201,7 +201,7 @@ class Command
      * @param InputInterface  $input  An InputInterface instance
      * @param OutputInterface $output An OutputInterface instance
      *
-     * @return integer The command exit code
+     * @return int     The command exit code
      *
      * @throws \Exception
      *
@@ -276,7 +276,7 @@ class Command
      *
      * This method is not part of public API and should not be used directly.
      *
-     * @param Boolean $mergeArgs Whether to merge or not the Application definition arguments to Command definition arguments
+     * @param bool    $mergeArgs Whether to merge or not the Application definition arguments to Command definition arguments
      */
     public function mergeApplicationDefinition($mergeArgs = true)
     {
@@ -351,7 +351,7 @@ class Command
      * Adds an argument.
      *
      * @param string  $name        The argument name
-     * @param integer $mode        The argument mode: InputArgument::REQUIRED or InputArgument::OPTIONAL
+     * @param int     $mode        The argument mode: InputArgument::REQUIRED or InputArgument::OPTIONAL
      * @param string  $description A description text
      * @param mixed   $default     The default value (for InputArgument::OPTIONAL mode only)
      *
@@ -371,7 +371,7 @@ class Command
      *
      * @param string  $name        The option name
      * @param string  $shortcut    The shortcut (can be null)
-     * @param integer $mode        The option mode: One of the InputOption::VALUE_* constants
+     * @param int     $mode        The option mode: One of the InputOption::VALUE_* constants
      * @param string  $description A description text
      * @param mixed   $default     The default value (must be null for InputOption::VALUE_REQUIRED or InputOption::VALUE_NONE)
      *
@@ -491,11 +491,11 @@ class Command
 
         $placeholders = array(
             '%command.name%',
-            '%command.full_name%'
+            '%command.full_name%',
         );
         $replacements = array(
             $name,
-            $_SERVER['PHP_SELF'].' '.$name
+            $_SERVER['PHP_SELF'].' '.$name,
         );
 
         return str_replace($placeholders, $replacements, $this->getHelp());
@@ -504,7 +504,7 @@ class Command
     /**
      * Sets the aliases for the command.
      *
-     * @param array $aliases An array of aliases for the command
+     * @param string[] $aliases An array of aliases for the command
      *
      * @return Command The current instance
      *
@@ -514,6 +514,10 @@ class Command
      */
     public function setAliases($aliases)
     {
+        if (!is_array($aliases) && !$aliases instanceof \Traversable) {
+            throw new \InvalidArgumentException('$aliases must be an array or an instance of \Traversable');
+        }
+
         foreach ($aliases as $alias) {
             $this->validateName($alias);
         }
@@ -584,7 +588,7 @@ class Command
     /**
      * Returns an XML representation of the command.
      *
-     * @param Boolean $asDom Whether to return a DOM or an XML string
+     * @param bool    $asDom Whether to return a DOM or an XML string
      *
      * @return string|\DOMDocument An XML string representing the command
      *

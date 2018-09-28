@@ -96,7 +96,7 @@ class Parser implements ParserInterface
 
         return array(
             $first ? ('-' === $first || '+' === $first ? $int($first.'1') : $int($first)) : 1,
-            isset($split[1]) && $split[1] ? $int($split[1]) : 0
+            isset($split[1]) && $split[1] ? $int($split[1]) : 0,
         );
     }
 
@@ -169,7 +169,7 @@ class Parser implements ParserInterface
      * Parses next simple node (hash, class, pseudo, negation).
      *
      * @param TokenStream $stream
-     * @param boolean     $insideNegation
+     * @param bool        $insideNegation
      *
      * @throws SyntaxErrorException
      *

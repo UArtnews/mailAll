@@ -12,41 +12,89 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	 */
 	protected $table = 'users';
 
-	/**
-	 * The attributes excluded from the model's JSON form.
-	 *
-	 * @var array
-	 */
-	protected $hidden = array('password');
+    public $guarded = array('id');
 
-	/**
-	 * Get the unique identifier for the user.
-	 *
-	 * @return mixed
-	 */
-	public function getAuthIdentifier()
+    protected $softDelete = true;
+
+    public static $rules = array(
+        'uanet' => 'required',
+        'email' => 'required|email',
+        'last'  => 'required',
+        'first' => 'required'
+    );
+
+    public function permissions(){
+        return $this->hasMany('UserPermission', 'user_id', 'id');
+    }
+
+    public function hasPermission($instanceId, $node){
+        if($this->isSuperAdmin()) {
+            return true;
+        }elseif(UserPermission::where('user_id', $this->id)->where('instance_id', $instanceId)->where('node', $node)->count() > 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public function isEditor($instanceId){
+        if($this->isSuperAdmin()){
+            return true;
+        }elseif($this->isAdmin($instanceId)){
+            return true;
+        }elseif($this->hasPermission($instanceId, 'edit') || $this->hasPermission(0, 'edit')){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public function isAdmin($instanceId){
+        if($this->isSuperAdmin()){
+            return true;
+        }elseif($this->hasPermission($instanceId, 'admin') || $this->hasPermission(0, 'admin')){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public function isSuperAdmin(){
+        if(UserPermission::where('user_id', $this->id)->where('instance_id', 0)->where('node', 'superAdmin')->count() > 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public function getAuthIdentifier()
 	{
 		return $this->getKey();
 	}
 
-	/**
-	 * Get the password for the user.
-	 *
-	 * @return string
-	 */
 	public function getAuthPassword()
 	{
 		return $this->password;
 	}
 
-	/**
-	 * Get the e-mail address where password reminders are sent.
-	 *
-	 * @return string
-	 */
 	public function getReminderEmail()
 	{
 		return $this->email;
+	}
+
+	public function getRememberToken()
+	{
+	    return $this->remember_token;
+	}
+
+	public function setRememberToken($value)
+	{
+	    $this->remember_token = $value;
+	}
+
+	public function getRememberTokenName()
+	{
+	    return 'remember_token';
 	}
 
 }

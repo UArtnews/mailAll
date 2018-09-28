@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 /*
 |--------------------------------------------------------------------------
 | Register The Laravel Class Loader
@@ -13,10 +14,11 @@
 
 ClassLoader::addDirectories(array(
 
-	app_path().'/commands',
-	app_path().'/controllers',
-	app_path().'/models',
-	app_path().'/database/seeds',
+    app_path().'/commands',
+    app_path().'/controllers',
+    app_path().'/models',
+    app_path().'/database/seeds',
+    app_path().'/Libraries',
 
 ));
 
@@ -48,8 +50,14 @@ Log::useFiles(storage_path().'/logs/laravel.log');
 
 App::error(function(Exception $exception, $code)
 {
-	Log::error($exception);
+    Log::error($exception);
 });
+
+App::error(function(ModelNotFoundException $exception, $code)
+{
+    return Redirect::to('/')->withError('Sorry, but what you are looking for does not exist!');
+});
+
 
 /*
 |--------------------------------------------------------------------------
@@ -64,7 +72,7 @@ App::error(function(Exception $exception, $code)
 
 App::down(function()
 {
-	return Response::make("Be right back!", 503);
+    return Response::make("Be right back!", 503);
 });
 
 /*
@@ -79,3 +87,48 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
+
+//Make sure we have this function.  I'll stop doing this soon.
+//TODO:MAKE OWN CLASS + SERVICE PROVIDER
+if(!function_exists('reindexArray')){
+    function reindexArray($array, $index, $value)
+    {
+
+        $tempArr = array();
+
+        foreach ($array as $item)
+        {
+            $tempArr[$item[$index]] = $item[$value];
+        }
+
+        return $tempArr;
+    }
+}
+
+//Make sure we have this function.  I'll stop doing this soon.
+if(!function_exists('uanet')){
+    function uanet()
+    {
+        //Only SECURE routes can get uanetID's and be sure about it
+        if(!Request::secure())
+        {
+            return false;
+        }
+
+        return Request::server('REMOTE_USER');
+    }
+}
+
+//Make sure we have this function.  I'll stop doing this soon.
+if(!function_exists('getInstanceName')){
+    function getInstanceName($id = null)
+    {
+        if($id == null) {
+            return Instance::where('name', strtolower(urldecode(Request::segment(2))))->firstOrFail()->name;
+        }elseif($id == 0) {
+            return 'GLOBAL';
+        }else{
+            return Instance::find($id)->name;
+        }
+    }
+}

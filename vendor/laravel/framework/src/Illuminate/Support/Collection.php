@@ -317,6 +317,18 @@ class Collection implements ArrayAccess, ArrayableInterface, Countable, Iterator
 	}
 
 	/**
+	 * Pulls an item from the collection.
+	 *
+	 * @param  mixed  $key
+	 * @param  mixed  $default
+	 * @return mixed
+	 */
+	public function pull($key, $default = null)
+	{
+		return array_pull($this->items, $key, $default);
+	}
+
+	/**
 	 * Put an item in the collection by key.
 	 *
 	 * @param  mixed  $key
@@ -384,6 +396,25 @@ class Collection implements ArrayAccess, ArrayableInterface, Countable, Iterator
 	public function slice($offset, $length = null, $preserveKeys = false)
 	{
 		return new static(array_slice($this->items, $offset, $length, $preserveKeys));
+	}
+
+	/**
+	 * Chunk the underlying collection array.
+	 *
+	 * @param  int $size
+	 * @param  bool  $preserveKeys
+	 * @return \Illuminate\Support\Collection
+	 */
+	public function chunk($size, $preserveKeys = false)
+	{
+		$chunks = new static;
+
+		foreach (array_chunk($this->items, $size, $preserveKeys) as $chunk)
+		{
+			$chunks->push(new static($chunk));
+		}
+
+		return $chunks;
 	}
 
 	/**
@@ -542,7 +573,7 @@ class Collection implements ArrayAccess, ArrayableInterface, Countable, Iterator
 	{
 		return function($item) use ($value)
 		{
-			return is_object($item) ? $item->{$value} : array_get($item, $value);
+			return data_get($item, $value);
 		};
 	}
 
