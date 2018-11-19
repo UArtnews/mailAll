@@ -1,0 +1,34 @@
+.popover,
+.tooltip-inner {
+  background: #323232;
+  color: #FFF;
+  border-radius: 2px;
+}
+.tooltip,
+.tooltip.in {
+  opacity: 1;
+}
+.popover.left .arrow:after,
+.tooltip.left .arrow:after,
+.popover.left .tooltip-arrow,
+.tooltip.left .tooltip-arrow {
+  border-left-color: #323232;
+}
+.popover.right .arrow:after,
+.tooltip.right .arrow:after,
+.popover.right .tooltip-arrow,
+.tooltip.right .tooltip-arrow {
+  border-right-color: #323232;
+}
+.popover.top .arrow:after,
+.tooltip.top .arrow:after,
+.popover.top .tooltip-arrow,
+.tooltip.top .tooltip-arrow {
+  border-top-color: #323232;
+}
+.popover.bottom .arrow:after,
+.tooltip.bottom .arrow:after,
+.popover.bottom .tooltip-arrow,
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #323232;
+}
