@@ -122,13 +122,4 @@ class AdminController extends BaseController {
             return Redirect::back()->withSuccess('User Successfully Restored');
         }
     }
-	public function updateSubmission()
-	{
-		Schema::table('submission', function($table)
-		{
-			$table->string('contactName')->after('location')->nullable();
-			$table->string('contactEmail')->after('contactName')->nullable();
-			$table->string('contactPhone')->after('contactEmail')->nullable();
-		});
-	}
 }

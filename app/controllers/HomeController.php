@@ -22,7 +22,6 @@ class HomeController extends BaseController {
 			'instances' => Instance::all(),
 		);
 
-
         $data['types'] = array('success', 'info', 'warning', 'danger');
 
         return View::make('publicLanding', $data);

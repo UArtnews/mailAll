@@ -15,6 +15,8 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
     public $guarded = array('id');
 
     protected $softDelete = true;
+    
+    protected $primaryKey = 'id';
 
     public static $rules = array(
         'uanet' => 'required',
