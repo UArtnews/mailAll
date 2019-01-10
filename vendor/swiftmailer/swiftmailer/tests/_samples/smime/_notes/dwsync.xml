@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="ca.crt" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109240000000" remote="130748109240000000" Dst="1" />
+<file name="ca.key" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109240000000" remote="130748109240000000" Dst="1" />
+<file name="CA.srl" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109240000000" remote="130748109240000000" Dst="1" />
+<file name="create-cert.sh" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109240000000" remote="130748109240000000" Dst="1" />
+<file name="encrypt.crt" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109240000000" remote="130748109240000000" Dst="1" />
+<file name="encrypt.key" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109240000000" remote="130748109240000000" Dst="1" />
+<file name="encrypt2.crt" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109240000000" remote="130748109240000000" Dst="1" />
+<file name="encrypt2.key" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109240000000" remote="130748109240000000" Dst="1" />
+<file name="sign.crt" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109240000000" remote="130748109240000000" Dst="1" />
+<file name="sign.key" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109240000000" remote="130748109240000000" Dst="1" />
+</dwsync>

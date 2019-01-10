@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="ComposableTextProtocol.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
+<file name="ResponseBulkHandler.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
+<file name="ResponseErrorHandler.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
+<file name="ResponseIntegerHandler.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
+<file name="ResponseMultiBulkHandler.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
+<file name="ResponseMultiBulkStreamHandler.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
+<file name="ResponseStatusHandler.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
+<file name="TextCommandSerializer.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
+<file name="TextProtocol.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
+<file name="TextResponseReader.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
+</dwsync>

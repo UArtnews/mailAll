@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="composer.json" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710370000000" remote="130628710370000000" Dst="1" />
+<file name="Connection.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="130628710350000000" Dst="1" />
+<file name="ConnectionInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="130628710350000000" Dst="1" />
+<file name="ConnectionResolver.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="130628710350000000" Dst="1" />
+<file name="ConnectionResolverInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="130628710350000000" Dst="1" />
+<file name="DatabaseManager.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
+<file name="DatabaseServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
+<file name="Grammar.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
+<file name="MigrationServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
+<file name="MySqlConnection.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
+<file name="PostgresConnection.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
+<file name="QueryException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
+<file name="README.md" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628708240000000" remote="130628708240000000" Dst="1" />
+<file name="Seeder.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710370000000" remote="130628710370000000" Dst="1" />
+<file name="SeedServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710370000000" remote="130628710370000000" Dst="1" />
+<file name="SQLiteConnection.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
+<file name="SqlServerConnection.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628708250000000" remote="130628708250000000" Dst="1" />
+</dwsync>

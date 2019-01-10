@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="ApcStore.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628708230000000" remote="130628708230000000" Dst="1" />
+<file name="ApcWrapper.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="130628710350000000" Dst="1" />
+<file name="ArrayStore.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="130628710350000000" Dst="1" />
+<file name="CacheManager.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628708230000000" remote="130628708230000000" Dst="1" />
+<file name="CacheServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628708230000000" remote="130628708230000000" Dst="1" />
+<file name="composer.json" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="130628710350000000" Dst="1" />
+<file name="DatabaseStore.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="130628710350000000" Dst="1" />
+<file name="FileStore.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628708230000000" remote="130628708230000000" Dst="1" />
+<file name="MemcachedConnector.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628708230000000" remote="130628708230000000" Dst="1" />
+<file name="MemcachedStore.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="130628710350000000" Dst="1" />
+<file name="RedisStore.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="130628710350000000" Dst="1" />
+<file name="RedisTaggedCache.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="130628710350000000" Dst="1" />
+<file name="Repository.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="130628710350000000" Dst="1" />
+<file name="StoreInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628708230000000" remote="130628708230000000" Dst="1" />
+<file name="TaggableStore.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="130628710350000000" Dst="1" />
+<file name="TaggedCache.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="130628710350000000" Dst="1" />
+<file name="TagSet.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="130628710350000000" Dst="1" />
+<file name="WinCacheStore.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="130628710350000000" Dst="1" />
+<file name="XCacheStore.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="130628710350000000" Dst="1" />
+</dwsync>

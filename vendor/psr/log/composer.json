@@ -1,6 +1,6 @@
 {
     "name": "psr/log",
-    "description": "Common interface for logging libraries",
+    "description": "Common interface for logging Libraries",
     "keywords": ["psr", "psr-3", "log"],
     "license": "MIT",
     "authors": [

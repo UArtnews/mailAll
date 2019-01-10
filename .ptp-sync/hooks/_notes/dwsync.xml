@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="applypatch-msg.sample" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131820209650000000" remote="131820209650000000" Dst="1" />
+<file name="commit-msg.sample" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131820209650000000" remote="131820209650000000" Dst="1" />
+<file name="post-commit.sample" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131820209650000000" remote="131820209650000000" Dst="1" />
+<file name="post-receive.sample" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131820209650000000" remote="131820209650000000" Dst="1" />
+<file name="post-update.sample" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131820209650000000" remote="131820209650000000" Dst="1" />
+<file name="pre-applypatch.sample" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131820209650000000" remote="131820209650000000" Dst="1" />
+<file name="pre-commit.sample" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131820209650000000" remote="131820209650000000" Dst="1" />
+<file name="pre-rebase.sample" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131820209650000000" remote="131820209650000000" Dst="1" />
+<file name="prepare-commit-msg.sample" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131820209650000000" remote="131820209650000000" Dst="1" />
+<file name="update.sample" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131820209650000000" remote="131820209650000000" Dst="1" />
+</dwsync>

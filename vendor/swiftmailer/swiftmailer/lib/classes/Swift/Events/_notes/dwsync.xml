@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="CommandEvent.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109210000000" remote="130748109210000000" Dst="1" />
+<file name="CommandListener.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109210000000" remote="130748109210000000" Dst="1" />
+<file name="Event.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109210000000" remote="130748109210000000" Dst="1" />
+<file name="EventDispatcher.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109210000000" remote="130748109210000000" Dst="1" />
+<file name="EventListener.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109210000000" remote="130748109210000000" Dst="1" />
+<file name="EventObject.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109210000000" remote="130748109210000000" Dst="1" />
+<file name="ResponseEvent.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109210000000" remote="130748109210000000" Dst="1" />
+<file name="ResponseListener.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109210000000" remote="130748109210000000" Dst="1" />
+<file name="SendEvent.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109210000000" remote="130748109210000000" Dst="1" />
+<file name="SendListener.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109220000000" remote="130748109220000000" Dst="1" />
+<file name="SimpleEventDispatcher.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109220000000" remote="130748109220000000" Dst="1" />
+<file name="TransportChangeEvent.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109220000000" remote="130748109220000000" Dst="1" />
+<file name="TransportChangeListener.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109220000000" remote="130748109220000000" Dst="1" />
+<file name="TransportExceptionEvent.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109220000000" remote="130748109220000000" Dst="1" />
+<file name="TransportExceptionListener.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109220000000" remote="130748109220000000" Dst="1" />
+</dwsync>

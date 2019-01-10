@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AbstractConnection.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710670000000" remote="130628710670000000" Dst="1" />
+<file name="AggregatedConnectionInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710670000000" remote="130628710670000000" Dst="1" />
+<file name="ClusterConnectionInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710670000000" remote="130628710670000000" Dst="1" />
+<file name="ComposableConnectionInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710670000000" remote="130628710670000000" Dst="1" />
+<file name="ComposableStreamConnection.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710670000000" remote="130628710670000000" Dst="1" />
+<file name="ConnectionException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710670000000" remote="130628710670000000" Dst="1" />
+<file name="ConnectionFactory.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710670000000" remote="130628710670000000" Dst="1" />
+<file name="ConnectionFactoryInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710670000000" remote="130628710670000000" Dst="1" />
+<file name="ConnectionInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710670000000" remote="130628710670000000" Dst="1" />
+<file name="ConnectionParameters.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710670000000" remote="130628710670000000" Dst="1" />
+<file name="ConnectionParametersInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710670000000" remote="130628710670000000" Dst="1" />
+<file name="MasterSlaveReplication.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
+<file name="PhpiredisConnection.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
+<file name="PhpiredisStreamConnection.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
+<file name="PredisCluster.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
+<file name="RedisCluster.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
+<file name="ReplicationConnectionInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
+<file name="SingleConnectionInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
+<file name="StreamConnection.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
+<file name="WebdisConnection.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
+</dwsync>

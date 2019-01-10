@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="Autoloader.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628726860000000" remote="130628726860000000" Dst="1" />
+<file name="CachedObjectStorageFactory.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628726860000000" remote="130628726860000000" Dst="1" />
+<file name="Calculation.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628726860000000" remote="130628726860000000" Dst="1" />
+<file name="Cell.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628726860000000" remote="130628726860000000" Dst="1" />
+<file name="Chart.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628726870000000" remote="130628726870000000" Dst="1" />
+<file name="Comment.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628726870000000" remote="130628726870000000" Dst="1" />
+<file name="DocumentProperties.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628726870000000" remote="130628726870000000" Dst="1" />
+<file name="DocumentSecurity.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628726870000000" remote="130628726870000000" Dst="1" />
+<file name="Exception.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628726870000000" remote="130628726870000000" Dst="1" />
+<file name="HashTable.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628726870000000" remote="130628726870000000" Dst="1" />
+<file name="IComparable.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628726870000000" remote="130628726870000000" Dst="1" />
+<file name="IOFactory.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628726870000000" remote="130628726870000000" Dst="1" />
+<file name="NamedRange.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628726870000000" remote="130628726870000000" Dst="1" />
+<file name="ReferenceHelper.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628726870000000" remote="130628726870000000" Dst="1" />
+<file name="RichText.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628726870000000" remote="130628726870000000" Dst="1" />
+<file name="Settings.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628726870000000" remote="130628726870000000" Dst="1" />
+<file name="Style.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628726880000000" remote="130628726880000000" Dst="1" />
+<file name="Worksheet.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628726880000000" remote="130628726880000000" Dst="1" />
+<file name="WorksheetIterator.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628726890000000" remote="130628726890000000" Dst="1" />
+</dwsync>

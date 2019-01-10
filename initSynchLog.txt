@@ -1,0 +1,296 @@
+﻿Started: 12/14/2018 1:26 PM
+
+/wwws/share/mailAllSource/app/views/editor/fromCartModals.blade.php - same - not transferred
+/wwws/share/mailAllSource/app/views/publication/publicationEditorControls.blade.php - same - not transferred
+C:\Users\rnewsome\Documents\websites\mailAll\.git\hooks\ - folder created
+/wwws/share/mailAllSource/.git/hooks/applypatch-msg.sample - Get operation successful
+/wwws/share/mailAllSource/.git/hooks/commit-msg.sample - Get operation successful
+/wwws/share/mailAllSource/.git/hooks/post-commit.sample - Get operation successful
+/wwws/share/mailAllSource/.git/hooks/post-receive.sample - Get operation successful
+/wwws/share/mailAllSource/.git/hooks/post-update.sample - Get operation successful
+/wwws/share/mailAllSource/.git/hooks/pre-applypatch.sample - Get operation successful
+/wwws/share/mailAllSource/.git/hooks/pre-commit.sample - Get operation successful
+/wwws/share/mailAllSource/.git/hooks/pre-rebase.sample - Get operation successful
+/wwws/share/mailAllSource/.git/hooks/prepare-commit-msg.sample - Get operation successful
+/wwws/share/mailAllSource/.git/hooks/update.sample - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\info\ - folder created
+/wwws/share/mailAllSource/.git/info/exclude - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\logs\refs\heads\ - folder created
+/wwws/share/mailAllSource/.git/logs/refs/heads/dev - Get operation successful
+/wwws/share/mailAllSource/.git/logs/refs/heads/master - Get operation successful
+/wwws/share/mailAllSource/.git/logs/refs/stash - Get operation successful
+/wwws/share/mailAllSource/.git/logs/HEAD - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\00\ - folder created
+/wwws/share/mailAllSource/.git/objects/00/798726ffd59e972ceebd0cb6c09503dbbd7c19 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/00/a2e7e85b7d9ca709e1f0c2e00de1f494cd7d8f - Get operation successful
+/wwws/share/mailAllSource/.git/objects/00/edc2ef3d5b85d612fed0c50d00ca0d83ef664a - Get operation successful
+/wwws/share/mailAllSource/.git/objects/00/fa83f6770d47ebdb86b8e4f9f7e236088d634f - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\01\ - folder created
+/wwws/share/mailAllSource/.git/objects/01/24e95dad15ceac1e5fac55b6cf3f8be7493cd3 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/01/61c16de896cfd652c4ccb3adc83ee2eb5a4f9b - Get operation successful
+/wwws/share/mailAllSource/.git/objects/01/e00d6ecb575a96afa0ada4cd6452bf7537dced - Get operation successful
+/wwws/share/mailAllSource/.git/objects/01/ee50f40dd9cb2aa8cde51fc933f42dd31fb88b - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\02\ - folder created
+/wwws/share/mailAllSource/.git/objects/02/46c66d67bd28b7aa012d463aa3d579a60c7310 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/02/4e980f107c0e324931c34fdb60a359c6dc66e3 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\03\ - folder created
+/wwws/share/mailAllSource/.git/objects/03/85f72edb593ac53147eb283b420f0038b7b5c1 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/03/9e5a8f3336f2f62e6fe682992abed44b5e93f4 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/03/f52334da76a587209e823862775b7273c78fb0 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\04\ - folder created
+/wwws/share/mailAllSource/.git/objects/04/3757ceaa7dbdbf8221c8044c7dcdbb8922c83c - Get operation successful
+/wwws/share/mailAllSource/.git/objects/04/d18f8012ca74888ead12fd5bc731c51adf08f3 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/04/da919c917be34eb1cb7215015ac90869281236 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/04/dfba90dbe2b362e5c2a5cc3ce95a6ea6c21ad8 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\05\ - folder created
+/wwws/share/mailAllSource/.git/objects/05/54ee150243bbf8cd2053eec5d7e44903cfc1a1 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/05/7680c187ed6b689f159d0af848e5ab0f468b82 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/05/7d1a341a0dd335a4df146b6285d80e92b15f9c - Get operation successful
+/wwws/share/mailAllSource/.git/objects/05/84d23e4601d587c7aac279477018a6c7814853 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/05/acddca028b02ea1b28c391ba619d79b5071fdf - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\06\ - folder created
+/wwws/share/mailAllSource/.git/objects/06/1437d2633263fc562ac34dd3ba6ae3425e532f - Get operation successful
+/wwws/share/mailAllSource/.git/objects/06/5522f4454cbf4f25b970a520289ac6ecd2a339 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/06/f5fd2d0022f42ef5b77c736fa6982a8fc95d7e - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\07\ - folder created
+/wwws/share/mailAllSource/.git/objects/07/4784487189be75fa9ec95025324af6e32d23cd - Get operation successful
+/wwws/share/mailAllSource/.git/objects/07/59e892ee154e27efffc7a8a8ae78ef14045688 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/07/71117899ff60d4343e73d936e87f84536de214 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/07/8a7df7b1687f28d5e72fc4d387609f26c903f5 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/07/e82f45b7bfdbe6be2a2f75394f1a42ecbd5904 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\08\ - folder created
+/wwws/share/mailAllSource/.git/objects/08/227ff0b196e88154d391abb0b51e5fe8bc8e0b - Get operation successful
+/wwws/share/mailAllSource/.git/objects/08/391dcbc64397992839fbf3dfdb3c308c13e0e0 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/08/9b1454f5e486d8324157fdd427e34c01fd51df - Get operation successful
+/wwws/share/mailAllSource/.git/objects/08/af0f8f72a05a72c1e86ac92bb85a8ac55eb017 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/08/b1fe17630276c9418d927347afd9596993111b - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\09\ - folder created
+/wwws/share/mailAllSource/.git/objects/09/26f21869126115b6c26a9ca2914f984332db28 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/09/4638dfd3f599c92540e016483aa78e5700b97f - Get operation successful
+/wwws/share/mailAllSource/.git/objects/09/7535bc111c1f66b6079654b011b8d99a189d5f - Get operation successful
+/wwws/share/mailAllSource/.git/objects/09/a67541932c8503ce4fb5e70b80ff94c4647b1e - Get operation successful
+/wwws/share/mailAllSource/.git/objects/09/e08bdebb02c420753ded8b16f97e2178241b05 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/09/eb9d11ccaaffca983001df94cc6915f9df150c - Get operation successful
+/wwws/share/mailAllSource/.git/objects/09/fff178cbea7634dc3da5d3aca60721833351dc - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\0a\ - folder created
+/wwws/share/mailAllSource/.git/objects/0a/0b8f8334d0997be383c6d5b9b0499d9e266187 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/0a/0d926b035a87f97c42c48213610e07c7a8443f - Get operation successful
+/wwws/share/mailAllSource/.git/objects/0a/4cd754ddf4ba6fa4d8d94464b901e7e35aea53 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/0a/bb19d89be8750e6b8cf9b1163fad66726cf410 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\0b\ - folder created
+/wwws/share/mailAllSource/.git/objects/0b/16c15cb7a98faa2614f8bf1af505f5ecd14581 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/0b/3a9f7158f9692d77bf0448bb268a164b5be395 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/0b/4f9a504f9fda6aa5331b980d6dfa763822998c - Get operation successful
+/wwws/share/mailAllSource/.git/objects/0b/8d99c59c36accd06a48cf04470037a8b06e10e - Get operation successful
+/wwws/share/mailAllSource/.git/objects/0b/bf335ea53eabc8d5aa123f568591b990b1ddb2 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/0b/ddaa27e07fe69bb12685f2b35e3dcac93c2c83 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\0c\ - folder created
+/wwws/share/mailAllSource/.git/objects/0c/14b0b7b205e965b4fa147fc98476a51076da13 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/0c/21c26e803ba22ec90b496cf8eef1072446d21e - Get operation successful
+/wwws/share/mailAllSource/.git/objects/0c/4c221ef17ab6657a7b588ef66cd0ef377cc02d - Get operation successful
+/wwws/share/mailAllSource/.git/objects/0c/53428152ef920dc9728096b7e0884e03a2e360 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/0c/b5ad7cb5a1a5b21b1f2685a44b6c7c8ebdf011 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\0d\ - folder created
+/wwws/share/mailAllSource/.git/objects/0d/3720f287d1bbddb7433d1f2e9c15134107b769 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/0d/a50c9cb9d9b92e4ed8a63336bf8562e0ad4b9c - Get operation successful
+/wwws/share/mailAllSource/.git/objects/0d/d4fead7b9bb8efb4cd854aa8f10958822ac764 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\0e\ - folder created
+/wwws/share/mailAllSource/.git/objects/0e/007e214fdb85cb11b4c36db5ef7ee55990581b - Get operation successful
+/wwws/share/mailAllSource/.git/objects/0e/0c84553f74f072602601577ea0e22a1639fe97 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/0e/316b7a409a08df5e4c3cdc1a271264f5193f98 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/0e/50fdd35ee16a28cbbb0d8fb19ae67e809bea48 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/0e/5cda31e51fa53470d6d00334f2bcd6533bfc7a - Get operation successful
+/wwws/share/mailAllSource/.git/objects/0e/d9af27e70bb9db0cd61808db098149e39ab542 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\0f\ - folder created
+/wwws/share/mailAllSource/.git/objects/0f/8a3f7aaa0d19d00bdf5bbbf8a8f8e535093e11 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/0f/afb708b43a3ce73ca32863f5702f5d2c0f266b - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\10\ - folder created
+/wwws/share/mailAllSource/.git/objects/10/29b96228c5de2b30b65af130313283539be3eb - Get operation successful
+/wwws/share/mailAllSource/.git/objects/10/6c0d53592235a113a3e87f2fb3fccad08c2afa - Get operation successful
+/wwws/share/mailAllSource/.git/objects/10/974015584bfa12d1b2c200f960ff0b4ca514da - Get operation successful
+/wwws/share/mailAllSource/.git/objects/10/9c0e38011e89c270d6ff28427b8d281aa7329d - Get operation successful
+/wwws/share/mailAllSource/.git/objects/10/aba8c02c5a7ebd0bb16be39b6cf5816714f111 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/10/d49e3f6ed395916bbce21d8b4a60ec78d7d658 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/10/d7e2d05f37935f553d9f266f11789a22c21cd3 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/10/d9fb5c959955f54d6482cefc0bf566dc3eca6a - Get operation successful
+/wwws/share/mailAllSource/.git/objects/10/e314a62bc892ecab9b28530b98fb2631e18b1e - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\11\ - folder created
+/wwws/share/mailAllSource/.git/objects/11/448a3df520e7052f088cefbcdf42cd479408f7 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/11/773d11a206fe72d1f4af6da5dc09f899158910 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\12\ - folder created
+/wwws/share/mailAllSource/.git/objects/12/219fa7029f37cb8c04a43d034cc862d410be17 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/12/2b2fe233161839170463ca9c9007f82f91bfe0 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/12/31d91ecbc8a61259790bd62ddb967f491fb6e7 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/12/6fb0c429a05fdee7c52b2afa3d479ffae1a63e - Get operation successful
+/wwws/share/mailAllSource/.git/objects/12/75c5f02d60bb23dbb0d8dea02b08c9304f03d6 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/12/87ca157bcc9cc922a35c3042aab57de6abd5de - Get operation successful
+/wwws/share/mailAllSource/.git/objects/12/9f0038d8f7100abb15e823a859363cee253e1f - Get operation successful
+/wwws/share/mailAllSource/.git/objects/12/a9e5cf70b6b7443cf5cb87f7f3784939c61fd5 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\13\ - folder created
+/wwws/share/mailAllSource/.git/objects/13/34f296930f78d582427b0e790f217c9997fe18 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/13/c4858c4c11724288581b5bec22f1d8400a136f - Get operation successful
+/wwws/share/mailAllSource/.git/objects/13/c7a52e735cee6a94732a5aa6178e4909da6f8d - Get operation successful
+/wwws/share/mailAllSource/.git/objects/13/ec5699545e6a7ead992c9a25f0a1bb1f792383 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\14\ - folder created
+/wwws/share/mailAllSource/.git/objects/14/73793fee86faa7ac9f146e89fae59ff0951952 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/14/cc8c228e5b69a4d32c989f2c04abf1b28624ee - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\15\ - folder created
+/wwws/share/mailAllSource/.git/objects/15/04938d2fbf3739b8d00c664be349f60bf971a3 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/15/c23427c969942b2dbcdfbaa8e322469f8fbf2d - Get operation successful
+/wwws/share/mailAllSource/.git/objects/15/e227f5ea48258cd93219bd6c86f7da0c504542 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\16\ - folder created
+/wwws/share/mailAllSource/.git/objects/16/5d5837e440ff59417c508eab6d52fa2d0f147e - Get operation successful
+/wwws/share/mailAllSource/.git/objects/16/7793bd15b21143c935b484f8fa3f918115f2d2 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/16/8e970ffa492b448c0eb3c7d00628deafb9fe9b - Get operation successful
+/wwws/share/mailAllSource/.git/objects/16/bd38e194c04eff669aa094b15b1de95b9a7faf - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\17\ - folder created
+/wwws/share/mailAllSource/.git/objects/17/4a25f35534dc713f0277879ea6be8763b38418 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/17/bd0f95d652e906fdd36f9425fc429249bd2170 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/17/f41cbc6642508c8ea6609fcf86d5c9d6f58e98 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/17/fc7b35d8675a03744d2eac2a2c1f47fa08bb1d - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\18\ - folder created
+/wwws/share/mailAllSource/.git/objects/18/5ad4c24611968d03b9b7b7e7452cbd0fddfd3e - Get operation successful
+/wwws/share/mailAllSource/.git/objects/18/c902b1c6021099c7325aed39cf4b0843d533e6 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/18/e4316b059116d2441f16dcd61228e645cd3a78 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\19\ - folder created
+/wwws/share/mailAllSource/.git/objects/19/062d1d086df90b83758694213604838227273e - Get operation successful
+/wwws/share/mailAllSource/.git/objects/19/08d8dd05874c1c4d6192ead3c17e0135395845 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/19/0f9cca51733efc565244ae4cd9fe3977e55ddf - Get operation successful
+/wwws/share/mailAllSource/.git/objects/19/59e8e10ecf02c739e5e49c612faf08cd4490d9 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/19/8ea653349a95134606064c9961ae3e0872d2ce - Get operation successful
+/wwws/share/mailAllSource/.git/objects/19/c75edb67e8aef1ea73b91f071b36f083220b04 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\1a\ - folder created
+/wwws/share/mailAllSource/.git/objects/1a/a1f3360bf818716d8f92dcce0c17f179e058ec - Get operation successful
+/wwws/share/mailAllSource/.git/objects/1a/ab6fa7090c02bffcab28023f06259c7047b2a6 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\1b\ - folder created
+/wwws/share/mailAllSource/.git/objects/1b/10428975c2b2e9e255ff28765c447289533e41 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/1b/2d667564c6a9805464aa50adfeb065c8ffd115 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/1b/3f20f24dcfdadd28b0aebc85437a300bf3ba4f - Get operation successful
+/wwws/share/mailAllSource/.git/objects/1b/8d4fbaf9407b45414e28b66ae0d495d360d33a - Get operation successful
+/wwws/share/mailAllSource/.git/objects/1b/aa5b2b5ce511f9ef1b096df7367892841bda35 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/1b/b0b53a4253d9f6fb9edffd9d78636cf1f73b31 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\1c\ - folder created
+/wwws/share/mailAllSource/.git/objects/1c/4e07314b82a3381773c122a65a58ac575d5220 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/1c/74e274f3a3b6abb405488f76fa7ca7f3716ee6 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/1c/849183068746092bdb67bfac25848e844677e1 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/1c/ce5a64f2aa0a717770d456047815e5cfc5047d - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\1d\ - folder created
+/wwws/share/mailAllSource/.git/objects/1d/c7238b63822cdee27310337d58c3b648a3acaf - Get operation successful
+/wwws/share/mailAllSource/.git/objects/1d/d9549fef4afc99a0ce1c2fa5e309bbc3656c83 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\1e\ - folder created
+/wwws/share/mailAllSource/.git/objects/1e/18aee0c71dbe80606c8585628aa37a7e8450a3 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/1e/3350c7e686782b0db534c6c7247c05dfb38e7e - Get operation successful
+/wwws/share/mailAllSource/.git/objects/1e/3cc72e2cb2dc44722fedefcc955047843fffa1 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/1e/70a80040692d4f0dd2b059361ae90a086f3615 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/1e/934b6df24f893a5022e46550f076e284e8a7de - Get operation successful
+/wwws/share/mailAllSource/.git/objects/1e/9b22e58ffe2fe3238b3915a8aab1429b094d7c - Get operation successful
+/wwws/share/mailAllSource/.git/objects/1e/ddf149b3b8c0c2847ec6caa41b4a8f98151cfd - Get operation successful
+/wwws/share/mailAllSource/.git/objects/1e/e31ccdfb7a6fb5fea79e7051a7abf6f05c384b - Get operation successful
+/wwws/share/mailAllSource/.git/objects/1e/e93092f48687e545045c80e57a885d7b16abd6 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/1e/f5e33085f7616e819f53eff684a273b6b8067a - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\1f\ - folder created
+/wwws/share/mailAllSource/.git/objects/1f/5c00c5bc2ce99d7a98eee2ac1632537413508c - Get operation successful
+/wwws/share/mailAllSource/.git/objects/1f/d601c6c83ba1977031e9d0fe8455ed9d2a18d3 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\20\ - folder created
+/wwws/share/mailAllSource/.git/objects/20/0661e35e8b685d614b9cb229876821ef9d95fc - Get operation successful
+/wwws/share/mailAllSource/.git/objects/20/0ab9b47ef89dac84ba94927b7b98e053437b42 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/20/a6078b190fb32839a7b7f2335d0e3401e0f9d4 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/20/e7d0176710b27c26c8491052fa0db0d00afe8a - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\21\ - folder created
+/wwws/share/mailAllSource/.git/objects/21/5121b1dddc69980c28c964c347f3588b38e427 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/21/9476565beae6862ffb2b87c2a5a76e97eb51c0 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/21/c0fc8e5bf9e5ccbb9315a876c2397731862e1f - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\22\ - folder created
+/wwws/share/mailAllSource/.git/objects/22/2465dc274df90129c121f25d69fc870178b5d6 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/22/25ac9fd2138d6396401b0dc7526f641434d0b1 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/22/2aaa914e9bafe699786a247d637634c78cd5d3 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/22/67ce5502d3ec50df17df6992f52c006d2a1b84 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/22/6d396aa589ea4b3d9cfd763f28ce5e4f266b78 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/22/83dc3aa9ef732e217ee4db5960a318a087008f - Get operation successful
+/wwws/share/mailAllSource/.git/objects/22/df7efb9e15f0d15798d8154fcba72790997a1b - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\23\ - folder created
+/wwws/share/mailAllSource/.git/objects/23/2da0a5a04048bc0f8d3e7de7a4c7cf444c5b25 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/23/c76d6fe196fd732d8763a4f8fbb2eaa3c74c50 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/23/ca2778d8ce0e30ac8e4a27313fd9ddf388bb5f - Get operation successful
+/wwws/share/mailAllSource/.git/objects/23/f91f94bedb4d96223080eb3902db32c5426258 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\24\ - folder created
+/wwws/share/mailAllSource/.git/objects/24/567bf70ed14f3661beec08e72a556455b1fe94 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/24/5e92cc46f537b0cb82eefdd7a6825b756948b5 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/24/8bf87e3ca29eead2946ea6468dbcbe48990045 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/24/a400a6c5c0b8223bb9b35e28d255cd443c3d2d - Get operation successful
+/wwws/share/mailAllSource/.git/objects/24/f70a36b47638a1dcf4bce29e9a88a02727252b - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\25\ - folder created
+/wwws/share/mailAllSource/.git/objects/25/43279a8265ec8d95966691086e757dd57451e1 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\26\ - folder created
+/wwws/share/mailAllSource/.git/objects/26/148791979e6e50a0dbbb175fa79f90796e1f49 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/26/43f5cf7ae6bcb5ff8d99fabce6f8160fdfa0f7 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/26/5b3939a036e3f27c74bab09f7ff6ed0f522083 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/26/8055e1e2963c53a640254187327a2af9ee2444 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/26/a75d17fdc79cec7b478723f4018b4addadc8ab - Get operation successful
+/wwws/share/mailAllSource/.git/objects/26/b7eeb72fa4dd9811e01bd4c4d7c91e91c138e5 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/26/eb96b9ace62b53cf98916cd57e6c2c70bfaf26 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\27\ - folder created
+/wwws/share/mailAllSource/.git/objects/27/124879705a8e085952f6af84a121a8b33d090b - Get operation successful
+/wwws/share/mailAllSource/.git/objects/27/1352c1497f9c8ef3c5fefd17ecd4d67bd0f119 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/27/417aaf17f4f0d45617fc536931a023942b5e12 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/27/ebcfede8d0c456f2b39d26ce9c3b309a044eb4 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/27/fef7b18d05da016d9b6a902a1e36b8d796c289 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\28\ - folder created
+/wwws/share/mailAllSource/.git/objects/28/1a7b5d87c48b13b7376d97e9745e89bf50f8bf - Get operation successful
+/wwws/share/mailAllSource/.git/objects/28/73652bbeb5a1b53f26c1c897ead461171020c8 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/28/90611e9cd57a9026cef07fe64e0c8878cacee5 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\29\ - folder created
+/wwws/share/mailAllSource/.git/objects/29/1e87c89f4fafb5ca542e5975e760603eeee131 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/29/cc46f692da3d113f34472274a257a606a34610 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/29/e18dc8fbc2143e4bfe0aa6fbceec332abbd774 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\2a\ - folder created
+/wwws/share/mailAllSource/.git/objects/2a/23029d5638cdfa9ebbd1c1b47c13a9a67cf868 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/2a/592a472dc5095f43eea19cdd6e2cf219cc587e - Get operation successful
+/wwws/share/mailAllSource/.git/objects/2a/62bdbff82b1d73e042253b3f4280520e433737 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/2a/64b74b63b2c87aec16c125a793cf1b973a17fd - Get operation successful
+/wwws/share/mailAllSource/.git/objects/2a/7c238ba515a60fd28a2f574ca5e7139a068c4d - Get operation successful
+/wwws/share/mailAllSource/.git/objects/2a/ab1dd79ae39e2b15d04a696757470fdc3ebbcf - Get operation successful
+/wwws/share/mailAllSource/.git/objects/2a/feec0f396b1c29fa145055b75497a0e440c7a5 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\2b\ - folder created
+/wwws/share/mailAllSource/.git/objects/2b/3db5988d135ed02ffad97082fc854ba5362283 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/2b/d9bdbd28e5022dce7b9be5c7bc6e0611b4b74e - Get operation successful
+/wwws/share/mailAllSource/.git/objects/2b/e0d6423e6a0803c97ddbbaab471996098b2859 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\2c\ - folder created
+/wwws/share/mailAllSource/.git/objects/2c/2f991d0c8b9f974c81f21da645b0e0db235978 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/2c/e02b0949f29b2d5e07cfec36a1099c2e9a7c0f - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\2d\ - folder created
+/wwws/share/mailAllSource/.git/objects/2d/0c48ad757cbfe7d11cf5c7113f9bcd3e807c7a - Get operation successful
+/wwws/share/mailAllSource/.git/objects/2d/1633db7649de7b1fd4234567b1826b052f8ed5 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/2d/448baa82015544dcfb4938acb3ec62bfd4457b - Get operation successful
+/wwws/share/mailAllSource/.git/objects/2d/5150122fcc6e7ed166b9d623402c3fe0e5ddd0 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/2d/6af684458475873f6b935b7ad94de9daa64408 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/2d/c24cae26381973bf049f36916d32b645718707 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\2e\ - folder created
+/wwws/share/mailAllSource/.git/objects/2e/2ffb585725222ebc1b7c73d28f37817d4ac66b - Get operation successful
+/wwws/share/mailAllSource/.git/objects/2e/3e3a15819584925d693aa50aa0c447f0bf7c13 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/2e/4a54ad8bdc7a677357514e355e5687404c925e - Get operation successful
+/wwws/share/mailAllSource/.git/objects/2e/7623454b85af21feecc8458649d717beaf5d18 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/2e/7824363899eddd8289acc1fe01602e57d26f6d - Get operation successful
+/wwws/share/mailAllSource/.git/objects/2e/8a9cf926416cd0a289819088f7a082b82fcb69 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\2f\ - folder created
+/wwws/share/mailAllSource/.git/objects/2f/10ac301caea7fe9867ffa31b89cf6f95ae9832 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/2f/202917d9c27a416a923f2dd222a4dfc7ab9811 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/2f/33b903ac4fb9b9d926eef1c4b0cf49d93d6771 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/2f/5c76be7d986f7080d7d7bcd5fcf2c6cf2642f8 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/2f/8260068f9f68818c59099d58520ac4a83e4b00 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/2f/b19fcad1b74a44d9482002d0e6fc5bb2f286f4 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/2f/d5b384ebd5ed7365097763d3c9077d636730be - Get operation successful
+/wwws/share/mailAllSource/.git/objects/2f/e1ab95ee55205f70da59ef36c96013b410adb6 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\30\ - folder created
+/wwws/share/mailAllSource/.git/objects/30/4ddfa07ffb204ae195988a5400083e3065a261 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/30/9ce06ffbf5440db8d2f1b01bb49f0c66619d5c - Get operation successful
+/wwws/share/mailAllSource/.git/objects/30/a44e1b2e212d814544d7bdfcbfd0463323ed8d - Get operation successful
+/wwws/share/mailAllSource/.git/objects/30/c6fb798e604179024779dbc6b55caba570e3f6 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/30/ccb21d1e512f2a54c62b9a823129a3542b169b - Get operation successful
+/wwws/share/mailAllSource/.git/objects/30/d6c2caba7ac960c53afb159938e01d8fca5f1d - Get operation successful
+/wwws/share/mailAllSource/.git/objects/30/ddd9bff04c9a4a3f06588859984974c360ecf1 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/30/dfbdf61bbd45163af41cd81dfa80a132ed11d2 - Get operation successful
+/wwws/share/mailAllSource/.git/objects/30/fe992b22449bd85754acd7c20fbc27c9f8eccc - Get operation successful
+/wwws/share/mailAllSource/.git/objects/30/ffa0e3eea48e0fd593f84615ca7dd45d274783 - Get operation successful
+C:\Users\rnewsome\Documents\websites\mailAll\.git\objects\31\ - folder created
+/

@@ -15,9 +15,31 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function showWelcome()
+	public function index()
 	{
-		return View::make('hello');
+
+		$data = array(
+			'instances' => Instance::all(),
+		);
+
+
+        $data['types'] = array('success', 'info', 'warning', 'danger');
+
+        return View::make('publicLanding', $data);
+
 	}
+
+	public function editors()
+	{
+
+		$data = array(
+			'instances' => Instance::all(),
+		);
+
+        $data['types'] = array('success', 'info', 'warning', 'danger');
+        return View::make('editorLanding', $data);
+	}
+
+
 
 }

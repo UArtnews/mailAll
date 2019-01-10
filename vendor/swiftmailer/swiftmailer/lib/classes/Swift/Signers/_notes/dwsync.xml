@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="BodySigner.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109230000000" remote="130748109230000000" Dst="1" />
+<file name="DKIMSigner.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109230000000" remote="130748109230000000" Dst="1" />
+<file name="DomainKeySigner.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109230000000" remote="130748109230000000" Dst="1" />
+<file name="HeaderSigner.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109230000000" remote="130748109230000000" Dst="1" />
+<file name="OpenDKIMSigner.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109230000000" remote="130748109230000000" Dst="1" />
+<file name="SMimeSigner.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109230000000" remote="130748109230000000" Dst="1" />
+</dwsync>

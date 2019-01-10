@@ -1,0 +1,1 @@
+<span class="publicationWebHeader">{{ isset($tweakables['publication-email-header']) ? str_replace('**THISPUB**',$publication->id, $tweakables['publication-email-header']) : str_replace('**THISPUB**', $publication->id, $default_tweakables['publication-email-header']) }}</span>

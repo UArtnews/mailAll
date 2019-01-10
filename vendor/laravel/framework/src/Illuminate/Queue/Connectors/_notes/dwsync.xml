@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="BeanstalkdConnector.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710380000000" remote="130628710380000000" Dst="1" />
+<file name="ConnectorInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710380000000" remote="130628710380000000" Dst="1" />
+<file name="IronConnector.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710380000000" remote="130628710380000000" Dst="1" />
+<file name="RedisConnector.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710380000000" remote="130628710380000000" Dst="1" />
+<file name="SqsConnector.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710380000000" remote="130628710380000000" Dst="1" />
+<file name="SyncConnector.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710380000000" remote="130628710380000000" Dst="1" />
+</dwsync>

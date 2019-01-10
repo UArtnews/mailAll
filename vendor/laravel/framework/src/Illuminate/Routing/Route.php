@@ -1,6 +1,5 @@
 <?php namespace Illuminate\Routing;
 
-use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Matching\UriValidator;
 use Illuminate\Routing\Matching\HostValidator;
@@ -109,14 +108,17 @@ class Route {
 	 * Determine if the route matches given request.
 	 *
 	 * @param  \Illuminate\Http\Request  $request
+	 * @param  bool  $includingMethod
 	 * @return bool
 	 */
-	public function matches(Request $request)
+	public function matches(Request $request, $includingMethod = true)
 	{
 		$this->compileRoute();
 
 		foreach ($this->getValidators() as $validator)
 		{
+			if ( ! $includingMethod && $validator instanceof MethodValidator) continue;
+
 			if ( ! $validator->matches($this, $request)) return false;
 		}
 
@@ -477,7 +479,7 @@ class Route {
 		// If the action is already a Closure instance, we will just set that instance
 		// as the "uses" property, because there is nothing else we need to do when
 		// it is available. Otherwise we will need to find it in the action list.
-		if ($action instanceof Closure)
+		if (is_callable($action))
 		{
 			return array('uses' => $action);
 		}
@@ -503,7 +505,7 @@ class Route {
 	{
 		return array_first($action, function($key, $value)
 		{
-			return $value instanceof Closure;
+			return is_callable($value);
 		});
 	}
 
@@ -687,7 +689,7 @@ class Route {
 	 */
 	public function httpOnly()
 	{
-		return in_array('http', $this->action);
+		return in_array('http', $this->action, true);
 	}
 
 	/**
@@ -707,7 +709,7 @@ class Route {
 	 */
 	public function secure()
 	{
-		return in_array('https', $this->action);
+		return in_array('https', $this->action, true);
 	}
 
 	/**
@@ -799,7 +801,7 @@ class Route {
 	/**
 	 * Get the compiled version of the route.
 	 *
-	 * @return void
+	 * @return \Symfony\Component\Routing\CompiledRoute
 	 */
 	public function getCompiled()
 	{
