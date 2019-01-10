@@ -76,7 +76,10 @@
             <h1 class="centerMe"><span class="glyphicon glyphicon-wrench" aria-hidden="true" style="font-size:400%;">&nbsp;</span>
                 <strong>The University of Akron: Publications</strong>
             </h1>
+<<<<<<< HEAD
 			@include('public.messages')
+=======
+>>>>>>> mailAllProd/master
             <div class="panel panel-default">
                 <div class="panel-heading">Please Choose a Publication to Edit <a href="{{ URL::to('/') }}" class="btn btn-primary btn-xs pull-right"><span class="glyphicon glyphicon-arrow-left"></span>&nbsp;Return to Publication Archive List&nbsp;<span class="glyphicon glyphicon-arrow-left"></span></a></div>
                 <div class="panel-body">

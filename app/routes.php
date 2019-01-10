@@ -115,8 +115,11 @@ Route::group(array('before' => 'force.ssl'), function(){
 
     //Post routes so AJAX can grab editable regions
     Route::any('/editable/article/{article_id}/{publication_id?}', 'MiscController@articleAJAX');
+<<<<<<< HEAD
 	Route::any('/user/signin/', 'AdminController@nonShibSignin');
 	Route::any('/user/signin/auth', 'AdminController@doNonShibAuth');
+=======
+>>>>>>> mailAllProd/master
 
 });
 

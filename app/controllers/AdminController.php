@@ -122,6 +122,7 @@ class AdminController extends BaseController {
             return Redirect::back()->withSuccess('User Successfully Restored');
         }
     }
+<<<<<<< HEAD
 	public function updateSubmission()
 	{
 		Schema::table('submission', function($table)
@@ -209,4 +210,6 @@ class AdminController extends BaseController {
 				}
 		}
 	}
+=======
+>>>>>>> mailAllProd/master
 }

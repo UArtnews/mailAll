@@ -5,7 +5,11 @@
         Article List
     </div>
     <div class="panel-body" id="articlePanelBody">
+<<<<<<< HEAD
         <div class="col-sm-10 col-sm-offset-1 col-xs-12 table-responsive" id="articleChooser">
+=======
+        <div class="col-sm-10 col-sm-offset-1 col-xs-12" id="articleChooser">
+>>>>>>> mailAllProd/master
             <button id="newArticleButton" class="btn btn-success btn-block" onclick="$('.newArticle').slideToggle();$('#newArticleButton').slideToggle();"><strong>Create New Article</strong></button><br/>
             <div class="newArticle" style="display:none;">
                 <div class="contentDiv">
