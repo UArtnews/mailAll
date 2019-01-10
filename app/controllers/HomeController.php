@@ -23,13 +23,17 @@ class HomeController extends BaseController {
 		);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> mailAllProd/master
 =======
 >>>>>>> mailAllProd/master
         $data['types'] = array('success', 'info', 'warning', 'danger');
 
         return View::make('publicLanding', $data);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	}
 
@@ -47,6 +51,10 @@ class HomeController extends BaseController {
 =======
 	}
 
+=======
+	}
+
+>>>>>>> mailAllProd/master
 	public function editors()
 	{
 
@@ -58,6 +66,9 @@ class HomeController extends BaseController {
         return View::make('editorLanding', $data);
 	}
 
+<<<<<<< HEAD
+>>>>>>> mailAllProd/master
+=======
 >>>>>>> mailAllProd/master
 
 

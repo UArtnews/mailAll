@@ -123,6 +123,7 @@ class AdminController extends BaseController {
         }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function updateSubmission()
 	{
 		Schema::table('submission', function($table)
@@ -210,6 +211,8 @@ class AdminController extends BaseController {
 				}
 		}
 	}
+=======
+>>>>>>> mailAllProd/master
 =======
 >>>>>>> mailAllProd/master
 }

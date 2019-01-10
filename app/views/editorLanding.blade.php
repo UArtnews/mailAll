@@ -77,7 +77,10 @@
                 <strong>The University of Akron: Publications</strong>
             </h1>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			@include('public.messages')
+=======
+>>>>>>> mailAllProd/master
 =======
 >>>>>>> mailAllProd/master
             <div class="panel panel-default">

@@ -9,7 +9,11 @@
         <div class="row articleEditor" id="articleEditor{{$article->id}}">
             <div class="col-sm-10 col-sm-offset-1 col-xs-12 article">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <div class="contentDiv table-responsive" >
+=======
+                <div class="contentDiv">
+>>>>>>> mailAllProd/master
 =======
                 <div class="contentDiv">
 >>>>>>> mailAllProd/master

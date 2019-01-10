@@ -6,7 +6,11 @@
     </div>
     <div class="panel-body" id="articlePanelBody">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <div class="col-sm-10 col-sm-offset-1 col-xs-12 table-responsive" id="articleChooser">
+=======
+        <div class="col-sm-10 col-sm-offset-1 col-xs-12" id="articleChooser">
+>>>>>>> mailAllProd/master
 =======
         <div class="col-sm-10 col-sm-offset-1 col-xs-12" id="articleChooser">
 >>>>>>> mailAllProd/master

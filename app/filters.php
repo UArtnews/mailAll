@@ -7,7 +7,11 @@ Route::filter('force.ssl', function()
         return Redirect::secure(Request::path());
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> mailAllProd/master
 =======
     
 >>>>>>> mailAllProd/master
@@ -58,6 +62,7 @@ App::after(function($request, $response)
 
 /*
 <<<<<<< HEAD
+<<<<<<< HEAD
 |--------------------------------------------------------------------------
 | Authentication Filters
 |--------------------------------------------------------------------------
@@ -88,6 +93,17 @@ Route::filter('auth', function()
     
     
 });
+=======
+ |--------------------------------------------------------------------------
+ | Authentication Filters
+ |--------------------------------------------------------------------------
+ |
+ | The following filters are used to verify that the user of the current
+ | session is logged into this application. The "basic" filter easily
+ | integrates HTTP Basic authentication for quick, simple checking.
+ |
+ */
+>>>>>>> mailAllProd/master
 
 Route::filter('editAuth', function() {
     $instance = Instance::where('name', getInstanceName())->first();
@@ -97,12 +113,25 @@ Route::filter('editAuth', function() {
     }else {
         $user = User::where('uanet', uanet())->first();
 
+<<<<<<< HEAD
         if (count($user) <= 0) {
             return Redirect::guest('/')->withError('You do not have permission to access that!');
+=======
+Route::filter('auth', function()
+{
+    if(Auth::check()){
+        $user = Auth::user();
+    }else {
+        $user = User::where('uanet', uanet())->first();
+        
+        if (count($user) <= 0) {
+            return Redirect::guest('/');
+>>>>>>> mailAllProd/master
         } else {
             Auth::login(User::find($user->id));
         }
     }
+<<<<<<< HEAD
     //Perform Instance Node Permission Check
     if(Auth::check() && ( $user->hasPermission($instance->id, 'edit') || $user->hasPermission(0, 'edit')) ){
         //Let editors in
@@ -114,13 +143,24 @@ Route::filter('editAuth', function() {
 });
 
 Route::filter('adminAuth', function() {
+=======
+    
+    if (Auth::guest()) return Redirect::guest('/')->withError('You do not have permission to access that!');
+});
+
+Route::filter('editAuth', function() {
+>>>>>>> mailAllProd/master
     $instance = Instance::where('name', getInstanceName())->first();
     //Log them in, or not
     if(Auth::check()){
         $user = Auth::user();
     }else {
         $user = User::where('uanet', uanet())->first();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> mailAllProd/master
         if (count($user) <= 0) {
             return Redirect::guest('/')->withError('You do not have permission to access that!');
         } else {
@@ -128,12 +168,19 @@ Route::filter('adminAuth', function() {
         }
     }
     //Perform Instance Node Permission Check
+<<<<<<< HEAD
     if(Auth::check() && ( $user->hasPermission($instance->id, 'admin') || $user->hasPermission(0, 'admin')) ){
+=======
+    if(Auth::check() && ( $user->hasPermission($instance->id, 'edit') || $user->hasPermission(0, 'edit')) ){
+        //Let editors in
+    }else if(Auth::check() && ( $user->hasPermission($instance->id, 'admin') || $user->hasPermission(0, 'admin')) ){
+>>>>>>> mailAllProd/master
         //Let admins in
     }else{
         return Redirect::guest('/')->withError('You do not have permission to access that!');
     }
 });
+<<<<<<< HEAD
 
 Route::filter('superAuth', function() {
     //Log them in, or not
@@ -231,6 +278,8 @@ Route::filter('editAuth', function() {
         return Redirect::guest('/')->withError('You do not have permission to access that!');
     }
 });
+=======
+>>>>>>> mailAllProd/master
     
     Route::filter('adminAuth', function() {
         $instance = Instance::where('name', getInstanceName())->first();

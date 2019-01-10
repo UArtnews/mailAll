@@ -16,6 +16,11 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 
     protected $softDelete = true;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    
+    protected $primaryKey = 'id';
+>>>>>>> mailAllProd/master
 =======
     
     protected $primaryKey = 'id';
