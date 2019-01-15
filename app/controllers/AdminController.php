@@ -200,8 +200,8 @@ class AdminController extends BaseController {
 		if($isToken > 0){
 			$anonID = 1899;
 			
-			$user = User::where('uanet', "rnewsome")->get();
-			print(User::where('uanet', 'shi3')->count());
+			$user = User::where('uanet', "rnewsome")->firstOrFail();
+			print(User::where('uanet', "rnewsome")->count());
 			if(count($user)){
 				Auth::login(User::find($user->id));
 				$errorMessage = "<strong style=\"color: red;\" >Permission to Login Granted</strong>";
