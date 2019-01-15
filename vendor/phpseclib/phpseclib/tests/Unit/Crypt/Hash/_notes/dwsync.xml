@@ -8,4 +8,10 @@
 <file name="TestCase.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748073200000000" remote="131916317280000000" Dst="1" />
 <file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825427910407532" remote="131916254360000000" Dst="1" />
 <file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825427910407532" remote="131919539790000000" Dst="1" />
+<file name="MD5Test.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109200000000" remote="130748109200000000" Dst="1" />
+<file name="SHA256_96Test.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109200000000" remote="130748109200000000" Dst="1" />
+<file name="SHA256Test.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109200000000" remote="130748109200000000" Dst="1" />
+<file name="SHA512_96Test.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109200000000" remote="130748109200000000" Dst="1" />
+<file name="SHA512Test.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109200000000" remote="130748109200000000" Dst="1" />
+<file name="TestCase.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109200000000" remote="130748109200000000" Dst="1" />
 </dwsync>

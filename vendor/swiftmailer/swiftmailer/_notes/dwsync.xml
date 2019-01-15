@@ -15,4 +15,12 @@
 <file name="build.xml" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428598164388" remote="131919540400000000" Dst="1" />
 <file name="create_pear_package.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428386366537" remote="131919540400000000" Dst="1" />
 <file name="package.xml.tpl" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428407016759" remote="131919540400000000" Dst="1" />
+<file name=".gitignore" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109210000000" remote="130748109210000000" Dst="1" />
+<file name=".travis.yml" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109210000000" remote="130748109210000000" Dst="1" />
+<file name="CHANGES" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109210000000" remote="130748109210000000" Dst="1" />
+<file name="composer.json" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109210000000" remote="130748109210000000" Dst="1" />
+<file name="LICENSE" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109210000000" remote="130748109210000000" Dst="1" />
+<file name="phpunit.xml.dist" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109240000000" remote="130748109240000000" Dst="1" />
+<file name="README" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109210000000" remote="130748109210000000" Dst="1" />
+<file name="VERSION" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109210000000" remote="130748109210000000" Dst="1" />
 </dwsync>

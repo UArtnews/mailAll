@@ -6,4 +6,8 @@
 <file name="sami.conf.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748073200000000" remote="131916317180000000" Dst="1" />
 <file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428519430002" remote="131916254330000000" Dst="1" />
 <file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428519430002" remote="131919539780000000" Dst="1" />
+<file name="build.xml" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109190000000" remote="130748109190000000" Dst="1" />
+<file name="code-sniffer-ruleset-tests.xml" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109190000000" remote="130748109190000000" Dst="1" />
+<file name="code-sniffer-ruleset.xml" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109200000000" remote="130748109200000000" Dst="1" />
+<file name="sami.conf.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109200000000" remote="130748109200000000" Dst="1" />
 </dwsync>

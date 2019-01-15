@@ -5,4 +5,7 @@
 <file name="usage.md" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748073140000000" remote="131916316770000000" Dst="1" />
 <file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428282042511" remote="131916253990000000" Dst="1" />
 <file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428282042511" remote="131919539700000000" Dst="1" />
+<file name="extending.md" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109140000000" remote="130748109140000000" Dst="1" />
+<file name="sockets.md" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109140000000" remote="130748109140000000" Dst="1" />
+<file name="usage.md" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109140000000" remote="130748109140000000" Dst="1" />
 </dwsync>

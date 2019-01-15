@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name=".gitkeep" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130345676970000000" remote="130345676970000000" Dst="1" />
-<file name="2014_05_22_130216_create_instance_table.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130601022890000000" remote="130601022890000000" Dst="1" />
-<file name="2014_05_22_131022_create_users_table.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130603794490000000" remote="130603794490000000" Dst="1" />
-<file name="2014_05_22_131205_create_tweakable_table.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130530306160000000" remote="130530306160000000" Dst="1" />
-<file name="2014_05_22_133510_create_article_table.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130498214770000000" remote="130498214770000000" Dst="1" />
-<file name="2014_05_22_152413_create_publication_table.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130682261520000000" remote="130682261520000000" Dst="1" />
-<file name="2014_05_27_152838_create_default_tweakable_table.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109120000000" remote="130748109120000000" Dst="1" />
-<file name="2014_07_07_125330_create_publication_order_table.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109120000000" remote="130748109120000000" Dst="1" />
-<file name="2014_07_09_131155_create_images_table.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109120000000" remote="130748109120000000" Dst="1" />
-<file name="2014_07_10_180325_create_submission_table.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131014170540000000" remote="131014170540000000" Dst="1" />
-<file name="2014_11_07_141727_create_user_permission_table.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109120000000" remote="130748109120000000" Dst="1" />
-<file name="2014_12_08_172542_create_profiles_table.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109120000000" remote="130748109120000000" Dst="1" />
-<file name="2016_03_01_190225_update_submission_table.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131014175990000000" remote="131014175990000000" Dst="1" />
+<file name="2014_05_22_130216_create_instance_table.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131871232729782739" remote="131919517600000000" Dst="1" />
+<file name="2014_05_22_131022_create_users_table.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131871232729792709" remote="131919517600000000" Dst="1" />
+<file name="2014_05_22_131205_create_tweakable_table.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131871232729792709" remote="131919517610000000" Dst="1" />
+<file name="2014_05_22_133510_create_article_table.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131871232729802686" remote="131919517610000000" Dst="1" />
+<file name="2014_05_22_152413_create_publication_table.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131871232729812650" remote="131919517610000000" Dst="1" />
+<file name="2014_05_27_152838_create_default_tweakable_table.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131871232729812650" remote="131919517610000000" Dst="1" />
+<file name="2014_07_07_125330_create_publication_order_table.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131871232729822631" remote="131919517610000000" Dst="1" />
+<file name="2014_07_09_131155_create_images_table.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131871232729822631" remote="131919517610000000" Dst="1" />
+<file name="2014_07_10_180325_create_submission_table.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131871232729832604" remote="131919517610000000" Dst="1" />
+<file name="2014_11_07_141727_create_user_permission_table.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131871232729842581" remote="131919517610000000" Dst="1" />
+<file name="2014_12_08_172542_create_profiles_table.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131871232729842581" remote="131919517610000000" Dst="1" />
+<file name=".gitkeep" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131919634058678355" remote="130345676970000000" Dst="1" />
+<file name="2016_03_01_190225_update_submission_table.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131014175990000000" remote="131919710380000000" Dst="1" />
+<file name="2018_11_15_202228_create_publicationLogger_table.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131867876620000000" remote="131867876620000000" Dst="1" />
+<file name="2018_11_15_191426_create_publicationLog_table.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131867867330000000" remote="131867867330000000" Dst="1" />
 </dwsync>

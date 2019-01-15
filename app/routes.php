@@ -138,6 +138,7 @@ Route::group(array('before' => 'force.ssl'), function(){
 //                              //
 //////////////////////////////////
 Route::group(array('before' => 'force.ssl|editAuth'), function(){
+	
 	//Specific Saving Controller for saving Publication Logs Excel doc
 	Route::get('/saveExcel/{instanceName}/{action?}/{subAction?}', 'EditorController@route');
 	
@@ -173,7 +174,7 @@ Route::group(array('before' => 'force.ssl|editAuth'), function(){
     Route::get('/deleteEmailAud/{instanceName}/{emailAudID}', 'EditorController@deleteEmailAudience');
 	//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	//+++++++++++++++These below routes are only for Migration+
-	
+	Route::get('/preview/{instanceName}/{publication_id}', 'EditorController@previewEmail');
 	
 	
 });
