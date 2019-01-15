@@ -19,6 +19,33 @@ class MiscController extends BaseController {
         }
         return Response::json($images);
     }
+	public function imagePicker($instanceName){
+        $instance = Instance::where('name',strtolower(urldecode($instanceName)))->first();
+        //Grab all the images for that instance and send them to the user
+        $images = array();
+        /*foreach(Image::where('instance_id',$instance->id)->orderBy('created_at', 'desc')->paginate(15) as $image){
+            $imageLocation = str_replace('https','http', URL::to('images/'.preg_replace('/[^\w]+/', '_', $instance->name).'/'.$image->filename));
+            array_push($images,array(
+                'image'  => $imageLocation,
+				'id' => '25'
+            ));
+			$images[] = array(
+                'image'  => $imageLocation,
+				'id' => $image->id,
+				'filename' => $image->filename
+            );
+        }*/
+		$data = array();
+		$data['images'] = Image::where('instance_id',$instance->id)->orderBy('created_at', 'desc')->paginate(15);
+		$data['count'] = count($data['images']);
+		$data['instance'] = $instance;
+		$data['instanceId'] = $instance->id;
+		$data['instanceName'] = $instance->name;
+		$data['action'] = "";
+		$data['default_tweakables'] = reindexArray(DefaultTweakable::all(), 'parameter', 'value');
+		
+        return View::make('editor.imagePicker', $data);
+    }
 
     public function cartAdd($instanceName){
         $instance = Instance::where('name',strtolower(urldecode($instanceName)))->first();
@@ -210,11 +237,245 @@ class MiscController extends BaseController {
             'isEmail'                  => false,
             'isEditable'               => true,
             'shareIcons'               => false,
+			'h1style'               => '',
         );
 
         if($publication_id != ''){
             $data['publication'] = Publication::where('id', $publication_id)->first();
         }
+		
         return View::make('article.article', $data);
     }
+	public function uploadDataMigration($instanceName){
+		$data = array();
+		 //Get most recent live publication
+		$instance = Instance::where('name', strtolower(urldecode($instanceName)))->firstOrFail();
+		$data = array(
+			'instance'                 => $instance,
+			'instanceId'               => $instance->id,
+			'instanceName'             => $instance->name,
+			'tweakables'               => reindexArray($instance->tweakables()->get(), 'parameter', 'value'),
+			'default_tweakables'       => reindexArray(DefaultTweakable::all(), 'parameter', 'value'),
+			'isEmail'                  => false,
+			'isEditable'               => true,
+			'shareIcons'               => false,
+			'action'				   => "",
+		);
+		if(!Input::hasFile('xlsfile')){return Redirect::back()->withError('Did you select a file to upload?  We never received one, try again.');}
+		
+		
+		
+		//return $editorController->callAction('preprocessReportMigration', $data);
+		//'/preprocess/reportMigration/'.$instance->name
+		//$extension = Input::file('xlsfile')->getClientOriginalExtension();
+		$file = Input::file('xlsfile');
+		$destinationPath = 'uploads';
+		// If the uploads fail due to file system, you can try doing public_path().'/uploads' 
+		$fileKey = str_random(5);
+		$data['fileName'] = $file->getClientOriginalName();
+		$extension =$file->getClientOriginalExtension(); 
+		//
+		//. "?filename=".$data['fileName']
+		$extensionArr = array('xlsx','xls','csv');
+		if(!in_array($extension, $extensionArr)){return Redirect::back()->withError('Sorry you can upload csv and xls files only, try again.');}
+		$upload_success = Input::file('xlsfile')->move($destinationPath, $fileKey.$data['fileName']);
+		return Redirect::to('/preprocess/reportMigration/'.$instance->name)->with('filename', $fileKey.$data['fileName'])->with('filetype', $extension );
+		//$data['view'] = "preprocess";
+		//return View::make('editor.reportMigration', $data);		
+	}
+	public function getDataMigration($instanceName){
+		
+		$data = array();
+		        //Get most recent live publication
+		$instance = Instance::where('name', strtolower(urldecode($instanceName)))->firstOrFail();
+			$data = array(
+				'instance'                 => $instance,
+				'instanceId'               => $instance->id,
+				'instanceName'             => $instance->name,
+				'tweakables'               => reindexArray($instance->tweakables()->get(), 'parameter', 'value'),
+				'default_tweakables'       => reindexArray(DefaultTweakable::all(), 'parameter', 'value'),
+				'isEmail'                  => false,
+				'isEditable'               => true,
+				'shareIcons'               => false,
+				'action'				   => "",
+			);		
+		
+        $data['view'] = "viewData";
+		return View::make('editor.reportMigration', $data);		
+	}
+	public function preprocessReportMigration($instanceName){
+		//print(Session::get('filename'). " <-file name filetype->".Session::get('filetype'));
+		$data = array();
+		        //Get most recent live publication
+		$instance = Instance::where('name', strtolower(urldecode($instanceName)))->firstOrFail();
+			$data = array(
+				'instance'                 => $instance,
+				'instanceId'               => $instance->id,
+				'instanceName'             => $instance->name,
+				'tweakables'               => reindexArray($instance->tweakables()->get(), 'parameter', 'value'),
+				'default_tweakables'       => reindexArray(DefaultTweakable::all(), 'parameter', 'value'),
+				'isEmail'                  => false,
+				'isEditable'               => true,
+				'shareIcons'               => false,
+				'action'				   => "",
+			);		
+		$data['fileName'] = Session::get('filename');
+			//$spreadsheet = $reader->load("/uploads/FilenamezTRt.xls");
+		$xldata = array();
+		$i = 0;
+		define('ROOTPATH', dirname(__FILE__));
+		//print(dirname(__FILE__));//FilenamezTRt.xls
+		$objXLS = new ExcelGet;
+		$fileName = base_path('public/uploads/'.$data['fileName']);
+		$columnNames = "Log Reference,"."Event,"."Published/Modified,"."Owner,"."Audience,"."Subject,"."Published,"."Publication,"."URL";
+		$columnNames = explode(",",$columnNames);
+		
+		//print_r($columnNames);
+		
+		$xldata = $objXLS->asArray($fileName);	
+		array_unshift($columnNames, $xldata);	
+		//$xldata = $columnNames + $xldata;
+		
+		$data['xldata']	= $xldata;
+		
+		
+        $data['view'] = "preprocess";
+		return View::make('editor.reportMigration', $data);		
+	}
+	
+	
+	
+	public function saveReportMigration($instanceName){
+		$data = array();
+		        //Get most recent live publication
+		$instance = Instance::where('name', strtolower(urldecode($instanceName)))->firstOrFail();
+			$data = array(
+				'instance'                 => $instance,
+				'instanceId'               => $instance->id,
+				'instanceName'             => $instance->name,
+				'tweakables'               => reindexArray($instance->tweakables()->get(), 'parameter', 'value'),
+				'default_tweakables'       => reindexArray(DefaultTweakable::all(), 'parameter', 'value'),
+				'isEmail'                  => false,
+				'isEditable'               => true,
+				'shareIcons'               => false,
+				'action'				   => "",
+			);		
+		$xldata = array();
+		$i = 0;
+		define('ROOTPATH', dirname(__FILE__));
+		$objXLS = new ExcelGet;
+		$fileName = base_path('uploads/FilenamezTRt.xls');
+		$xldata = $objXLS->asArray($fileName);
+		$pubHeadingsArr = "instance_id,"."publish_date,"."banner_image,"."published,"."type,"."created_at";
+		$pubData = array();
+		$pubData[0] = explode(",", $pubHeadingsArr);
+		
+		$pubLogHeadingsArr = "event_id,"."user_id,"."instance,"."logtype,"."description";
+		$pubLogData[0] = explode(",", $pubLogHeadingsArr);
+		
+		$pub = new Publication;
+		$pubCountObj = new Publication;
+		$xmlObj = new XmlConversions();
+		$pubLog = new PublicationLog;
+		$rowIndex = 0;
+		foreach($xldata as $key => $row){
+			//if($rowIndex > 0){
+				$dataKey = $key + 1;
+				$instanceEventName = $row['event'];
+				$instance = Instance::where('name', $instanceEventName)->first();
+				
+				$count = $pubCountObj::where('instance_id', $instance->id)->where('publish_date', $row['publishedmodified'])->count();
+				print("count: " . $count);
+
+				$pub->instance_id = $instance->id;
+				$pub->publish_date = $row['publishedmodified'];
+				$pub->banner_image = "";
+				$pub->published = $row['published'];
+				$pub->type = "regular";
+				$pub->created_at = date("Y-m-d", strtotime("-1 year", time()));
+
+				//$fdData[$key][''] = ;	
+				$pubData[$dataKey]['instance_id'] = $pub->instance_id;
+				$pubData[$dataKey]['publish_date'] = $pub->publish_date;
+				$pubData[$dataKey]['banner_image'] = $pub->banner_image;
+				$pubData[$dataKey]['published'] = $pub->published;
+				$pubData[$dataKey]['type'] = $pub->type;
+				$pubData[$dataKey]['created_at'] = $pub->created_at;
+				
+				//+++++++PUBLICATION LOG UPDATES++++++++++++++++++++++
+				$dataXML = array(
+							'audience' => $row['audience'],
+							'Subject' => $row['subject'],
+							'Published' => $row['published'],
+							'PublicationURL' => $row['publication_url']		
+				);
+				//CONVERT TO XML
+				
+				$rootItem = new SimpleXMLElement('<content/>');
+				$xmlText =  $xmlObj->from_array($dataXML,$rootItem);
+				$userId = Auth::id();
+				//++++++++++NOW LOG TO DB ++++++++++++++++++++++++++++++++
+				
+				$pubLog->event_id = $pub->instance_id;
+				$pubLog->user_id = $userId;
+				$pubLog->eventname = $row['event'];
+				$pubLog->type = $row['log_reference'];
+				$pubLog->description = $xmlText ;
+				
+				$pubLog->event_id = $pub->instance_id;
+				$pubLog->user_id = $userId;
+				$pubLog->eventname = $row['event'];
+				$pubLog->type = $row['log_reference'];
+				$pubLog->description = $xmlText ;
+
+				$pubLogData[$dataKey]['event_id'] = $pubLog->event_id;	
+				$pubLogData[$dataKey]['user_id'] = $pubLog->user_id;	
+				$pubLogData[$dataKey]['eventname'] = $pubLog->eventname ;	
+				$pubLogData[$dataKey]['type'] = $pubLog->type;	
+				$pubLogData[$dataKey]['description'] = $pubLog->description;
+			//}//
+			//$rowIndex++;
+		}
+
+		// add more fields (all fields that users table contains without id)
+		//$pubLog->save();
+			//Get This Publication
+//`id`, `instance_id`, `publish_date`, `banner_image`, `published`, `type`, `created_at`, `updated_at`		
+		
+/*
+0log_reference	1event	2publishedmodified	3owner	4audience	5subject	6published	7publication_url
+$dataXML = array(
+			'audience' => implode("," , Input::get('myAudience')),
+			'Subject' => Input::get('subject'),
+			'Published' => $logData['isPublished'],
+			'PublicationURL' => 'https://share.uakron.edu/mailAll/'.$instanceName		
+		);
+		//CONVERT TO XML
+		$xmlObj = new XmlConversions();
+		$rootItem = new SimpleXMLElement('<content/>');
+ 		$xmlText =  $xmlObj->from_array($dataXML,$rootItem);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+		
+		
+		
+		$data['pubData'] = $pubData;
+		$data['pubLogData'] = $pubLogData;
+        $data['view'] = "save";
+		return View::make('editor.reportMigration', $data);			
+	}
+	
 }

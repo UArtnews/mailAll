@@ -2,13 +2,14 @@
 <html>
 <head>
     <title>The University of Akron Publication Editor</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{-- TODO: Conditionally load these js/css resources --}}
     <script type="text/javascript">
         document.write("    \<script src='//code.jquery.com/jquery-latest.min.js' type='text/javascript'>\<\/script>");
     </script>
     <script src="{{ URL::to('js/bootstrap.min.js') }}"></script>
     <script src="{{ URL::to('js/ckeditor/ckeditor.js') }}"></script>
+	   <script src="{{ URL::to('js/tinymce4/tinymce.min.js') }}"></script>
     <script src="{{ URL::to('js/ckeditor/adapters/jquery.js') }}"></script>
     <script src="{{ URL::to('js/bootstrap-colorpicker.js') }}"></script>
     <script src="{{ URL::to('js/moment.js') }}"></script>

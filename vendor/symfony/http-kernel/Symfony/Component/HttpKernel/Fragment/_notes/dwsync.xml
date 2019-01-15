@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="EsiFragmentRenderer.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
+<file name="EsiFragmentRenderer.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="131916317970000000" Dst="1" />
 <file name="FragmentHandler.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
 <file name="FragmentRendererInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
 <file name="HIncludeFragmentRenderer.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
 <file name="InlineFragmentRenderer.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
 <file name="RoutableFragmentRenderer.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428519758837" remote="131916255440000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428519758837" remote="131919540470000000" Dst="1" />
 </dwsync>

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="AuthManager.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628708230000000" remote="130628708230000000" Dst="1" />
-<file name="AuthServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="130628710350000000" Dst="1" />
-<file name="composer.json" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="130628710350000000" Dst="1" />
-<file name="DatabaseUserProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="130628710350000000" Dst="1" />
-<file name="EloquentUserProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="130628710350000000" Dst="1" />
-<file name="GenericUser.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="130628710350000000" Dst="1" />
-<file name="Guard.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="130628710350000000" Dst="1" />
-<file name="UserInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="130628710350000000" Dst="1" />
-<file name="UserProviderInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="130628710350000000" Dst="1" />
+<file name="AuthManager.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628708230000000" remote="131916311290000000" Dst="1" />
+<file name="AuthServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="131916311290000000" Dst="1" />
+<file name="composer.json" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="131916311290000000" Dst="1" />
+<file name="DatabaseUserProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="131916311290000000" Dst="1" />
+<file name="EloquentUserProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="131916311290000000" Dst="1" />
+<file name="GenericUser.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="131916311290000000" Dst="1" />
+<file name="Guard.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="131916311300000000" Dst="1" />
+<file name="UserInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="131916311300000000" Dst="1" />
+<file name="UserProviderInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710350000000" remote="131916311300000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428612223636" remote="131916311290000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428612223636" remote="131919539630000000" Dst="1" />
 </dwsync>

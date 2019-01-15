@@ -5,4 +5,6 @@
 <file name="installation.md" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628726840000000" remote="130628726840000000" Dst="1" />
 <file name="license.md" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628726840000000" remote="130628726840000000" Dst="1" />
 <file name="requirements.md" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628726840000000" remote="130628726840000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428572234114" remote="131916253940000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428572234114" remote="131919539680000000" Dst="1" />
 </dwsync>

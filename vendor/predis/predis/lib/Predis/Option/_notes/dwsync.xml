@@ -11,4 +11,6 @@
 <file name="ClientReplication.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
 <file name="CustomOption.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
 <file name="OptionInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428591710234" remote="131916254420000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428591710234" remote="131919539800000000" Dst="1" />
 </dwsync>

@@ -59,7 +59,7 @@
             </table>
         </div>
     </div>
-    <div class="panel-footer" id="publicationPanelFoot">
-    </div>
+    {{-- <div class="panel-footer" id="publicationPanelFoot">
+    </div> --}}
 </div>
 @stop

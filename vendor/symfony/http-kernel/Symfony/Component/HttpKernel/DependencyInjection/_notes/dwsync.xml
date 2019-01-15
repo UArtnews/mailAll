@@ -6,4 +6,6 @@
 <file name="Extension.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
 <file name="MergeExtensionConfigurationPass.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
 <file name="RegisterListenersPass.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428240006574" remote="131916255430000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428240006574" remote="131919540470000000" Dst="1" />
 </dwsync>

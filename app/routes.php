@@ -59,6 +59,9 @@ Route::get('/{instanceName}/search', 'PublicController@search');
 //Return image lists for ckeditors
 Route::get('/json/{instanceName}/images', 'MiscController@imageJSON');
 
+//Return image lists for Tiny MCE
+Route::get('/image-picker/{instanceName}/images', 'MiscController@imagePicker');
+
 //////////////////////////////////
 //                              //
 // 3.  Public Logged In Routes  //
@@ -115,15 +118,18 @@ Route::group(array('before' => 'force.ssl'), function(){
 
     //Post routes so AJAX can grab editable regions
     Route::any('/editable/article/{article_id}/{publication_id?}', 'MiscController@articleAJAX');
-<<<<<<< HEAD
-<<<<<<< HEAD
+	
+	//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	//+++++++++++++++MIGRATION ROUTES for PUBLICATION LOGS+++++++++++++++++++
+	Route::any('/show/reportMigration/{instanceName}', 'MiscController@getDataMigration');
+	Route::any('/preprocess/reportMigration/{instanceName}', 'MiscController@preprocessReportMigration');
+	Route::any('/save/reportMigration/{instanceName}', 'MiscController@saveReportMigration');
+	Route::any('/upload/reportMigration/{instanceName}', 'MiscController@uploadDataMigration');
+	//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	//+++++++++++++++BACKDOOR SIGNIN ROUTES++++++++++++++++++++++++++++++++++
 	Route::any('/user/signin/', 'AdminController@nonShibSignin');
 	Route::any('/user/signin/auth', 'AdminController@doNonShibAuth');
-=======
->>>>>>> mailAllProd/master
-=======
->>>>>>> mailAllProd/master
-
+	
 });
 
 //////////////////////////////////
@@ -132,6 +138,11 @@ Route::group(array('before' => 'force.ssl'), function(){
 //                              //
 //////////////////////////////////
 Route::group(array('before' => 'force.ssl|editAuth'), function(){
+	//Specific Saving Controller for saving Publication Logs Excel doc
+	Route::get('/saveExcel/{instanceName}/{action?}/{subAction?}', 'EditorController@route');
+	
+	Route::get('/show/{instanceName}/{action?}/{subAction?}', 'EditorController@route');
+	
     Route::get('/edit/{instanceName}/{action?}/{subAction?}', 'EditorController@route');
 
     //Specific Saving Controller for things in the editor like saving settings
@@ -148,6 +159,23 @@ Route::group(array('before' => 'force.ssl|editAuth'), function(){
 
     //Send an email
     Route::any('sendEmail/{instanceName}/{publication_id}', 'EmailController@sendEmail');
+	
+	//Specific Saving Controller for saving settings>Profiles>Save Email Favorites
+    Route::post('/save/{instanceName}/SaveEmailFavorites/{subAction?}', 'EditorController@SaveEmailFavorites');
+	
+    //Specific Saving Controller for deleteing settings>Profiles>Delete Email Favorites
+    Route::get('/deleteEmailFav/{instanceName}/{emailFavID}', 'EditorController@deleteEmailFav');
+    
+	//Specific Saving Controller for saving settings>Profiles>Save Email Audiences
+    Route::post('/saveAudience/{instanceName}/{action?}/{subAction?}', 'EditorController@SaveEmailAudiences');
+	
+    //Specific Saving Controller for deleteing settings>Profiles>Delete Email Audiences
+    Route::get('/deleteEmailAud/{instanceName}/{emailAudID}', 'EditorController@deleteEmailAudience');
+	//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	//+++++++++++++++These below routes are only for Migration+
+	
+	
+	
 });
 //////////////////////////////////
 //                              //

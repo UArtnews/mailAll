@@ -105,4 +105,7 @@
             opacity:0.5;
         }
     }
+		.nav li{
+			font-size: 14px;
+		}
 </style>

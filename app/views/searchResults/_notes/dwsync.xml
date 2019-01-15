@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="articleResults.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109130000000" remote="130748109130000000" Dst="1" />
-<file name="imageResults.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109130000000" remote="130748109130000000" Dst="1" />
-<file name="publicationResults.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109130000000" remote="130748109130000000" Dst="1" />
+<file name="articleResults.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131871232730381138" remote="131916330440000000" Dst="1" />
+<file name="imageResults.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131871232730391112" remote="130748109130000000" Dst="1" />
+<file name="publicationResults.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131871232730391112" remote="131916330440000000" Dst="1" />
+<file name="articleResults.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131871232730381138" remote="131891092160000000" Dst="1" />
+<file name="imageResults.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131871232730391112" remote="130748109130000000" Dst="1" />
+<file name="publicationResults.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131871232730391112" remote="131891092160000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428342105574" remote="131916289110000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428342105574" remote="131919522010000000" Dst="1" />
 </dwsync>

@@ -8,4 +8,6 @@
 <file name="ResponseErrorTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710720000000" remote="130628710720000000" Dst="1" />
 <file name="ResponseQueuedTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710720000000" remote="130628710720000000" Dst="1" />
 <file name="ServerExceptionTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710720000000" remote="130628710720000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428258741264" remote="131916254440000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428258741264" remote="131919539810000000" Dst="1" />
 </dwsync>

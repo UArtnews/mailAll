@@ -2,8 +2,10 @@
 <dwsync>
 <file name="ConfigDataCollectorTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710980000000" remote="130628710980000000" Dst="1" />
 <file name="ExceptionDataCollectorTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710980000000" remote="130628710980000000" Dst="1" />
-<file name="LoggerDataCollectorTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710980000000" remote="130628710980000000" Dst="1" />
+<file name="LoggerDataCollectorTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710980000000" remote="131916318000000000" Dst="1" />
 <file name="MemoryDataCollectorTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710980000000" remote="130628710980000000" Dst="1" />
-<file name="RequestDataCollectorTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710980000000" remote="130628710980000000" Dst="1" />
+<file name="RequestDataCollectorTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710980000000" remote="131916318010000000" Dst="1" />
 <file name="TimeDataCollectorTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710980000000" remote="130628710980000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428543965578" remote="131916255450000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428543965578" remote="131919540480000000" Dst="1" />
 </dwsync>

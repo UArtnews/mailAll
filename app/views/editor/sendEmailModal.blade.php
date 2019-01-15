@@ -1,6 +1,6 @@
-<div class="modal fade" id="sendEmailModal{{ $publication->id }}" role="dialog">
+<div class="modal fade" id="sendEmailModal{{ $publication->id }}" role="dialog" >
     <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content"  style="height: 800px; overflow-y: auto;">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                 <h4 class="modal-title">Send Publication Email
@@ -76,6 +76,153 @@
                     {{ Form::label('addressTo', 'To: ') }}
                     {{ Form::text('addressTo',null ,array('class' => 'form-control')) }}
                     <br/>
+<!-- EMAIL FAVORITES -->				
+{{-- @if (Session::has('retData'))
+   <div class="alert alert-info">{{ Session::get('retData') }} </div>
+@endif --}}
+                    <div class="panel panel-default">
+                      <div class="panel-heading"><strong>Selected Emails</strong> </div>
+                      <div class="panel-body" id="selectedEmails">
+					   
+                      </div>
+                    </div>		
+
+                <div class="panel panel-default " >
+                  <div class="panel-heading">
+						<div class="panel-title">    
+							<button type="button" class="btn btn-success" data-toggle="collapse" data-target="#currentFavEmail" id="efavbtn">
+								<span class="glyphicon glyphicon-collapse-down"></span> Favorite Emails
+							</button>
+						</div>
+                  </div>
+                  <div class="panel-body collapse" id="currentFavEmail">
+					<ul class="list-group">
+				
+				 @if(count($emailFavoritesData) > 0)
+                    <ul class="list-group">
+                    @foreach($emailFavoritesData as $emFavItems)
+                        <li class="list-group-item">
+                            <input type="checkbox" value="{{ $emFavItems->value  }}" name="myEmails[]"  onclick="processEmailChkBx('');" />
+                            {{ $emFavItems->value  }}
+                        </li>
+                    @endforeach 
+                    </ul>
+                @else
+                    There are no Email Favoites currently for this Publication.
+                @endif    
+					</ul>
+					</div>
+<script>
+	$(document).ready(function(){
+		  $("#currentFavEmail").on("hide.bs.collapse", function(){
+			$("#efavbtn").html('<span class="glyphicon glyphicon-collapse-down"></span> Favorite Emails');
+		  });
+		  $("#currentFavEmail").on("show.bs.collapse", function(){
+			$("#efavbtn").html('<span class="glyphicon glyphicon-collapse-up"></span> Favorite Emails');
+		  });
+	});
+</script>
+<!-- Publication Audiences -->				
+{{-- @if (Session::has('retData'))
+   <div class="alert alert-info">{{ Session::get('retData') }} </div>
+@endif --}}
+                    <div class="panel panel-default">
+                      <div class="panel-heading"><strong>Selected Audiences</strong></div>
+                      <div class="panel-body" id="selectedAudiences">
+					
+                      </div>
+                    </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    	<div class="panel-title">    
+							<button type="button" class="btn btn-success" data-toggle="collapse" data-target="#audienceEdit" id="pubAudbtn">
+								<span class="glyphicon glyphicon-collapse-down"></span> Publication Audiences
+							</button>
+						</div>
+					  
+					  
+					  
+					  
+                  </div>
+                  <div class="panel-body collapse" id="audienceEdit">
+					<ul class="list-group">
+				
+				 @if(count($emailAudienceData) > 0)
+                    <ul class="list-group">
+                    @foreach($emailAudienceData as $emAudItems)
+                        <li class="list-group-item">
+                            <input type="checkbox" value="{{ $emAudItems->value  }}" name="myAudience[]"  Checked = "checked" onclick="processEmailChkBx('audience');" />
+                            {{ $emAudItems->value  }}
+                        </li>
+                    @endforeach 
+                    </ul>
+                @else
+                    There are no Email Favoites currently for this Publication.
+                @endif    
+					</ul>
+					  
+                <script>
+                    function processEmailChkBx(target){
+                    	var checked = [];
+                    	var valueHTML = "";
+						var targetItem = "input[name='myEmails[]']:checked";
+						var targetSelItem = "#selectedEmails";
+						if(target == "audience"){
+						   targetItem = "input[name='myAudience[]']:checked";
+							targetSelItem = "#selectedAudiences";
+						   }
+                    	$(targetItem).each(function () {
+                    	  checked.push($(this).val());                    	  
+                    	});
+                    	$(targetSelItem).html("");
+						//console.log(checked);
+                    	$.each(checked, function( index, value ) {
+                    		  //console.log( index + ": " + value );
+                    		  valueHTML = '<span class="label label-default">' + value + '</span> &nbsp;  &nbsp;';
+                    		  $(targetSelItem).prepend(valueHTML);
+                    	});               
+                    }
+                    function processSessionsEmailChkBx(target){
+                        var sessStr = "{{ Session::get('retData') }}";
+                        var sessArr = sessStr.split(",");
+                       	$.each(sessArr, function(  index, value ) {                    		  
+                       		setCheckBoxes(value,target);
+                    	});
+                    }
+                    function setCheckBoxes(currValue,target){
+                    	$("input[name='myEmails[]']").each(function () {
+                    		//console.log( $(this).val() );
+                        	if($(this).val() == currValue){
+                        		$(this).attr('checked', true);  }                        	             	  
+                    	});
+                    	processEmailChkBx(target);
+                    }
+					{{-- @if (Session::has('retData')) --}}
+                        $(document).ready(function() {
+                        	processSessionsEmailChkBx('');
+							processSessionsEmailChkBx('audience');
+							processEmailChkBx('audience');
+                      	});
+                    {{-- @endif --}}
+
+                </script>			
+<script>
+	$(document).ready(function(){
+		  $("#audienceEdit").on("hide.bs.collapse", function(){
+			$("#pubAudbtn").html('<span class="glyphicon glyphicon-collapse-down"></span> Publication Audiences');
+		  });
+		  $("#audienceEdit").on("show.bs.collapse", function(){
+			$("#pubAudbtn").html('<span class="glyphicon glyphicon-collapse-up"></span> Publication Audiences');
+		  });
+	});
+</script>
+					</div>
+                  </div>
+					
+                </div>
+				
+			
 
                     {{ Form::label('addressFrom', 'From Address: ') }}
                     {{ Form::text('addressFrom',null ,array('class' => 'form-control')) }}

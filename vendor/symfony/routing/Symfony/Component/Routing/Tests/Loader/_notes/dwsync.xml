@@ -7,5 +7,7 @@
 <file name="ClosureLoaderTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711020000000" remote="130628711020000000" Dst="1" />
 <file name="PhpFileLoaderTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711020000000" remote="130628711020000000" Dst="1" />
 <file name="XmlFileLoaderTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711020000000" remote="130628711020000000" Dst="1" />
-<file name="YamlFileLoaderTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711020000000" remote="130628711020000000" Dst="1" />
+<file name="YamlFileLoaderTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711020000000" remote="131916318080000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428274534928" remote="131916255530000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428274534928" remote="131919540500000000" Dst="1" />
 </dwsync>

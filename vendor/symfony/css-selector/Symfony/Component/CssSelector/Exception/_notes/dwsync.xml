@@ -5,4 +5,6 @@
 <file name="InternalErrorException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710870000000" remote="130628710870000000" Dst="1" />
 <file name="ParseException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710870000000" remote="130628710870000000" Dst="1" />
 <file name="SyntaxErrorException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710870000000" remote="130628710870000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825427942608596" remote="131916255250000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825427942608596" remote="131919540410000000" Dst="1" />
 </dwsync>

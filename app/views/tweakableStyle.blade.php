@@ -22,8 +22,8 @@ body {
 a {
     text-decoration:none;
 }
-
-p, .article, .aritcleContent, li {
+/*, li */
+p, .article, .aritcleContent, li{
     color:{{$tweakables['publication-p-color'] or $default_tweakables['publication-p-color']}};
     font-family:{{$tweakables['publication-p-font'] or $default_tweakables['publication-p-font']}};
     font-size:{{$tweakables['publication-p-font-size'] or $default_tweakables['publication-p-font-size']}};

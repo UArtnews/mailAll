@@ -13,6 +13,102 @@
     <div class="panel-body" id="settingPanelBody">
         <div class="col-md-5 col-sm-12" id="settingChooser">
             @if($subAction == 'profiles')
+<!--  Add Favorites for email --> 
+<!--  /edit/{instanceName}/SaveEmailFavorites/{subAction?} -->  
+
+<ul class="nav nav-pills">
+	<li role="presentation" class="active">
+		  <a id="publications-nav-link" href="{{URL::to('/show/reportMigration/'.$instance->name)}}">
+		  <span class="glyphicon glyphicon-transfer"></span>
+		  &nbsp;&nbsp;Report Migration</a> 
+	</li>
+</ul>
+            {{ Form::open(array('url' => URL::to('/save/'.$instance->name.'/SaveEmailFavorites/'.$subAction), 'method' => 'post')) }}
+            <h3><strong>Save email favorites for this publication:</strong></h3>
+       		 <label for="emailfavorite">Add Favorite Email(s)</label>
+        	<input name="emailfavorite" type="text" id="emailfavorite">
+            {{ Form::submit('Add',array('class'=>'btn btn-sm btn-success')) }}
+            {{ Form::close()}}    
+
+
+			<button type="button" class="btn btn-success" data-toggle="collapse" data-target="#currentFavEmail" id="efavbtn">
+					<span class="glyphicon glyphicon-collapse-down"></span> Current Email Favorites
+			</button>
+
+                  @if(count($emailFavoritesData) > 0)
+                    <ul class="list-group collapse" id="currentFavEmail">
+                    @foreach($emailFavoritesData as $emFavItems)
+                        <li class="list-group-item">
+                            <strong>{{ $emFavItems->value  }}</strong>
+                            <button class="btn btn-danger btn-xs pull-right" onclick="deleteEmailFav('{{ $emFavItems->id  }}');"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> <span class="glyphicon-class"></span> </button>
+                            </li>
+                    @endforeach
+                    </ul>
+                <script>
+                    function deleteEmailFav(emailFavID){
+                        if(confirm('Are you sure you wish to delete this email favorite?')){
+                            window.location = "{{ URL::to('/deleteEmailFav/'.$instance->name) }}" + '/' + emailFavID;
+                        }
+                    }
+                </script>
+                @else
+                    There are no named profiles currently
+                @endif            
+<!--  Add Favorites for email --> 
+<!--  /edit/{instanceName}/SaveEmailFavorites/{subAction?} -->    
+            {{ Form::open(array('url' => URL::to('/saveAudience/'.$instance->name.'/SaveEmailAudience/'.$subAction), 'method' => 'post')) }}
+            <h3><strong>Save audience labels linked to this publication:</strong></h3>
+       		 <label for="emailaudience">Add Audiences</label>
+        	<input name="emailaudience" type="text" id="emailaudience">
+            {{ Form::submit('Add',array('class'=>'btn btn-sm btn-success')) }}
+            {{ Form::close()}}    
+
+			<button type="button" class="btn btn-success" data-toggle="collapse" data-target="#audienceEdit" id="pubAudbtn">
+								<span class="glyphicon glyphicon-collapse-down"></span> Current Linked Audiences
+			</button>
+
+                  @if(count($emailAudienceData) > 0)
+                    <ul class="list-group collapse" id="audienceEdit">
+                    @foreach($emailAudienceData as $emAudItems)
+                        <li class="list-group-item">
+                            <strong>{{ $emAudItems->value  }}</strong>
+                            <button class="btn btn-danger btn-xs pull-right" onclick="deleteEmailAud('{{ $emAudItems->id  }}');"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> <span class="glyphicon-class"></span> </button>
+                            </li>
+                    @endforeach
+                    </ul>
+                <script>
+                    function deleteEmailAud(emailAudID){
+                        if(confirm('Are you sure you wish to remove this audience?')){
+                            window.location = "{{ URL::to('/deleteEmailAud/'.$instance->name) }}" + '/' + emailAudID;
+                        }
+                    }
+                </script>
+                @else
+                    There are no named profiles currently
+                @endif 
+              
+<script>
+	$(document).ready(function(){
+		  $("#currentFavEmail").on("hide.bs.collapse", function(){
+			$("#efavbtn").html('<span class="glyphicon glyphicon-collapse-down"></span> Current Email Favorites');
+		  });
+		  $("#currentFavEmail").on("show.bs.collapse", function(){
+			$("#efavbtn").html('<span class="glyphicon glyphicon-collapse-up"></span> Current Email Favorites');
+		  });
+		  $("#audienceEdit").on("hide.bs.collapse", function(){
+			$("#pubAudbtn").html('<span class="glyphicon glyphicon-collapse-down"></span> Publication Audiences');
+		  });
+		  $("#audienceEdit").on("show.bs.collapse", function(){
+			$("#pubAudbtn").html('<span class="glyphicon glyphicon-collapse-up"></span> Publication Audiences');
+		  });
+	});
+</script>
+              
+              
+              
+              
+              
+			<p>&nbsp;</p><p>&nbsp;</p>
             {{ Form::open(array('url' => URL::to('/save/'.$instance->name.'/profiles'), 'method' => 'post')) }}
             <h3><strong>Save current settings as a named profile:</strong></h3>
             {{ Form::label('profileName','Profile Name') }}
@@ -25,7 +121,9 @@
                     @foreach($profiles as $profileName => $profile)
                         <li class="list-group-item">
                             <strong>{{ $profileName  }}</strong>
-                            <button class="btn btn-danger btn-xs pull-right" onclick="deleteProfile('{{ $profileName }}');">Delete Profile</button>
+                            <button class="btn btn-danger btn-xs pull-right" onclick="deleteProfile('{{ $profileName }}');">
+                            
+                            Delete Profile</button>
                             <a href="{{ URL::to('/loadProfile/'.$instance->name.'/'.$profileName) }}" class="btn btn-warning btn-xs pull-right">Load Profile</a>
                         </li>
                     @endforeach
@@ -71,8 +169,62 @@
                         <button type="button" class="btn btn-primary btn-sm" onclick="saveSetting('{{ $defName }}')">Save {{ $default_tweakables_names[$defName] }}</button>
 
                     </div>
-                    <script>
-                        $(document).ready(function(){
+<script>
+	$(document).ready(function(){
+		tinymce.init({
+			  selector: ".editableSetting",
+			  body_class: 'my_class',
+			  height: 500,
+			width: '500px',
+			  inline: true,
+			  menubar: false,
+			  browser_spellcheck: true,
+			 image_advtab: true,
+			  //file_browser_callback : 'myFileBrowser',
+			  plugins: [
+				'advlist autolink lists link imagetools image charmap print preview anchor textcolor',
+				'searchreplace visualblocks code fullscreen',
+				'insertdatetime media table contextmenu paste code help wordcount'
+			  ],
+			  toolbar1: 'insert | undo redo | code removeformat | formatselect',
+			  toolbar2: 'bold italic backcolor | alignleft aligncenter alignright alignjustify',
+			  toolbar3: 'bullist numlist | outdent indent | image | help',
+			  content_css: [
+				'//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+				'//www.tinymce.com/css/codepen.min.css'],
+				 //image_list: "{{ URL::to('json/'.$instanceName.'/images') }}"
+			    file_picker_callback: function(callback, value, meta) {
+    				imageFilePicker(callback, value, meta);
+  				} 
+		});	
+		$('.editableSetting').click(function(){
+			$(".mce-tinymce").css("width","500");
+		});	
+
+	});		
+	
+	
+				function saveSetting(defName){
+							var editContent = tinyMCE.get(defName);
+							console.log(editContent.getContent());
+							
+                            data = {};
+                            data[defName] =editContent.getContent();
+							//console.log(data);
+                            $.ajax({
+                                url: '{{ URL::to('save/'.$instance->name.'/settings') }}',
+                                type: 'post',
+                                data: data
+                            }).success(function(data){
+								//console.log('success');
+                                location.reload();
+                            }).error(function(data){
+								alert('Oops!  There was an error.  Try again');
+								//console.log(data);
+                                //location.reload();'Oops!  There was an error.  Try again' + 
+                            });
+                        }
+                        /*$(document).ready(function(){
                             $('.editableSetting').ckeditor({
                                 "extraPlugins": "imagebrowser,sourcedialog,openlink",
                                 "imageBrowser_listUrl": "{{ URL::to('json/'.$instanceName.'/images') }}"
@@ -93,8 +245,8 @@
 								alert('Oops!  There was an error.  Try again');
                                 //location.reload();
                             });
-                        }
-                    </script>
+                        }*/
+</script>
 
 
                     {{-- Boolean Radio Boxes --}}
@@ -185,7 +337,7 @@
         </div>
 
     </div>
-    <div class="panel-footer" id="settingPanelFoot">
-    </div>
+    {{-- <div class="panel-footer" id="publicationPanelFoot">
+    </div> --}}
 </div>
 @stop

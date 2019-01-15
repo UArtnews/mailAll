@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="Article.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130682261520000000" remote="130682261520000000" Dst="1" />
-<file name="DefaultTweakable.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109120000000" remote="130748109120000000" Dst="1" />
-<file name="Image.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109120000000" remote="130748109120000000" Dst="1" />
-<file name="Instance.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130601021300000000" remote="130601021300000000" Dst="1" />
-<file name="Profile.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109120000000" remote="130748109120000000" Dst="1" />
-<file name="Publication.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131701997150000000" remote="131701997150000000" Dst="1" />
-<file name="PublicationOrder.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130492206720000000" remote="130492206720000000" Dst="1" />
-<file name="Submission.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130964859580000000" remote="130964859580000000" Dst="1" />
-<file name="Tweakable.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130493877640000000" remote="130493877640000000" Dst="1" />
-<file name="User.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130603642150000000" remote="130603642150000000" Dst="1" />
-<file name="UserPermission.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109120000000" remote="130748109120000000" Dst="1" />
+<file name="Article.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131916930677911106" remote="131916930680000000" Dst="1" />
+<file name="DefaultTweakable.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131824658110000000" remote="131916329090000000" Dst="1" />
+<file name="Image.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131824658110000000" remote="131916329090000000" Dst="1" />
+<file name="Instance.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131824658110000000" remote="131916329090000000" Dst="1" />
+<file name="Profile.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131824658110000000" remote="131916329090000000" Dst="1" />
+<file name="Publication.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131824658120000000" remote="131916329090000000" Dst="1" />
+<file name="PublicationOrder.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131824658120000000" remote="131916329090000000" Dst="1" />
+<file name="Submission.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131824658120000000" remote="131916329090000000" Dst="1" />
+<file name="Tweakable.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131824658120000000" remote="131916329090000000" Dst="1" />
+<file name="User.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825327300000000" remote="131916329090000000" Dst="1" />
+<file name="UserPermission.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131824658120000000" remote="131916329090000000" Dst="1" />
+<file name="PublicationLog.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131872033130867998" remote="131872033170000000" Dst="1" />
+<file name="PublicationLog.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131872033130867998" remote="131916321510000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825427896831604" remote="131916289070000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825427896831604" remote="131919517620000000" Dst="1" />
+<file name="Article.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131916930677911106" remote="131919517620000000" Dst="1" />
+<file name="DefaultTweakable.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131824658110000000" remote="131919517620000000" Dst="1" />
+<file name="Image.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131824658110000000" remote="131919517620000000" Dst="1" />
+<file name="Instance.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131824658110000000" remote="131919517630000000" Dst="1" />
+<file name="Profile.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131824658110000000" remote="131919517630000000" Dst="1" />
+<file name="Publication.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131824658120000000" remote="131919517630000000" Dst="1" />
+<file name="PublicationOrder.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131824658120000000" remote="131919517630000000" Dst="1" />
+<file name="Submission.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131824658120000000" remote="131919517630000000" Dst="1" />
+<file name="Tweakable.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131824658120000000" remote="131919517630000000" Dst="1" />
+<file name="UserPermission.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131824658120000000" remote="131919517630000000" Dst="1" />
+<file name="User.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825327300000000" remote="131919724050000000" Dst="1" />
 </dwsync>

@@ -6,12 +6,14 @@
 <file name="declare.test" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710520000000" remote="130628710520000000" Dst="1" />
 <file name="echo.test" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710520000000" remote="130628710520000000" Dst="1" />
 <file name="haltCompiler.test" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710530000000" remote="130628710530000000" Dst="1" />
-<file name="haltCompilerInvalidSyntax.test-fail" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710530000000" remote="130628710530000000" Dst="1" />
-<file name="haltCompilerOutermostScope.test-fail" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710530000000" remote="130628710530000000" Dst="1" />
+<file name="haltCompilerInvalidSyntax.test-fail" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710530000000" remote="131916316920000000" Dst="1" />
+<file name="haltCompilerOutermostScope.test-fail" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710530000000" remote="131916316920000000" Dst="1" />
 <file name="if.test" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710530000000" remote="130628710530000000" Dst="1" />
 <file name="inlineHTML.test" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710530000000" remote="130628710530000000" Dst="1" />
 <file name="switch.test" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710530000000" remote="130628710530000000" Dst="1" />
 <file name="tryCatch.test" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710530000000" remote="130628710530000000" Dst="1" />
 <file name="tryCatch.test-fail" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710530000000" remote="130628710530000000" Dst="1" />
 <file name="unset.test" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710530000000" remote="130628710530000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428283309126" remote="131916254130000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428283309126" remote="131919539720000000" Dst="1" />
 </dwsync>

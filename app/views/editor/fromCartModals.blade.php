@@ -34,6 +34,8 @@
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
+
+
 @if(count($publication->submissions) > 0)
 <div class="modal fade" id="addPendingSubmissionsModal{{ $publication->id }}" role="dialog">
     <div class="modal-dialog">
