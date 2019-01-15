@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
 <file name="BufferedOutput.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710840000000" remote="130628710840000000" Dst="1" />
-<file name="ConsoleOutput.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710840000000" remote="130628710840000000" Dst="1" />
+<file name="ConsoleOutput.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710840000000" remote="131916317760000000" Dst="1" />
 <file name="ConsoleOutputInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710840000000" remote="130628710840000000" Dst="1" />
-<file name="NullOutput.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710840000000" remote="130628710840000000" Dst="1" />
+<file name="NullOutput.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710840000000" remote="131916317760000000" Dst="1" />
 <file name="Output.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710840000000" remote="130628710840000000" Dst="1" />
 <file name="OutputInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710840000000" remote="130628710840000000" Dst="1" />
-<file name="StreamOutput.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710840000000" remote="130628710840000000" Dst="1" />
+<file name="StreamOutput.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710840000000" remote="131916317760000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428571336502" remote="131916255220000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428571336502" remote="131919540410000000" Dst="1" />
 </dwsync>

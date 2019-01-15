@@ -6,15 +6,7 @@ Route::filter('force.ssl', function()
     {
         return Redirect::secure(Request::path());
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
     
->>>>>>> mailAllProd/master
-=======
-    
->>>>>>> mailAllProd/master
 });
 
 /*
@@ -54,46 +46,13 @@ App::before(function($request)
     }
 });
 
-//g
+
 App::after(function($request, $response)
 {
     //
 });
 
 /*
-<<<<<<< HEAD
-<<<<<<< HEAD
-|--------------------------------------------------------------------------
-| Authentication Filters
-|--------------------------------------------------------------------------
-|
-| The following filters are used to verify that the user of the current
-| session is logged into this application. The "basic" filter easily
-| integrates HTTP Basic authentication for quick, simple checking.
-|
-*/
-
-
-Route::filter('auth', function()
-{
-    
-    if(Auth::check()){
-        $user = Auth::user();
-    }else {
-        $user = User::where('uanet', uanet())->first();
-        
-        if (count($user) <= 0) {
-            return Redirect::guest('/');
-        } else {
-            Auth::login(User::find($user->id));
-        }
-    }
-    
-    if (Auth::guest()) return Redirect::guest('/')->withError('You do not have permission to access that!');
-    
-    
-});
-=======
  |--------------------------------------------------------------------------
  | Authentication Filters
  |--------------------------------------------------------------------------
@@ -103,139 +62,6 @@ Route::filter('auth', function()
  | integrates HTTP Basic authentication for quick, simple checking.
  |
  */
->>>>>>> mailAllProd/master
-
-Route::filter('editAuth', function() {
-    $instance = Instance::where('name', getInstanceName())->first();
-    //Log them in, or not
-    if(Auth::check()){
-        $user = Auth::user();
-    }else {
-        $user = User::where('uanet', uanet())->first();
-
-<<<<<<< HEAD
-        if (count($user) <= 0) {
-            return Redirect::guest('/')->withError('You do not have permission to access that!');
-=======
-Route::filter('auth', function()
-{
-    if(Auth::check()){
-        $user = Auth::user();
-    }else {
-        $user = User::where('uanet', uanet())->first();
-        
-        if (count($user) <= 0) {
-            return Redirect::guest('/');
->>>>>>> mailAllProd/master
-        } else {
-            Auth::login(User::find($user->id));
-        }
-    }
-<<<<<<< HEAD
-    //Perform Instance Node Permission Check
-    if(Auth::check() && ( $user->hasPermission($instance->id, 'edit') || $user->hasPermission(0, 'edit')) ){
-        //Let editors in
-    }else if(Auth::check() && ( $user->hasPermission($instance->id, 'admin') || $user->hasPermission(0, 'admin')) ){
-        //Let admins in
-    }else{
-        return Redirect::guest('/')->withError('You do not have permission to access that!');
-    }
-});
-
-Route::filter('adminAuth', function() {
-=======
-    
-    if (Auth::guest()) return Redirect::guest('/')->withError('You do not have permission to access that!');
-});
-
-Route::filter('editAuth', function() {
->>>>>>> mailAllProd/master
-    $instance = Instance::where('name', getInstanceName())->first();
-    //Log them in, or not
-    if(Auth::check()){
-        $user = Auth::user();
-    }else {
-        $user = User::where('uanet', uanet())->first();
-<<<<<<< HEAD
-
-=======
-        
->>>>>>> mailAllProd/master
-        if (count($user) <= 0) {
-            return Redirect::guest('/')->withError('You do not have permission to access that!');
-        } else {
-            Auth::login(User::find($user->id));
-        }
-    }
-    //Perform Instance Node Permission Check
-<<<<<<< HEAD
-    if(Auth::check() && ( $user->hasPermission($instance->id, 'admin') || $user->hasPermission(0, 'admin')) ){
-=======
-    if(Auth::check() && ( $user->hasPermission($instance->id, 'edit') || $user->hasPermission(0, 'edit')) ){
-        //Let editors in
-    }else if(Auth::check() && ( $user->hasPermission($instance->id, 'admin') || $user->hasPermission(0, 'admin')) ){
->>>>>>> mailAllProd/master
-        //Let admins in
-    }else{
-        return Redirect::guest('/')->withError('You do not have permission to access that!');
-    }
-});
-<<<<<<< HEAD
-
-Route::filter('superAuth', function() {
-    //Log them in, or not
-    if(Auth::check()){
-        $user = Auth::user();
-    }else {
-        $user = User::where('uanet', uanet())->first();
-
-        if (count($user) <= 0) {
-            return Redirect::guest('/')->withError('You do not have permission to access that!');
-        } else {
-            Auth::login(User::find($user->id));
-        }
-    }
-    //Perform SuperAdmin Check
-    if(Auth::check() && $user->isSuperAdmin()){
-        //Let them in
-    }else{
-        return Redirect::guest('/')->withError('You do not have permission to access that!');
-    }
-});
-
-Route::filter('registerSubmitter', function(){
-    if(Auth::check()){
-        //logged in
-    }else{
-        $user = User::where('uanet', uanet())->first();
-
-        if (count($user) <= 0) {
-            //User does not exist, create new user
-            $user = new User;
-            $user->uanet = uanet();
-            $user->email = $_SERVER['mail'];
-            $user->first = $_SERVER['givenName'];
-            $user->last = $_SERVER['sn'];
-            $user->submitter = 1;
-            $user->save();
-            Auth::login(User::find($user->id));
-        } else {
-            //Log them in
-            Auth::login(User::find($user->id));
-        }
-    }
-});
-=======
- |--------------------------------------------------------------------------
- | Authentication Filters
- |--------------------------------------------------------------------------
- |
- | The following filters are used to verify that the user of the current
- | session is logged into this application. The "basic" filter easily
- | integrates HTTP Basic authentication for quick, simple checking.
- |
- */
->>>>>>> mailAllProd/master
 
 
 Route::filter('auth', function()
@@ -278,8 +104,6 @@ Route::filter('editAuth', function() {
         return Redirect::guest('/')->withError('You do not have permission to access that!');
     }
 });
-=======
->>>>>>> mailAllProd/master
     
     Route::filter('adminAuth', function() {
         $instance = Instance::where('name', getInstanceName())->first();

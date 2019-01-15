@@ -3,20 +3,12 @@
 <div class="panel panel-default colorPanel">
     <div class="panel-heading" id="articlePanelHead">
         Article Editor
-        <a href="{{ URL::to("edit/$instanceName/articles") }}" id="backToListArticle" type="button" class="btn btn-primary pull-right btn-xs"><span class="glyphicon glyphicon-arrow-up"></span>&nbsp&nbspBack To List</a>
+        <a href="{{ URL::to("edit/$instanceName/articles${thisPage}#articleTitle$article->id") }}" id="backToListArticle" type="button" class="btn btn-primary pull-right btn-xs"><span class="glyphicon glyphicon-arrow-up"></span>&nbsp&nbspBack To List</a>
     </div>
     <div class="panel-body" id="articlePanelBody">
         <div class="row articleEditor" id="articleEditor{{$article->id}}">
             <div class="col-sm-10 col-sm-offset-1 col-xs-12 article">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <div class="contentDiv table-responsive" >
-=======
                 <div class="contentDiv">
->>>>>>> mailAllProd/master
-=======
-                <div class="contentDiv">
->>>>>>> mailAllProd/master
                     @include('article.article', array('isEditable' => true, 'isRepeat' => false, 'isEmail' => false, 'shareIcons' => false))
                     <table class="table well">
                         <thead>

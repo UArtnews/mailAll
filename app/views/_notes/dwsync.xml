@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="editor.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130578715930000000" remote="130578715930000000" Dst="1" />
-<file name="editorLanding.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131898091069756952" remote="131898091090000000" Dst="1" />
-<file name="emailPublication.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109130000000" remote="130748109130000000" Dst="1" />
-<file name="emailStyle.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131823838910000000" remote="131823838910000000" Dst="1" />
-<file name="html.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109130000000" remote="130748109130000000" Dst="1" />
-<file name="publicLanding.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131824433550000000" remote="131824433550000000" Dst="1" />
-<file name="tweakableStyle.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131333785750000000" remote="131333785750000000" Dst="1" />
+<file name="editor.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131916065717523259" remote="131916330430000000" Dst="1" />
+<file name="editorLanding.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131898067023897952" remote="131916330430000000" Dst="1" />
+<file name="emailPublication.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131917117331461966" remote="131917117490000000" Dst="1" />
+<file name="emailStyle.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131871232730261456" remote="131916330430000000" Dst="1" />
+<file name="html.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131871232730271430" remote="131916330430000000" Dst="1" />
+<file name="publicLanding.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131892749211182287" remote="131916330440000000" Dst="1" />
+<file name="tweakableStyle.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131916910271007630" remote="131916910300000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825427981819608" remote="131916289100000000" Dst="1" />
+<file name="hello.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428056382227" remote="131916289110000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825427981819608" remote="131919522010000000" Dst="1" />
+<file name="editor.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131916065717523259" remote="131919522010000000" Dst="1" />
+<file name="emailPublication.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131917117331461966" remote="131919522010000000" Dst="1" />
+<file name="hello.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428056382227" remote="131919522020000000" Dst="1" />
+<file name="tweakableStyle.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131916910271007630" remote="131919522020000000" Dst="1" />
+<file name="editorLanding.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131898067023897952" remote="131919724200000000" Dst="1" />
+<file name="emailStyle.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131871232730261456" remote="131919724200000000" Dst="1" />
+<file name="html.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131871232730271430" remote="131919724200000000" Dst="1" />
+<file name="publicLanding.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131892749211182287" remote="131919724200000000" Dst="1" />
 </dwsync>

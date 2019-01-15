@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="blank.stub" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628708240000000" remote="130628708240000000" Dst="1" />
-<file name="create.stub" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628708240000000" remote="130628708240000000" Dst="1" />
-<file name="update.stub" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
+<file name="blank.stub" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628708240000000" remote="131916311370000000" Dst="1" />
+<file name="create.stub" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628708240000000" remote="131916311370000000" Dst="1" />
+<file name="update.stub" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="131916311370000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428657942518" remote="131916311370000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428657942518" remote="131919539640000000" Dst="1" />
 </dwsync>

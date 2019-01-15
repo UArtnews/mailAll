@@ -4,4 +4,6 @@
 <file name="ElementParser.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710870000000" remote="130628710870000000" Dst="1" />
 <file name="EmptyStringParser.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710870000000" remote="130628710870000000" Dst="1" />
 <file name="HashParser.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710870000000" remote="130628710870000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428064150231" remote="131916255260000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428064150231" remote="131919540420000000" Dst="1" />
 </dwsync>

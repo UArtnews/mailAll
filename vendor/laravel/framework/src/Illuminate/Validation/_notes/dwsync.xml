@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="composer.json" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710400000000" remote="130628710400000000" Dst="1" />
-<file name="DatabasePresenceVerifier.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710400000000" remote="130628710400000000" Dst="1" />
-<file name="Factory.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710400000000" remote="130628710400000000" Dst="1" />
-<file name="PresenceVerifierInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710400000000" remote="130628710400000000" Dst="1" />
-<file name="ValidationServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710400000000" remote="130628710400000000" Dst="1" />
-<file name="Validator.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710400000000" remote="130628710400000000" Dst="1" />
+<file name="composer.json" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710400000000" remote="131916311650000000" Dst="1" />
+<file name="DatabasePresenceVerifier.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710400000000" remote="131916311650000000" Dst="1" />
+<file name="Factory.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710400000000" remote="131916311650000000" Dst="1" />
+<file name="PresenceVerifierInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710400000000" remote="131916311660000000" Dst="1" />
+<file name="ValidationServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710400000000" remote="131916311660000000" Dst="1" />
+<file name="Validator.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710400000000" remote="131916311660000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428199385920" remote="131916311650000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428199385920" remote="131919539670000000" Dst="1" />
 </dwsync>

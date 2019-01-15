@@ -45,7 +45,8 @@ class PublicController extends \BaseController {
         }else{
             $data['publication'] = null;
         }
-
+        //print_r($data);
+		$data['h1style'] = '';
         return View::make('public.publication')->with($data);
     }
 
@@ -83,6 +84,7 @@ class PublicController extends \BaseController {
 
         //Populate $data
         $data['article'] = $article;
+		$data['h1style'] = '';
 
         return View::make('public.article')->with($data);
     }
@@ -103,7 +105,8 @@ class PublicController extends \BaseController {
                 'tweakables'               => reindexArray($instance->tweakables()->get(), 'parameter', 'value'),
                 'default_tweakables'       => reindexArray(DefaultTweakable::all(), 'parameter', 'value'),
                 'tweakables_types'         => reindexArray(DefaultTweakable::all(), 'parameter', 'type'),
-                'default_tweakables_names' => reindexArray(DefaultTweakable::all(), 'parameter', 'display_name')
+                'default_tweakables_names' => reindexArray(DefaultTweakable::all(), 'parameter', 'display_name'),
+				'h1style'                  => '',
             );
 
             if(isset($data['tweakables']['global-accepts-submissions'])){
@@ -123,7 +126,7 @@ class PublicController extends \BaseController {
             //Populate $data
             $data['publication'] = $publication;
         }
-
+		$data['h1style'] = '';
         return View::make('public.publication')->with($data);
     }
 
@@ -226,7 +229,7 @@ class PublicController extends \BaseController {
 				$article->original_publication_id="";
 			}
         }
-
+		$data['h1style'] = '';
         return View::make('public.search')->with($data);
     }
 
@@ -247,6 +250,7 @@ class PublicController extends \BaseController {
                 'default_tweakables'       => reindexArray(DefaultTweakable::all(), 'parameter', 'value'),
                 'tweakables_types'         => reindexArray(DefaultTweakable::all(), 'parameter', 'type'),
                 'default_tweakables_names' => reindexArray(DefaultTweakable::all(), 'parameter', 'display_name'),
+				'h1style'                  => '',
             );
 
             //Setup dropdowns for searching
@@ -289,11 +293,14 @@ class PublicController extends \BaseController {
                     $data['submission'] = false;
                 }
             }
+			$data['h1style'] = '';
 
             //Populate $data
             $data['publications'] = $publications;
 
         }
+		
+
         return View::make('public.archive')->with($data);
     }
 
@@ -331,7 +338,7 @@ class PublicController extends \BaseController {
             $data['publication'] = $publication;
             $data['publication']->articles = $articles;
         }
-
+			$data['h1style'] = '';
         return View::make('publication')->with($data);
 	}
 

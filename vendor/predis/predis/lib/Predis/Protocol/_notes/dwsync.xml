@@ -6,4 +6,6 @@
 <file name="ProtocolInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
 <file name="ResponseHandlerInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
 <file name="ResponseReaderInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428621164703" remote="131916254420000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428621164703" remote="131919539800000000" Dst="1" />
 </dwsync>

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name=".gitignore" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710990000000" remote="130628710990000000" Dst="1" />
 <file name="CHANGELOG.md" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710990000000" remote="130628710990000000" Dst="1" />
 <file name="composer.json" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711000000000" remote="130628711000000000" Dst="1" />
 <file name="ExecutableFinder.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711000000000" remote="130628711000000000" Dst="1" />
 <file name="LICENSE" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711000000000" remote="130628711000000000" Dst="1" />
 <file name="PhpExecutableFinder.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711000000000" remote="130628711000000000" Dst="1" />
-<file name="PhpProcess.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711000000000" remote="130628711000000000" Dst="1" />
-<file name="phpunit.xml.dist" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711000000000" remote="130628711000000000" Dst="1" />
-<file name="Process.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711000000000" remote="130628711000000000" Dst="1" />
-<file name="ProcessBuilder.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711000000000" remote="130628711000000000" Dst="1" />
+<file name="PhpProcess.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711000000000" remote="131916318030000000" Dst="1" />
+<file name="phpunit.xml.dist" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711000000000" remote="131916318030000000" Dst="1" />
+<file name="Process.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711000000000" remote="131916318040000000" Dst="1" />
+<file name="ProcessBuilder.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711000000000" remote="131916318040000000" Dst="1" />
 <file name="ProcessPipes.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711000000000" remote="130628711000000000" Dst="1" />
 <file name="ProcessUtils.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711000000000" remote="130628711000000000" Dst="1" />
-<file name="README.md" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711000000000" remote="130628711000000000" Dst="1" />
+<file name="README.md" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711000000000" remote="131916318040000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428594971531" remote="131916255490000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428594971531" remote="131919540490000000" Dst="1" />
 </dwsync>

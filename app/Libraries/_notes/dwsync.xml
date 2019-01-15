@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="ExcelGet.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109120000000" remote="130748109120000000" Dst="1" />
-<file name="SwitchMail.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109120000000" remote="130748109120000000" Dst="1" />
+<file name="XmlConversions.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131886667683618017" remote="131886668900000000" Dst="1" />
+<file name="Utilities.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131910057782617563" remote="131910057780000000" Dst="1" />
+<file name="ExcelGet.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748073120000000" remote="131919517620000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428124092394" remote="131916289070000000" Dst="1" />
+<file name="ExcelGet.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748073120000000" remote="131916329080000000" Dst="1" />
+<file name="SwitchMail.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748073120000000" remote="131916329080000000" Dst="1" />
+<file name="Utilities.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131910057782617563" remote="131916327600000000" Dst="1" />
+<file name="XmlConversions.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131886667683618017" remote="131916327600000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428124092394" remote="131919517620000000" Dst="1" />
+<file name="SwitchMail.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748073120000000" remote="131919724050000000" Dst="1" />
 </dwsync>

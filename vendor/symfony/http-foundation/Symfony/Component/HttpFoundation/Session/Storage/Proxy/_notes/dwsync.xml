@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="AbstractProxy.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710950000000" remote="130628710950000000" Dst="1" />
-<file name="NativeProxy.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710950000000" remote="130628710950000000" Dst="1" />
-<file name="SessionHandlerProxy.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710950000000" remote="130628710950000000" Dst="1" />
+<file name="AbstractProxy.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710950000000" remote="131916317910000000" Dst="1" />
+<file name="NativeProxy.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710950000000" remote="131916317910000000" Dst="1" />
+<file name="SessionHandlerProxy.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710950000000" remote="131916317910000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825427823101246" remote="131916255380000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825427823101246" remote="131919540460000000" Dst="1" />
 </dwsync>

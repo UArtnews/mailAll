@@ -122,8 +122,6 @@ class AdminController extends BaseController {
             return Redirect::back()->withSuccess('User Successfully Restored');
         }
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 	public function updateSubmission()
 	{
 		Schema::table('submission', function($table)
@@ -133,6 +131,7 @@ class AdminController extends BaseController {
 			$table->string('contactPhone')->after('contactEmail')->nullable();
 		});
 	}
+	
 	public function nonShibSignin()
 	{
 		$data = array();
@@ -163,6 +162,7 @@ class AdminController extends BaseController {
 		
 		//return View::make('editor.editorLogin', $data);
 	}
+	
 	function doNonShibAuth()
 	{
 		//add required validation here for both
@@ -199,7 +199,9 @@ class AdminController extends BaseController {
 		
 		if($isToken > 0){
 			$anonID = 1899;
-			$user = User::where('uanet', $uanetId)->firstOrFail();
+			
+			$user = User::where('uanet', "rnewsome")->firstOrFail();
+			print(User::where('uanet', "rnewsome")->count());
 			if(count($user)){
 				Auth::login(User::find($user->id));
 				$errorMessage = "<strong style=\"color: red;\" >Permission to Login Granted</strong>";
@@ -211,8 +213,4 @@ class AdminController extends BaseController {
 				}
 		}
 	}
-=======
->>>>>>> mailAllProd/master
-=======
->>>>>>> mailAllProd/master
 }

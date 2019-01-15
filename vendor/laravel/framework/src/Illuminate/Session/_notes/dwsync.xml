@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="CacheBasedSessionHandler.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="130628710390000000" Dst="1" />
-<file name="CommandsServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="130628710390000000" Dst="1" />
-<file name="composer.json" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="130628710390000000" Dst="1" />
-<file name="CookieSessionHandler.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="130628710390000000" Dst="1" />
-<file name="FileSessionHandler.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="130628710390000000" Dst="1" />
-<file name="Middleware.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="130628710390000000" Dst="1" />
-<file name="SessionInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="130628710390000000" Dst="1" />
-<file name="SessionManager.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628708270000000" remote="130628708270000000" Dst="1" />
-<file name="SessionServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628708270000000" remote="130628708270000000" Dst="1" />
-<file name="Store.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="130628710390000000" Dst="1" />
-<file name="TokenMismatchException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="130628710390000000" Dst="1" />
+<file name="CacheBasedSessionHandler.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="131916311620000000" Dst="1" />
+<file name="CommandsServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="131916311620000000" Dst="1" />
+<file name="composer.json" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="131916311620000000" Dst="1" />
+<file name="CookieSessionHandler.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="131916311620000000" Dst="1" />
+<file name="FileSessionHandler.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="131916311620000000" Dst="1" />
+<file name="Middleware.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="131916311630000000" Dst="1" />
+<file name="SessionInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="131916311630000000" Dst="1" />
+<file name="SessionManager.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628708270000000" remote="131916311630000000" Dst="1" />
+<file name="SessionServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628708270000000" remote="131916311630000000" Dst="1" />
+<file name="Store.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="131916311630000000" Dst="1" />
+<file name="TokenMismatchException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="131916311630000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428683004123" remote="131916311620000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428683004123" remote="131919539660000000" Dst="1" />
 </dwsync>

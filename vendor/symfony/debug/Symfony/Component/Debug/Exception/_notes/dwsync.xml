@@ -6,4 +6,6 @@
 <file name="FatalErrorException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710880000000" remote="130628710880000000" Dst="1" />
 <file name="FlattenException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710880000000" remote="130628710880000000" Dst="1" />
 <file name="UndefinedFunctionException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710880000000" remote="130628710880000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825427866410628" remote="131916255280000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825427866410628" remote="131919540420000000" Dst="1" />
 </dwsync>

@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="composer.json" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="130628710390000000" Dst="1" />
-<file name="Controller.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710380000000" remote="130628710380000000" Dst="1" />
-<file name="ControllerDispatcher.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710380000000" remote="130628710380000000" Dst="1" />
-<file name="ControllerInspector.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="130628710390000000" Dst="1" />
-<file name="ControllerServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="130628710390000000" Dst="1" />
-<file name="Redirector.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628708270000000" remote="130628708270000000" Dst="1" />
-<file name="Route.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="130628710390000000" Dst="1" />
-<file name="RouteCollection.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="130628710390000000" Dst="1" />
-<file name="RouteFiltererInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="130628710390000000" Dst="1" />
-<file name="Router.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="130628710390000000" Dst="1" />
-<file name="RoutingServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="130628710390000000" Dst="1" />
-<file name="UrlGenerator.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="130628710390000000" Dst="1" />
+<file name="composer.json" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="131916311600000000" Dst="1" />
+<file name="Controller.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710380000000" remote="131916311600000000" Dst="1" />
+<file name="ControllerDispatcher.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710380000000" remote="131916311600000000" Dst="1" />
+<file name="ControllerInspector.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="131916311600000000" Dst="1" />
+<file name="ControllerServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="131916311600000000" Dst="1" />
+<file name="Redirector.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628708270000000" remote="131916311610000000" Dst="1" />
+<file name="Route.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="131916311610000000" Dst="1" />
+<file name="RouteCollection.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="131916311610000000" Dst="1" />
+<file name="RouteFiltererInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="131916311610000000" Dst="1" />
+<file name="Router.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="131916311620000000" Dst="1" />
+<file name="RoutingServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="131916311620000000" Dst="1" />
+<file name="UrlGenerator.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710390000000" remote="131916311620000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428500635032" remote="131916311600000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428500635032" remote="131919539660000000" Dst="1" />
 </dwsync>

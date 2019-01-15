@@ -3,7 +3,7 @@
 <head>
 
     <title>The University of Akron Emailer</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link async rel="StyleSheet" href="{{ URL::to('css/bootstrap.css') }}" type="text/css" />
     <script type="text/javascript">
         document.write("    \<script src='//code.jquery.com/jquery-latest.min.js' type='text/javascript'>\<\/script>");
@@ -76,15 +76,11 @@
             <h1 class="centerMe"><span class="glyphicon glyphicon-wrench" aria-hidden="true" style="font-size:400%;">&nbsp;</span>
                 <strong>The University of Akron: Publications</strong>
             </h1>
-<<<<<<< HEAD
-<<<<<<< HEAD
-			@include('public.messages')
-=======
->>>>>>> mailAllProd/master
-=======
->>>>>>> mailAllProd/master
             <div class="panel panel-default">
-                <div class="panel-heading">Please Choose a Publication to Edit <a href="{{ URL::to('/') }}" class="btn btn-primary btn-xs pull-right"><span class="glyphicon glyphicon-arrow-left"></span>&nbsp;Return to Publication Archive List&nbsp;<span class="glyphicon glyphicon-arrow-left"></span></a></div>
+                <div class="panel-heading">
+					@include('public.messages')
+					
+					Please Choose a Publication to Edit <a href="{{ URL::to('/') }}" class="btn btn-primary btn-xs pull-right"><span class="glyphicon glyphicon-arrow-left"></span>&nbsp;Return to Publication Archive List&nbsp;<span class="glyphicon glyphicon-arrow-left"></span></a></div>
                 <div class="panel-body">
                     <br/>
                     <ul class="list-group">

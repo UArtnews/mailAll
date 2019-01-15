@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="BelongsTo.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
-<file name="BelongsToMany.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
-<file name="HasMany.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
-<file name="HasManyThrough.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
-<file name="HasOne.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
-<file name="HasOneOrMany.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
-<file name="MorphMany.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
-<file name="MorphOne.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
-<file name="MorphOneOrMany.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
-<file name="MorphPivot.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
-<file name="MorphTo.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
-<file name="MorphToMany.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
-<file name="Pivot.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
-<file name="Relation.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
+<file name="BelongsTo.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="131916311350000000" Dst="1" />
+<file name="BelongsToMany.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="131916311360000000" Dst="1" />
+<file name="HasMany.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="131916311360000000" Dst="1" />
+<file name="HasManyThrough.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="131916311360000000" Dst="1" />
+<file name="HasOne.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="131916311360000000" Dst="1" />
+<file name="HasOneOrMany.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="131916311360000000" Dst="1" />
+<file name="MorphMany.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="131916311360000000" Dst="1" />
+<file name="MorphOne.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="131916311360000000" Dst="1" />
+<file name="MorphOneOrMany.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="131916311360000000" Dst="1" />
+<file name="MorphPivot.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="131916311360000000" Dst="1" />
+<file name="MorphTo.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="131916311360000000" Dst="1" />
+<file name="MorphToMany.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="131916311360000000" Dst="1" />
+<file name="Pivot.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="131916311360000000" Dst="1" />
+<file name="Relation.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="131916311360000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825427851794874" remote="131916311350000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825427851794874" remote="131919539640000000" Dst="1" />
 </dwsync>

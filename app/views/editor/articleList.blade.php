@@ -5,21 +5,13 @@
         Article List
     </div>
     <div class="panel-body" id="articlePanelBody">
-<<<<<<< HEAD
-<<<<<<< HEAD
         <div class="col-sm-10 col-sm-offset-1 col-xs-12 table-responsive" id="articleChooser">
-=======
-        <div class="col-sm-10 col-sm-offset-1 col-xs-12" id="articleChooser">
->>>>>>> mailAllProd/master
-=======
-        <div class="col-sm-10 col-sm-offset-1 col-xs-12" id="articleChooser">
->>>>>>> mailAllProd/master
             <button id="newArticleButton" class="btn btn-success btn-block" onclick="$('.newArticle').slideToggle();$('#newArticleButton').slideToggle();"><strong>Create New Article</strong></button><br/>
             <div class="newArticle" style="display:none;">
                 <div class="contentDiv">
                     <div class="article">
-                        <h1 id="newArticleTitle" class="newEditable">[Click here to begin editing Title]</h1>
-                        <p id="newArticleContent" class="newEditable">[Click here to begin editing Body]<p>
+                        <div id="newArticleTitle" class="newEditable well well-sm" ><span {{ $h1style }}>[Click here to begin editing Title]</span></div>
+                        <div id="newArticleContent" class="newEditable well well-lg"  >[Click here to begin editing Body]</div>
                         <input type="hidden" id="token" value="{{ csrf_token() }}">
                         <hr/>
                     </div>
@@ -41,8 +33,9 @@
                 @foreach($articles as $article)
                 <tr>
                     <td>
+						<a name="articleTitle{{ $article->id }}"></a>
                         <a href="{{ URL::to("edit/$instanceName/article/".$article->id) }}">
-                            {{stripslashes($article->title)}}
+                            {{strip_tags($article->title)}}
                         </a>
                         @if(isset($cart) && isset($cart[$article->id]))
                             <a href="#" class="addToCartButton{{ $article->id }}" onclick="removeArticleFromCart({{ $article->id }})"><span class="badge pull-right alert-danger">Remove from Cart</span></a>
