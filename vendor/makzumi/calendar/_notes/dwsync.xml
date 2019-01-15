@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name=".gitignore" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109140000000" remote="130748109140000000" Dst="1" />
-<file name=".project" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109140000000" remote="130748109140000000" Dst="1" />
-<file name=".travis.yml" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109140000000" remote="130748109140000000" Dst="1" />
-<file name="composer.json" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109140000000" remote="130748109140000000" Dst="1" />
-<file name="phpunit.xml" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109140000000" remote="130748109140000000" Dst="1" />
-<file name="README.md" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109140000000" remote="130748109140000000" Dst="1" />
+<file name=".project" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748073140000000" remote="131916316760000000" Dst="1" />
+<file name=".travis.yml" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748073140000000" remote="131916316760000000" Dst="1" />
+<file name="composer.json" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748073140000000" remote="131916316760000000" Dst="1" />
+<file name="phpunit.xml" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748073140000000" remote="131916316760000000" Dst="1" />
+<file name="README.md" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748073140000000" remote="131916316760000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825427826571077" remote="131916253980000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825427826571077" remote="131919539700000000" Dst="1" />
 </dwsync>

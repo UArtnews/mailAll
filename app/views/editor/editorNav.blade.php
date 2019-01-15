@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation"><!-- navbar-fixed-top -->
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -15,6 +15,10 @@
         <div class="collapse navbar-collapse" id="editor-nav-collapse">
             <!-- Main Tab Links -->
             <ul class="nav navbar-nav">
+				<li @if($action == 'home')class="active"@endif >
+                <a id="images-nav-link" href="{{URL::to('/editors')}}"><span class="glyphicon glyphicon-home"></span> Home
+					</a>
+                </li>
                 <li @if($action == 'articles')class="active"@endif >
                 <a id="articles-nav-link" href="{{URL::to('edit/'.$instanceName.'/articles')}}">
                     <span class="glyphicon glyphicon-file"></span>&nbsp&nbspArticles
@@ -40,20 +44,27 @@
                     &nbsp;&nbsp;Images
                 </a>
                 </li>
-                @if(Auth::user()->isAdmin($instance->id))
-                <li @if($action == 'settings')class="active"@endif >
-                <a id="settings-nav-link" href="{{URL::to('edit/'.$instanceName.'/settings')}}">
-                    <span class="glyphicon glyphicon-wrench"></span>
-                    &nbsp;&nbsp;Settings
-                </a>
-                </li>
-                @endif
-                <li @if($action == 'help')class="active"@endif >
-                <a id="help-nav-link" href="{{URL::to('edit/'.$instanceName.'/help')}}">
-                    <span class="glyphicon glyphicon-question-sign"></span>
-                    &nbsp;&nbsp;Help
-                </a>
-                </li>
+				<!-- +++++++++++++++++++++SUPPORT MENU++++++++++++++++++++++++++++++ -->			  
+				<li @if($action == 'settings')class="active"@endif >
+					<a class="dropdown-toggle"  data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-info-sign"></span>&nbsp; Support
+					<span class="caret"></span></a>
+    				<ul class="dropdown-menu">
+						@if(Auth::user()->isAdmin($instance->id))
+      					<li><a id="settings-nav-link" href="{{URL::to('edit/'.$instanceName.'/settings')}}">
+							<span class="glyphicon glyphicon-wrench"></span>
+							&nbsp;&nbsp;Settings</a></li>
+      					<li><a id="help-nav-link" href="{{URL::to('show/'.$instanceName.'/publicationLogs/')}}">
+								<i class="glyphicon glyphicon-dashboard"></i>
+								&nbsp;&nbsp; Log</a></li>
+						@endif
+						<li @if($action == 'help')class="active"@endif >
+							<a id="help-nav-link" href="{{URL::to('edit/'.$instanceName.'/help')}}">
+								<span class="glyphicon glyphicon-question-sign"></span>
+								&nbsp;&nbsp;Help</a></li>
+    				</ul> 				
+				</li>			
+				<!-- +++++++++++++++++++++SUPPORT MENU++++++++++++++++++++++++++++++ -->			
+                
             </ul><!-- End Main Tab Links -->
 
             <!-- Greater Than 1200px Right Hand Nav -->
@@ -62,13 +73,13 @@
                 <div class="form-group">
                     <input type="text" name="search" class="form-control" placeholder="Search" size="8">
                 </div>
-                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="submit" class="btn btn-default">Go</button>
                 </form>
                 @if(isset($cart))
                 <li>
                     <a id="article-cart-btn" href="#" data-toggle="modal" data-target="#cartModal">
                         <span class="glyphicon glyphicon-shopping-cart"></span>
-                        &nbsp;Article Cart&nbsp;
+                        &nbsp;Cart&nbsp;
                         <span class="badge cartCountBadge" style="background-color:#428bca;">{{ count($cart) }}</span>
                     </a>
                 </li>
@@ -76,38 +87,38 @@
                 <li>
                     <a id="article-cart-btn" href="#" data-toggle="modal" data-target="#cartModal">
                         <span class="glyphicon glyphicon-shopping-cart"></span>
-                        &nbsp;Article Cart&nbsp;
+                        &nbsp;Cart&nbsp;
                         <span class="badge cartCountBadge" style="background-color:#428bca;">0</span>
                     </a>
                 </li>
                 @endif
                 <li class="dropdown">
                     <a href="#" id="SearchType" class="dropdown-toggle" data-toggle="dropdown">
-                        Search everything <b class="caret"></b>
+                       <span class="glyphicon glyphicon-search" aria-hidden="true"></span> All <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="#" onclick="$('#SearchType').text('Search Articles');$('#searchForm').attr('action','{{ URL::to("edit/$instanceName/search/articles") }}');" >
-                            Search Articles
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Articles
                             </a>
                         </li>
                         <li>
                             <a href="#" onclick="$('#SearchType').text('Search Publications');$('#searchForm').attr('action','{{ URL::to("edit/$instanceName/search/publications") }}');" >
-                            Search Publications
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Publications
                             </a>
                         </li>
                         <li>
                             <a href="#" onclick="$('#SearchType').text('Search Images');$('#searchForm').attr('action','{{ URL::to("edit/$instanceName/search/images") }}');">
-                            Search Images
+                          <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Images
                             </a>
                         </li>
                         <li>
                             <a href="#" onclick="$('#SearchType').text('Search Everything');$('#searchForm').attr('action','{{ URL::to("edit/$instanceName/search/everything") }}');" >
-                            Search Everything
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span> All
                             </a>
                         </li>
                     </ul>
-                </li>
+                </li>	
             </ul>
 
             <!-- Less Than 1200px Right Hand Nav -->
@@ -116,7 +127,7 @@
                 <div class="form-group">
                     <input type="text" name="search" class="form-control" placeholder="Search" size="8">
                 </div>
-                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="submit" class="btn btn-default">Go</button>
                 </form>
                 @if(isset($cart))
                 <li>
@@ -137,32 +148,44 @@
                 @endif
                 <li class="dropdown">
                     <a href="#" id="SearchType" class="dropdown-toggle" data-toggle="dropdown">
-                        Search everything <b class="caret"></b>
+                       <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Everything <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="#" onclick="$('#SearchType').text('Search Articles');$('#searchForm').attr('action','{{ URL::to("edit/$instanceName/search/articles") }}');">
-                            Search Articles
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Articles
                             </a>
                         </li>
                         <li><a href="#" onclick="$('#SearchType').text('Search Publications');$('#searchForm').attr('action','{{ URL::to("edit/$instanceName/search/publications") }}');">
-                            Search Publications
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Publications
                             </a>
                         </li>
                         <li>
                             <a href="#" onclick="$('#SearchType').text('Search Images');$('#searchForm').attr('action','{{ URL::to("edit/$instanceName/search/images") }}');">
-                            Search Images
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Images
                             </a>
                         </li>
                         <li><a href="#" onclick="$('#SearchType').text('Search Everything');$('#searchForm').attr('action','{{ URL::to("edit/$instanceName/search/everything") }}');">
-                            Search Everything
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span> All
                             </a>
                         </li>
                     </ul>
-                </li>
+                </li>	
             </ul>
+			<ul class="hidden-lg nav navbar-nav navbar-right">
+
+         		<li @if($action == 'help')class="active"@endif >
+					<a id="help-nav-link" href="{{URL::to('edit/'.$instanceName.'/help')}}">
+						<span class="glyphicon glyphicon-question-sign"></span>
+						&nbsp;&nbsp;Help
+					</a>
+                </li>
+
+			</ul>
         </div>
         <!-- /.navbar-collapse -->
     </div>
     <!-- /.container-fluid -->
 </nav>
+
+<div style="height: 60px; widht: 60px"></div>

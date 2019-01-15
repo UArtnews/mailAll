@@ -13,7 +13,7 @@ class EmailController extends \BaseController
     public function sendEmail($instanceName, $publication_id){
 
         $instance = Instance::where('name', $instanceName)->first();
-
+        
         $data = array(
             'instance'		=> $instance,
             'instanceId'	=> $instance->id,
@@ -25,24 +25,43 @@ class EmailController extends \BaseController
             'isEditable'               => false,
             'shareIcons'               => false,
         );
-
+		$data['h1style'] = "";
+        $addressToArr = array();
+        $addressToArr = explode ( ",", Input::get('addressTo') );
+        $myEmails = Input::get('myEmails');
+        $fieldArr = array();
+        $rulesArr = array();
+		$messages = array();
+        
+		if($addressToArr[0]==""){$addressToArr = array();}
+		if($myEmails[0]==""){$myEmails = array();}
+		
+        if(is_array($myEmails)){
+			foreach ($myEmails as $item) {
+				array_push($addressToArr,$item);
+			}
+        }
+		
+        foreach ($addressToArr as $key => $val) {
+            $fieldArr[$key] = $val;
+			$rulesArr[$key] = 'required|email';
+			//$messages[$key.'.required|email'] = "At least one email field is required.";
+			$messages[$key.'.email'] = "The email field is " . $val . " or are NOT the correct email format. Try using this pattern xxx@xxx.com";
+         }
+        
+        $fieldArr['addressFrom']   = Input::get('addressFrom');
+        $fieldArr['nameFrom']      = Input::get('nameFrom');
+        $fieldArr['replyTo']       = Input::get('replyTo');
+        $fieldArr['subject']       = Input::get('subject');
+        $rulesArr['addressFrom']   = 'required|email';
+        $rulesArr['nameFrom']      = 'required';
+        $rulesArr['replyTo']       = 'required|email';
+        $rulesArr['subject']       = 'required';
+        
+        
         //Validate Input
-        $validator = Validator::make(
-            array(
-                'addressTo'     => Input::get('addressTo'),
-                'addressFrom'   => Input::get('addressFrom'),
-                'nameFrom'   => Input::get('nameFrom'),
-                'replyTo'       => Input::get('replyTo'),
-                'subject'       => Input::get('subject')
-            ),
-            array(
-                'addressTo'     => 'required|email',
-                'addressFrom'   => 'required|email',
-                'nameFrom'      => 'required',
-                'replyTo'       => 'required|email',
-                'subject'       => 'required'
-            )
-        );
+        $validator = Validator::make($fieldArr,$rulesArr,$messages);
+
 
         if($validator->fails()){
             $errorMessage = 'Please correct the following:</br>';
@@ -66,7 +85,50 @@ class EmailController extends \BaseController
             $publication->published = 'Y';
             $publication->save();
         }
+		//+++++++++++++++++++++++++++++SAVING A LOG +++++++++++++++++++++++++++++++++++++++
+		
+		$userId = Auth::id();
+		$logData['isPublished'] = 'N';
+		if(!Input::has('isTest')){
+			$logData['isPublished'] = 'Y';
+		}
+		$logData['eventId'] = $publication_id;
+		$logData['userId'] = Auth::id();
+		$logData['eventName'] = "PublicationLog";
+		$logData['type'] = $instanceName;
+		
+		$audience = array ();
+		if(Input::has('myAudience')){$audience = Input::get('myAudience');}
+		$dataXML = array(
+			'audience' => implode("," , $audience),
+			'Subject' => Input::get('subject'),
+			'Published' => $logData['isPublished'],
+			'PublicationURL' => 'https://share.uakron.edu/mailAll/'.$instanceName		
+		);
+		//CONVERT TO XML
+		$xmlObj = new XmlConversions();
+		$rootItem = new SimpleXMLElement('<content/>');
+ 		$xmlText =  $xmlObj->from_array($dataXML,$rootItem);
+		
+		$debugData = array(
+            'userid' => $userId,
+            'Toaddress' => implode("," , $addressToArr),
+			'Log' => implode("," , $logData),
+			'descriptionXML' => $xmlText
+        );
+		
+		//++++++++++NOW LOG TO DB ++++++++++++++++++++++++++++++++
+		$pubLog = new PublicationLog;
+		$pubLog->event_id = $logData['eventId'];
+		$pubLog->user_id = $logData['userId'];
+		$pubLog->eventname = $logData['eventName'];
+		$pubLog->type = $logData['type'];
+		$pubLog->description = $xmlText ;
 
+		// add more fields (all fields that users table contains without id)
+		$pubLog->save();
+		
+		
         $data['publication'] = $publication;
         $data['isEmail'] = true;
 
@@ -81,14 +143,29 @@ class EmailController extends \BaseController
 
         $sendingAddress = isset($data['tweakables']['publication-email-address']) ? $data['tweakables']['publication-email-address'] : $data['default_tweakables']['publication-email-address'];
         $this->switchMail->gmail($sendingAddress);
-        Mail::send('html', array('html' => $inlineHTML), function($message){
-            $message->to(Input::get('addressTo'))
-                ->subject(Input::has('subject') ? stripslashes(Input::get('subject')) : '')
-                ->from(Input::get('addressFrom'), Input::has('nameFrom') ? Input::get('nameFrom') : '')
-                ->replyTo(Input::get('replyTo'), Input::has('nameFrom') ? Input::get('nameFrom') : '');
-        });
+       $emailText = implode(",", $addressToArr);
+		   	/*+++++SENDING EMAIL++++++++++++++++++++++++++++++*/
+			Mail::send('html', array('html' => $inlineHTML), function($message) use ($emailText){
+				$message->to(explode(",",$emailText));
+					$message->subject(Input::has('subject') ? stripslashes(Input::get('subject')) : '');
+					$message->from(Input::get('addressFrom'), Input::has('nameFrom') ? Input::get('nameFrom') : '');
+					$message->replyTo(Input::get('replyTo'), Input::has('nameFrom') ? Input::get('nameFrom') : '');
+			});
+		   /*+++++SENDING EMAIL++++++++++++++++++++++++++++++*/  
 
-        return Redirect::back()->withSuccess("Publication successfully sent!");
+  
+        Session::flash('retData', implode("," , $addressToArr));
+		
+        return Redirect::back()->withSuccess("Publication successfully sent to  " . implode("," , $addressToArr) . "." );
+		//+++++++++++++++++++++++++FOR TESTING ONLY++++++++++++++++++++++++++++++++++++++
+		//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+			/*$data['emailFavoritesData'] = Tweakable::where('parameter', "emailfavorite")->where('instance_id', $data['instance']->id)->get();
+			$data['emailAudienceData'] = Tweakable::where('parameter', "emailaudience")->where('instance_id', $data['instance']->id)->get();
+			$data['action']='';
+			$data['inlineHTML']=$inlineHTML;
+			return View::make('editor.publicationEditor', $data)->withSuccess("Publication successfully sent to  " . implode("," , $addressToArr) . "." );*/
+		//+++++++++++++++++++++++++FOR TESTING ONLY++++++++++++++++++++++++++++++++++++++
+		//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     }
 
     public function mergeEmail($instanceName, $publication_id){
@@ -326,5 +403,21 @@ class EmailController extends \BaseController
             return Redirect::back()->withSuccess("Message(s) successfully sent!");
         }
     }
-
+        //Validate Input
+        /*$validator = Validator::make(
+            array(
+                'addressTo'     => $addressToArr,
+                'addressFrom'   => Input::get('addressFrom'),
+                'nameFrom'   => Input::get('nameFrom'),
+                'replyTo'       => Input::get('replyTo'),
+                'subject'       => Input::get('subject')
+            ),
+            array(
+                '*.addressTo'     => 'required|email',
+                'addressFrom'   => 'required|email',
+                'nameFrom'      => 'required',
+                'replyTo'       => 'required|email',
+                'subject'       => 'required'
+            )
+        );*/
 }

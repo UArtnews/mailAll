@@ -6,7 +6,7 @@
         <button id="backToListSubmission" type="button" class="btn btn-primary pull-right btn-xs" onclick="$('.submissionEditor').slideUp();$('#submissionChooser').slideDown();"><span class="glyphicon glyphicon-arrow-up"></span>&nbsp&nbspBack To List</button>
     </div>
     <div class="panel-body" id="articlePanelBody">
-        <div class="col-sm-10 col-sm-offset-1 col-xs-12" id="submissionChooser">
+        <div class="col-sm-10 col-sm-offset-1 col-xs-12 table-responsive" id="submissionChooser">
             <table class="table well">
                 <thead>
                 <tr>
@@ -58,7 +58,7 @@
         </div>
         @foreach($submissions as $submission)
         <div class="row submissionEditor" id="submissionEditor{{$submission->id}}" style="display:none;">
-            <div class="col-sm-10 col-sm-offset-1 col-xs-12 article">
+            <div class="col-sm-10 col-sm-offset-1 col-xs-12 article table-responsive">
                 <div class="contentDiv">
                     <div class="submission" id="submission{{ $submission->id }}">
                         <h1 id="submissionTitle{{ $submission->id }}" class="editable">{{ stripslashes($submission->title) }}</h1>

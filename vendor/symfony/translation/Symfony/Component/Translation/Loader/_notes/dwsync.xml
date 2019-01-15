@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
 <file name="ArrayLoader.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711050000000" remote="130628711050000000" Dst="1" />
-<file name="CsvFileLoader.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711050000000" remote="130628711050000000" Dst="1" />
-<file name="IcuDatFileLoader.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711050000000" remote="130628711050000000" Dst="1" />
-<file name="IcuResFileLoader.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711050000000" remote="130628711050000000" Dst="1" />
+<file name="CsvFileLoader.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711050000000" remote="131916318110000000" Dst="1" />
+<file name="IcuDatFileLoader.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711050000000" remote="131916318110000000" Dst="1" />
+<file name="IcuResFileLoader.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711050000000" remote="131916318110000000" Dst="1" />
 <file name="IniFileLoader.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711050000000" remote="130628711050000000" Dst="1" />
-<file name="JsonFileLoader.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711050000000" remote="130628711050000000" Dst="1" />
+<file name="JsonFileLoader.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711050000000" remote="131916318110000000" Dst="1" />
 <file name="LoaderInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711050000000" remote="130628711050000000" Dst="1" />
-<file name="MoFileLoader.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711050000000" remote="130628711050000000" Dst="1" />
+<file name="MoFileLoader.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711050000000" remote="131916318110000000" Dst="1" />
 <file name="PhpFileLoader.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711050000000" remote="130628711050000000" Dst="1" />
 <file name="PoFileLoader.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711050000000" remote="130628711050000000" Dst="1" />
 <file name="QtFileLoader.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711050000000" remote="130628711050000000" Dst="1" />
 <file name="XliffFileLoader.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711050000000" remote="130628711050000000" Dst="1" />
-<file name="YamlFileLoader.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711050000000" remote="130628711050000000" Dst="1" />
+<file name="YamlFileLoader.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711050000000" remote="131916318110000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428343362219" remote="131916255600000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428343362219" remote="131919540530000000" Dst="1" />
 </dwsync>

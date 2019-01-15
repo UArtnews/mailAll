@@ -13,6 +13,7 @@
         var title = $('#newArticleTitle').html();
         var body = $('#newArticleContent').html();
 
+		
         //If title or body is empty or boilerplate, don't bother saving the article, alert the user
         if(title == '[Click here to begin editing Title]' || title.length == 0){
             alert('Cannot save empty or boilerplate title');
@@ -34,11 +35,10 @@
                 'title': title,
                 'content': body
 				
-        }
-		//,
-                    //error : function(XMLHttpRequest, textStatus, errorThrown) {
-                        //alert(XMLHttpRequest.responseText);
-                    //}
+        }/*,
+                    error : function(XMLHttpRequest, textStatus, errorThrown) {
+                        alert(XMLHttpRequest.responseText);
+                    }*/
         }).done(function(data){
 			//console.log('Ajax End');
             location.reload();
@@ -135,19 +135,77 @@
                     $(elem).parent().css('animation','slidein 1s forwards');
                 },1000);
         });
-
+			 tinymce.init({
+			  selector: ".newEditable",
+			  body_class: 'my_class',
+			  inline: true,
+			  menubar: false,
+			  browser_spellcheck: true,
+				  image_advtab: true,
+			  //file_browser_callback : 'myFileBrowser',
+			  plugins: [
+				'advlist autolink lists link imagetools image charmap print preview anchor textcolor',
+				'searchreplace visualblocks code fullscreen',
+				'insertdatetime media table contextmenu paste code help wordcount'
+			  ],
+			  toolbar1: 'insert | undo redo | code removeformat | formatselect',
+			  toolbar2: 'bold italic backcolor | alignleft aligncenter alignright alignjustify',
+			  toolbar3: 'bullist numlist | outdent indent | image | help',
+			  toolbar4: 'cut copy | paste pastetext',
+			  content_css: [
+				'//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+				'//www.tinymce.com/css/codepen.min.css'],
+				 //image_list: "{{ URL::to('json/'.$instanceName.'/images') }}"
+			    file_picker_callback: function(callback, value, meta) {
+    				imageFilePicker(callback, value, meta);
+  				}				
+			});// end of tinymce
+		
+			tinymce.init({
+			  selector: ".editable",
+			  body_class: 'my_class',
+			  inline: true,
+			  menubar: false,
+			  browser_spellcheck: true,
+				 image_advtab: true,
+			  //file_browser_callback : 'myFileBrowser',
+			  plugins: [
+				'advlist autolink lists link imagetools image charmap print preview anchor textcolor',
+				'searchreplace visualblocks code fullscreen',
+				'insertdatetime media table contextmenu paste code help wordcount'
+			  ],
+			  toolbar1: 'insert | undo redo | code removeformat | formatselect',
+			  toolbar2: 'bold italic backcolor | alignleft aligncenter alignright alignjustify',
+			  toolbar3: 'bullist numlist | outdent indent | image | help',
+				toolbar4: 'cut copy | paste pastetext',
+			  content_css: [
+				'//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+				'//www.tinymce.com/css/codepen.min.css'],
+				 //image_list: "{{ URL::to('json/'.$instanceName.'/images') }}"
+			    file_picker_callback: function(callback, value, meta) {
+    				imageFilePicker(callback, value, meta);
+  				}				
+			});// end of tinymce
+		
         //////////////////////////////////////////
         //  NEW ARTICLE EDITABLE CLICK HANDLER  //
         //////////////////////////////////////////
         $('.newEditable').click(function(){
             $(this).attr('contenteditable', true);
-            $(this).ckeditor({
+			console.log("{{ URL::to('json/'.$instanceName.'/images') }}");
+            /* RTN$(this).ckeditor({
                 "extraPlugins": "imagebrowser,sourcedialog,openlink",
                 "imageBrowser_listUrl": "{{ URL::to('json/'.$instanceName.'/images') }}",
                 "allowedContent": true
-            });
-        });
+            });*/
 
+			//console.log("onclick");
+        });
+//border: blue 1px dashed
+		$('.newEditable').mouseenter(function() {
+				$( this ).css( "{'border': 'blue 1px solid'}" );
+			  });
+		$('.newEditable').css( "{'height': '1350px'}" );
         ///////////////////////////////////////////////////////////////////
         //  EXISTING ARTICLE EDITABLE CLICK HANDLER AND SAVE INDICATORS  //
         ///////////////////////////////////////////////////////////////////
@@ -176,7 +234,7 @@
         if(typeof thisSelector.parent().find('.articleTitle').position() == 'undefined'){
             return;
         }
-
+		$(".mce-tinymce").css("width","500");
         //Save the content as it currently is into the EditorData object
         if(typeof EditorData.contents[idNum] == 'undefined'){
             EditorData.contents[idNum] = {};
@@ -247,11 +305,11 @@
         //Init editor since it's not fired up!
         thisSelector.attr('contenteditable', true);
 
-        var thisEditor = thisSelector.ckeditor({
+        /* var thisEditor = thisSelector.ckeditor({
             "extraPlugins": "imagebrowser,sourcedialog,openlink",
             "imageBrowser_listUrl": "{{ URL::to('json/'.$instanceName.'/images') }}",
             "allowedContent": true
-        });
+        }); */
 
         //Setup Indicator stuff
         thisSelector.parent().find('.articleTitle').unbind('keyup').bind('keyup', function(){
@@ -576,6 +634,7 @@
     }
 
     function addArticleToExistingPublication(article_id, publication_id, doSave){
+		
         if($('#publication'+publication_id+' #article'+article_id).length > 0){
             return;
         }
@@ -607,7 +666,8 @@
             $('.editorSaveRevert').remove();
             if(doSave)
                 savePublicationOrder(publication_id);
-        });
+        })
+		.fail(function (jqXHR, textStatus, errorThrown) { console.log(jqXHR) });
     }
 
     function addArticleCartToNewPublication(){
@@ -617,7 +677,7 @@
     }
 
     function addArticleCartToExistingPublication(publication_id){
-        $('#addFromCartModal'+publication_id+' .addCartItem').each(function(index, elem){
+        $('#addFromCartModal'+publication_id+' .addCartItem').each(function(index, elem){			
             addArticleToExistingPublication($(elem).attr('id').replace('addCartArticle',''), publication_id, false);
         });
 
@@ -666,7 +726,9 @@
             }
         }).done(function(data){
             if(data['success']){
+				console.log(data);
                 window.location = '{{ URL::to('/edit/'.$instance->name.'/publication') }}/'+data['publication_id'];
+				
             }else{
                 alert('Something went wrong!');
             }
@@ -849,4 +911,34 @@
 			$(hide_id).hide();
 		}
 	}
+var imageFilePicker = function (callback, value, meta) {               
+    tinymce.activeEditor.windowManager.open({
+        title: 'Image Picker',
+        url: "{{ URL::to('image-picker/'.$instanceName.'/images') }}",
+        width: 750,
+        height: 550,
+        buttons: [{
+            text: 'Insert',
+            onclick: function () {
+                //.. do some work
+				console.log("derp");
+				var cf = $(".mce-container-body").find( "iframe" );
+				var selectedImage = $( cf ).contents().find("#image_select").val();
+				var inputs = $( "input" );
+				$(".mce-filepicker").find( inputs ).val( selectedImage );
+				//console.log( "image?" + selectedImage );
+                tinymce.activeEditor.windowManager.close();
+            }
+        }, {
+            text: 'Close',
+            onclick: 'close'
+        }],
+    }, {
+        oninsert: function (url) {
+            callback(url);
+            console.log("derp");
+        },
+    });
+};
+	
 </script>

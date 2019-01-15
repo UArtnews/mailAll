@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="Expectations.pkg" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428151096545" remote="131916255050000000" Dst="1" />
+<file name="FormTesting.pkg" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825427989562082" remote="131916255050000000" Dst="1" />
+<file name="MockObjects.pkg" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428208569972" remote="131916255060000000" Dst="1" />
+<file name="PartialMock.pkg" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825427925570023" remote="131916255060000000" Dst="1" />
+<file name="Reporting.pkg" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428476193608" remote="131916255060000000" Dst="1" />
+<file name="ServerStubs.pkg" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428049917583" remote="131916255060000000" Dst="1" />
+<file name="SimpleTest.pkg" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428617444347" remote="131916255060000000" Dst="1" />
+<file name="SimpleTest.pkg.ini" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428478167978" remote="131916255060000000" Dst="1" />
+<file name="UnitTestCase.pkg" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428151684970" remote="131916255060000000" Dst="1" />
+<file name="WebTester.pkg" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428111596974" remote="131916255070000000" Dst="1" />
+<file name="Expectations.pkg" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428151096545" remote="131919540250000000" Dst="1" />
+<file name="FormTesting.pkg" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825427989562082" remote="131919540260000000" Dst="1" />
+<file name="MockObjects.pkg" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428208569972" remote="131919540260000000" Dst="1" />
+<file name="PartialMock.pkg" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825427925570023" remote="131919540260000000" Dst="1" />
+<file name="Reporting.pkg" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428476193608" remote="131919540260000000" Dst="1" />
+<file name="ServerStubs.pkg" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428049917583" remote="131919540260000000" Dst="1" />
+<file name="SimpleTest.pkg" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428617444347" remote="131919540260000000" Dst="1" />
+<file name="SimpleTest.pkg.ini" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428478167978" remote="131919540260000000" Dst="1" />
+<file name="UnitTestCase.pkg" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428151684970" remote="131919540260000000" Dst="1" />
+<file name="WebTester.pkg" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428111596974" remote="131919540270000000" Dst="1" />
+</dwsync>

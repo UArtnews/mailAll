@@ -26,4 +26,6 @@
 <file name="validresource.xml" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711020000000" remote="130628711020000000" Dst="1" />
 <file name="validresource.yml" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711020000000" remote="130628711020000000" Dst="1" />
 <file name="withdoctype.xml" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711020000000" remote="130628711020000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428437196113" remote="131916255520000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428437196113" remote="131919540500000000" Dst="1" />
 </dwsync>

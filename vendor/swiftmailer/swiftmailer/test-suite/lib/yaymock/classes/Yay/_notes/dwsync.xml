@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="Expectation.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428461956703" remote="131916255090000000" Dst="1" />
+<file name="Expectations.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825427965660996" remote="131916255100000000" Dst="1" />
+<file name="Invocation.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428603370476" remote="131916255100000000" Dst="1" />
+<file name="InvocationHandler.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825427865074406" remote="131916255100000000" Dst="1" />
+<file name="InvocationProxy.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428328324940" remote="131916255100000000" Dst="1" />
+<file name="InvocationRecorder.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428638365265" remote="131916255100000000" Dst="1" />
+<file name="Mockery.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825427980438178" remote="131916255100000000" Dst="1" />
+<file name="MockGenerator.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825427842239647" remote="131916255110000000" Dst="1" />
+<file name="MockObject.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428571815518" remote="131916255110000000" Dst="1" />
+<file name="Sequence.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428095063277" remote="131916255110000000" Dst="1" />
+<file name="SimpleInvocation.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428293701355" remote="131916255110000000" Dst="1" />
+<file name="SimpleSequence.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428336395451" remote="131916255110000000" Dst="1" />
+<file name="SimpleState.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825427887151707" remote="131916255110000000" Dst="1" />
+<file name="SimpleStatePredicate.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428458904874" remote="131916255110000000" Dst="1" />
+<file name="State.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428248038107" remote="131916255110000000" Dst="1" />
+<file name="StateMachine.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428683562637" remote="131916255110000000" Dst="1" />
+<file name="StatePredicate.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428150797345" remote="131916255110000000" Dst="1" />
+<file name="Expectation.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428461956703" remote="131919540340000000" Dst="1" />
+<file name="Expectations.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825427965660996" remote="131919540350000000" Dst="1" />
+<file name="Invocation.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428603370476" remote="131919540350000000" Dst="1" />
+<file name="InvocationHandler.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825427865074406" remote="131919540350000000" Dst="1" />
+<file name="InvocationProxy.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428328324940" remote="131919540350000000" Dst="1" />
+<file name="InvocationRecorder.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428638365265" remote="131919540350000000" Dst="1" />
+<file name="Mockery.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825427980438178" remote="131919540350000000" Dst="1" />
+<file name="MockGenerator.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825427842239647" remote="131919540350000000" Dst="1" />
+<file name="MockObject.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428571815518" remote="131919540350000000" Dst="1" />
+<file name="Sequence.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428095063277" remote="131919540350000000" Dst="1" />
+<file name="SimpleInvocation.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428293701355" remote="131919540350000000" Dst="1" />
+<file name="SimpleSequence.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428336395451" remote="131919540360000000" Dst="1" />
+<file name="SimpleState.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825427887151707" remote="131919540360000000" Dst="1" />
+<file name="SimpleStatePredicate.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428458904874" remote="131919540360000000" Dst="1" />
+<file name="State.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428248038107" remote="131919540360000000" Dst="1" />
+<file name="StateMachine.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428683562637" remote="131919540360000000" Dst="1" />
+<file name="StatePredicate.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428150797345" remote="131919540360000000" Dst="1" />
+</dwsync>

@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="adminNav.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109120000000" remote="130748109120000000" Dst="1" />
-<file name="index.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109120000000" remote="130748109120000000" Dst="1" />
-<file name="instances.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109120000000" remote="130748109120000000" Dst="1" />
-<file name="master.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109120000000" remote="130748109120000000" Dst="1" />
-<file name="users.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109120000000" remote="130748109120000000" Dst="1" />
+<file name="adminNav.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131871232730121824" remote="131891092120000000" Dst="1" />
+<file name="index.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131871232730121824" remote="131891092120000000" Dst="1" />
+<file name="instances.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131871232730131801" remote="131891092120000000" Dst="1" />
+<file name="master.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131871232730141781" remote="131891092120000000" Dst="1" />
+<file name="users.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131871232730141781" remote="131891092120000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825427944134509" remote="131916289100000000" Dst="1" />
+<file name="adminNav.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131871232730121824" remote="131916330390000000" Dst="1" />
+<file name="index.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131871232730121824" remote="131916330390000000" Dst="1" />
+<file name="instances.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131871232730131801" remote="131916330390000000" Dst="1" />
+<file name="master.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131871232730141781" remote="131916330390000000" Dst="1" />
+<file name="users.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131871232730141781" remote="131916330390000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825427944134509" remote="131919522000000000" Dst="1" />
 </dwsync>

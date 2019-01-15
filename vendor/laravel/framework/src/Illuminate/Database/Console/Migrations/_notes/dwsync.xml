@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="BaseCommand.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
-<file name="InstallCommand.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
-<file name="MigrateCommand.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
-<file name="MigrateMakeCommand.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
-<file name="RefreshCommand.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
-<file name="ResetCommand.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
-<file name="RollbackCommand.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="130628710360000000" Dst="1" />
+<file name="BaseCommand.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="131916311330000000" Dst="1" />
+<file name="InstallCommand.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="131916311330000000" Dst="1" />
+<file name="MigrateCommand.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="131916311330000000" Dst="1" />
+<file name="MigrateMakeCommand.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="131916311330000000" Dst="1" />
+<file name="RefreshCommand.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="131916311330000000" Dst="1" />
+<file name="ResetCommand.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="131916311330000000" Dst="1" />
+<file name="RollbackCommand.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710360000000" remote="131916311330000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428613570038" remote="131916311330000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428613570038" remote="131919539640000000" Dst="1" />
 </dwsync>

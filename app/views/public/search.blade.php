@@ -45,8 +45,8 @@
                 </ul>
                 {{ $articleResults->appends(array('search' => $searchValue, 'year' => $year, 'month' => $month))->links() }}
             </div>
-            <div class="panel-footer" id="publicationPanelFoot">
-            </div>
+    {{-- <div class="panel-footer" id="publicationPanelFoot">
+    			</div> --}}
         </div>
     </div>
 @stop

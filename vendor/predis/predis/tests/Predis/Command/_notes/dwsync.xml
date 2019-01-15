@@ -67,11 +67,11 @@
 <file name="PubSubSubscribeTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710700000000" remote="130628710700000000" Dst="1" />
 <file name="PubSubUnsubscribeByPatternTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710700000000" remote="130628710700000000" Dst="1" />
 <file name="PubSubUnsubscribeTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710700000000" remote="130628710700000000" Dst="1" />
-<file name="RawCommandTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710700000000" remote="130628710700000000" Dst="1" />
+<file name="RawCommandTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710700000000" remote="131916317370000000" Dst="1" />
 <file name="ScriptedCommandTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710700000000" remote="130628710700000000" Dst="1" />
 <file name="ServerBackgroundRewriteAOFTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710700000000" remote="130628710700000000" Dst="1" />
 <file name="ServerBackgroundSaveTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710700000000" remote="130628710700000000" Dst="1" />
-<file name="ServerClientTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710700000000" remote="130628710700000000" Dst="1" />
+<file name="ServerClientTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710700000000" remote="131916317370000000" Dst="1" />
 <file name="ServerCommandTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710700000000" remote="130628710700000000" Dst="1" />
 <file name="ServerConfigTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710700000000" remote="130628710700000000" Dst="1" />
 <file name="ServerDatabaseSizeTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710700000000" remote="130628710700000000" Dst="1" />
@@ -153,4 +153,6 @@
 <file name="ZSetScanTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710720000000" remote="130628710720000000" Dst="1" />
 <file name="ZSetScoreTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710720000000" remote="130628710720000000" Dst="1" />
 <file name="ZSetUnionStoreTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710720000000" remote="130628710720000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428308668503" remote="131916254440000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428308668503" remote="131919539810000000" Dst="1" />
 </dwsync>

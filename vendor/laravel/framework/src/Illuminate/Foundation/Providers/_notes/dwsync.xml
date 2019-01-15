@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="ArtisanServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710370000000" remote="130628710370000000" Dst="1" />
-<file name="CommandCreatorServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710370000000" remote="130628710370000000" Dst="1" />
-<file name="ComposerServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710370000000" remote="130628710370000000" Dst="1" />
-<file name="ConsoleSupportServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710370000000" remote="130628710370000000" Dst="1" />
-<file name="KeyGeneratorServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710370000000" remote="130628710370000000" Dst="1" />
-<file name="MaintenanceServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710370000000" remote="130628710370000000" Dst="1" />
-<file name="OptimizeServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710370000000" remote="130628710370000000" Dst="1" />
-<file name="PublisherServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628708250000000" remote="130628708250000000" Dst="1" />
-<file name="RouteListServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710370000000" remote="130628710370000000" Dst="1" />
-<file name="ServerServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710370000000" remote="130628710370000000" Dst="1" />
-<file name="TinkerServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710370000000" remote="130628710370000000" Dst="1" />
+<file name="ArtisanServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710370000000" remote="131916311560000000" Dst="1" />
+<file name="CommandCreatorServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710370000000" remote="131916311560000000" Dst="1" />
+<file name="ComposerServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710370000000" remote="131916311560000000" Dst="1" />
+<file name="ConsoleSupportServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710370000000" remote="131916311560000000" Dst="1" />
+<file name="KeyGeneratorServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710370000000" remote="131916311560000000" Dst="1" />
+<file name="MaintenanceServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710370000000" remote="131916311560000000" Dst="1" />
+<file name="OptimizeServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710370000000" remote="131916311560000000" Dst="1" />
+<file name="PublisherServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628708250000000" remote="131916311560000000" Dst="1" />
+<file name="RouteListServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710370000000" remote="131916311560000000" Dst="1" />
+<file name="ServerServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710370000000" remote="131916311560000000" Dst="1" />
+<file name="TinkerServiceProvider.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710370000000" remote="131916311560000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825427970199228" remote="131916311560000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825427970199228" remote="131919539650000000" Dst="1" />
 </dwsync>

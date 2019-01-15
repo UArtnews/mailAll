@@ -22,19 +22,11 @@ class HomeController extends BaseController {
 			'instances' => Instance::all(),
 		);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> mailAllProd/master
-=======
->>>>>>> mailAllProd/master
         $data['types'] = array('success', 'info', 'warning', 'danger');
 
         return View::make('publicLanding', $data);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 	}
 
 	public function editors()
@@ -48,28 +40,6 @@ class HomeController extends BaseController {
         return View::make('editorLanding', $data);
 	}
 
-=======
-	}
-
-=======
-	}
-
->>>>>>> mailAllProd/master
-	public function editors()
-	{
-
-		$data = array(
-			'instances' => Instance::all(),
-		);
-
-        $data['types'] = array('success', 'info', 'warning', 'danger');
-        return View::make('editorLanding', $data);
-	}
-
-<<<<<<< HEAD
->>>>>>> mailAllProd/master
-=======
->>>>>>> mailAllProd/master
 
 
 }

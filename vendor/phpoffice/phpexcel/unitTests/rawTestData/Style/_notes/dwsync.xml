@@ -5,4 +5,6 @@
 <file name="ColorGetGreen.data" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628726960000000" remote="130628726960000000" Dst="1" />
 <file name="ColorGetRed.data" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628726960000000" remote="130628726960000000" Dst="1" />
 <file name="NumberFormat.data" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628726960000000" remote="130628726960000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428293063061" remote="131916254330000000" Dst="1" />
+<file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428293063061" remote="131919539770000000" Dst="1" />
 </dwsync>

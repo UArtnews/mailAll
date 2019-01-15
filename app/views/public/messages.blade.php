@@ -16,3 +16,4 @@
     <strong>{{ Session::get('error') }}</strong>
 </div>
 @endif
+
