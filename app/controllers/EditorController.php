@@ -52,7 +52,8 @@ class EditorController extends \BaseController
 		$parameters['data']['h1color'] = $util->getTweakableByParam("publication-h1-color", $parameters['data']['tweakables']);
 		$parameters['data']['h1fontsize'] = $util->getTweakableByParam("publication-h1-font-size", $parameters['data']['tweakables']);	
 		$parameters['data']['h1fontweight'] = $util->getTweakableByParam("publication-h1-font-weight", $parameters['data']['tweakables']);
-		$parameters['data']['h1style'] = ' Style="color: ' . $parameters['data']['h1color'] . '; font-size: ' . $parameters['data']['h1fontsize'] . ';  font-weight: bold; "';
+		$parameters['data']['h1font'] = $util->getTweakableByParam("publication-h1-font", $parameters['data']['tweakables']);
+		$parameters['data']['h1style'] = ' Style="color: ' . $parameters['data']['h1color'] . '; font-size: ' . $parameters['data']['h1fontsize'] . ';  font-weight: bold; font-family:'. str_replace('"', '', $parameters['data']['h1font']) . '!important "';
 		//print( $parameters['data']['tweakables'][0]->id . "font-size");
 		
 		
