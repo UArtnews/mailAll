@@ -52,7 +52,8 @@ class EditorController extends \BaseController
 		$parameters['data']['h1color'] = $util->getTweakableByParam("publication-h1-color", $parameters['data']['tweakables']);
 		$parameters['data']['h1fontsize'] = $util->getTweakableByParam("publication-h1-font-size", $parameters['data']['tweakables']);	
 		$parameters['data']['h1fontweight'] = $util->getTweakableByParam("publication-h1-font-weight", $parameters['data']['tweakables']);
-		$parameters['data']['h1style'] = ' Style="color: ' . $parameters['data']['h1color'] . '; font-size: ' . $parameters['data']['h1fontsize'] . ';  font-weight: bold; "';
+		$parameters['data']['h1font'] = $util->getTweakableByParam("publication-h1-font", $parameters['data']['tweakables']);
+		$parameters['data']['h1style'] = ' Style="color: ' . $parameters['data']['h1color'] . '; font-size: ' . $parameters['data']['h1fontsize'] . ';  font-weight: bold; font-family:'. str_replace('"', '', $parameters['data']['h1font']) . '!important "';
 		//print( $parameters['data']['tweakables'][0]->id . "font-size");
 		
 		
@@ -103,9 +104,35 @@ class EditorController extends \BaseController
         $data['publication'] = $publication;
 		$data['emailFavoritesData'] = Tweakable::where('parameter', "emailfavorite")->where('instance_id', $data['instance']->id)->get();
 		$data['emailAudienceData'] = Tweakable::where('parameter', "emailaudience")->where('instance_id', $data['instance']->id)->get();
+		$data['baseURL'] = url();
+
+        return View::make('editor.editorDefault', $data);
+    }
+
+    ////////////////////////
+    //  preview/{instanceName}{publicationid}
+    ///////////////////////
+    public function previewEmail($instanceName, $publication_id){
+		$instance = Instance::where('name', $instanceName)->first();
+        
+        $data = array(
+            'instance'		=> $instance,
+            'instanceId'	=> $instance->id,
+            'instanceName'	=> $instance->name,
+            'tweakables'               => reindexArray($instance->tweakables()->get(), 'parameter', 'value'),
+            'default_tweakables'       => reindexArray(DefaultTweakable::all(), 'parameter', 'value'),
+            'tweakables_types'         => reindexArray(DefaultTweakable::all(), 'parameter', 'type'),
+            'default_tweakables_names' => reindexArray(DefaultTweakable::all(), 'parameter', 'display_name'),
+            'isEditable'               => false,
+            'shareIcons'               => false,
+        );
 		
+		//Get This Publication
+        $publication = Publication::where('id', $publication_id)->where('instance_id', $instance->id)->withArticles()->first();
+		$data['publication'] = $publication;
 		/*++++++++++++++++++EMAILED CONTENT PREVIEW+++++++++++++++++++++++++++++++++++++++++++*/
-		/*$data['isEmail'] = true;
+		$data['isEmail'] = true;
+		 $data['h1style'] = "";
 		$data['shareIcons'] = '';
 		$data['isEditable'] = true;
 		$html = View::make('emailPublication', $data)->render();
@@ -116,16 +143,19 @@ class EditorController extends \BaseController
         $inliner->setCSS($css);
 
       	$data['inlineHTML'] = $inliner->convert();
-		$data['isEmail'] = true;*/
 		/*++++++++++++++++++EMAILED CONTENT PREVIEW+++++++++++++++++++++++++++++++++++++++++++*/
 		
+		//print("<!-- Instance OF INLINE HTML -> -->" . $instanceName . $publication_id . "</body></html>  <!-- END OF Instance HTML -> -->");
+			//$data['inlineHTML'] = $inlineHTML;
 		
-        return View::make('editor.editorDefault', $data);
+        return View::make('article.viewArticle', $data);
     }
-
-	////////////////////////
-    //  downLoadExcel/{instanceName}/publicationLogs
-    ///////////////////////
+	
+	
+	
+	////////////////////////////////////////////////////
+    //  downLoadExcel/{instanceName}/publicationLogs //
+    ///////////////////////////////////////////////////
     public function downLoadExcel($action,$data){
         //$instanceID = $instance->id;
         //Get most recent live publication
@@ -400,20 +430,8 @@ class EditorController extends \BaseController
 		
 		$data['emailFavoritesData'] = Tweakable::where('parameter', "emailfavorite")->where('instance_id', $data['publication']->instance_id)->get();
 		$data['emailAudienceData'] = Tweakable::where('parameter', "emailaudience")->where('instance_id', $data['publication']->instance_id)->get();
-		/*++++++++++++++++++EMAILED CONTENT PREVIEW+++++++++++++++++++++++++++++++++++++++++++*/
-		/*$data['isEmail'] = true;
-		$data['shareIcons'] = '';
-		$data['isEditable'] = true;
-		$html = View::make('emailPublication', $data)->render();
-        $css = View::make('emailStyle', $data)->render();
+		$data['baseURL'] = url();
 
-        $inliner = new \TijsVerkoyen\CssToInlineStyles\CssToInlineStyles();
-        $inliner->setHTML($html);
-        $inliner->setCSS($css);
-
-      	$data['inlineHTML'] = $inliner->convert();
-		$data['isEmail'] = true;*/
-		/*++++++++++++++++++EMAILED CONTENT PREVIEW+++++++++++++++++++++++++++++++++++++++++++*/	
         return View::make('editor.publicationEditor', $data);
     }
 

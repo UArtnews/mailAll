@@ -5,4 +5,7 @@
 <file name="StringReplacementFilterTest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748073260000000" remote="131916317690000000" Dst="1" />
 <file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428338196648" remote="131916255180000000" Dst="1" />
 <file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428338196648" remote="131919540390000000" Dst="1" />
+<file name="ByteArrayReplacementFilterTest.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109260000000" remote="130748109260000000" Dst="1" />
+<file name="StringReplacementFilterFactoryTest.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109260000000" remote="130748109260000000" Dst="1" />
+<file name="StringReplacementFilterTest.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109260000000" remote="130748109260000000" Dst="1" />
 </dwsync>

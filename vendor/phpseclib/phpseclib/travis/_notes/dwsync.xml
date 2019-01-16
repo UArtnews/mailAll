@@ -11,4 +11,7 @@
 <file name="upload-code-coverage.sh" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428481668953" remote="131916254370000000" Dst="1" />
 <file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428075145133" remote="131919539790000000" Dst="1" />
 <file name="upload-code-coverage.sh" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428481668953" remote="131919539800000000" Dst="1" />
+<file name="code_coverage_id_rsa" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109210000000" remote="130748109210000000" Dst="1" />
+<file name="run-phpunit.sh" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109210000000" remote="130748109210000000" Dst="1" />
+<file name="setup-secure-shell.sh" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109210000000" remote="130748109210000000" Dst="1" />
 </dwsync>

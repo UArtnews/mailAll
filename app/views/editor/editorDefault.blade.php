@@ -12,34 +12,35 @@
 		<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 		<!-- ++++++++++++++++++++++ FOR TESTING ONLY +++++++++++++++++++++++++++++++++++++ -->
 		<p>
-		  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+		  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" id="previewEmail">
 			EMAIL PREVIEW
 		  </a>
 
 		</p>
 		<div class="collapse" id="collapseExample">
 		  <div class="card card-body" id="emailBody">
-			<!-- ++++++++++++++++++++++ INLINE HTML FOR EMAIL +++++++++++++++++++++++++++++++++++++ -->			  
+			<!-- ++++++++++++++++++++++ INLINE HTML FOR EMAIL +++++++++++++++++++++++++++++++++++++ -->	
+			  <iframe id="previewFrame" src="{{ $baseURL }}/preview/{{ $instance->name }}/{{ $publication->id }}" style="width: 100%; height: 500px; overflow: hidden;"  scrolling="no"></iframe>
 			<!-- ++++++++++++++++++++++ INLINE HTML FOR EMAIL +++++++++++++++++++++++++++++++++++++ -->	  
 		  </div>
 		</div> 
 		<script>
-			$( document ).ready(function() {
-				var decodeHTML = function (html) {
-					var txt = document.createElement('textarea');
-					txt.innerHTML = html;
-					return txt.value;
-				};
-					// Example
-			// ++++++++++++++++++++++ INLINE HTML FOR EMAIL +++++++++++++++++++++++++++++++++++++					  
-				var decoded = decodeHTML('{{{ isset($inlineHTML) ? str_replace("'", "`", preg_replace('/[\r\n]+/','', html_entity_decode($inlineHTML))) : 'Send an Email to see the email body here.' }}}');				  
-    				$("#emailBody").html(decoded);
-				  }); //end of doc ready function
+			  $('#previewEmail').click(function () {
+				  $('#previewFrame').attr('src', '{{ $baseURL }}/preview/{{ $instance->name }}/{{ $publication->id }}');
+			  });
+				window.addEventListener('message', function(e) {
+					// message passed can be accessed in "data" attribute of the event object
+					var scroll_height = e.data;
+
+					document.getElementById('previewFrame').style.height = scroll_height + 'px'; 
+				} , false);
+			
+			
+			
 		</script>
 			<!-- ++++++++++++++++++++++ FOR TESTING ONLY +++++++++++++++++++++++++++++++++++++ -->
-			<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			
-			
-			
+			<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 		
+
 			
 			
 			

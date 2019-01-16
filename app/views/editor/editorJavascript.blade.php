@@ -215,7 +215,37 @@
 
     });
 
-
+        //////////////////////////////////////////
+        //  NEW ARTICLE EDITABLE CLICK HANDLER  //
+        //////////////////////////////////////////
+	
+	function InitTinyMCE(elem){
+			tinymce.init({
+				  selector: ".editable",
+				  body_class: 'my_class',
+				  inline: true,
+				  menubar: false,
+				  browser_spellcheck: true,
+					 image_advtab: true,
+				  //file_browser_callback : 'myFileBrowser',
+				  plugins: [
+					'advlist autolink lists link imagetools image charmap print preview anchor textcolor',
+					'searchreplace visualblocks code fullscreen',
+					'insertdatetime media table contextmenu paste code help wordcount'
+				  ],
+				  toolbar1: 'insert | undo redo | code removeformat | formatselect',
+				  toolbar2: 'bold italic backcolor | alignleft aligncenter alignright alignjustify',
+				  toolbar3: 'bullist numlist | outdent indent | image | help',
+					toolbar4: 'cut copy | paste pastetext',
+				  content_css: [
+					'//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+					'//www.tinymce.com/css/codepen.min.css'],
+					 //image_list: "{{ URL::to('json/'.$instanceName.'/images') }}"
+					file_picker_callback: function(callback, value, meta) {
+						imageFilePicker(callback, value, meta);
+					}				
+				});// end of tinymce
+	}
     function editorClick(elem){
         //Get idNum
         if(typeof elem.id == 'undefined'){
@@ -242,7 +272,7 @@
             EditorData.contents[idNum].content = $('#articleContent'+idNum).html();
             getArticleState(idNum);
         }
-
+		InitTinyMCE($('#articleContent'+idNum));
         //Remove all other editorSaveRevert divs
         $('.editorSaveRevert').remove();
 

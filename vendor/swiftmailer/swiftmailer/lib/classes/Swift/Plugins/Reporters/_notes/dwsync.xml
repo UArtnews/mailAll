@@ -4,4 +4,6 @@
 <file name="HtmlReporter.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748073230000000" remote="131916317510000000" Dst="1" />
 <file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131825428282621264" remote="131916254540000000" Dst="1" />
 <file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428282621264" remote="131919539830000000" Dst="1" />
+<file name="HitReporter.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109230000000" remote="130748109230000000" Dst="1" />
+<file name="HtmlReporter.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="130748109230000000" remote="130748109230000000" Dst="1" />
 </dwsync>
