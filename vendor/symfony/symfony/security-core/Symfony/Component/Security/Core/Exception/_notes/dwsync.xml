@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AccessDeniedException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="AccountExpiredException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="AccountStatusException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="AuthenticationCredentialsNotFoundException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="AuthenticationException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="AuthenticationServiceException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="BadCredentialsException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="CookieTheftException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="CredentialsExpiredException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="DisabledException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="ExceptionInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="InsufficientAuthenticationException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="InvalidArgumentException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="InvalidCsrfTokenException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="LockedException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="LogoutException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="NonceExpiredException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="ProviderNotFoundException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="RuntimeException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="SessionUnavailableException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="TokenNotFoundException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="UnsupportedUserException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="UsernameNotFoundException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+</dwsync>

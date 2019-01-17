@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AbstractSmtpTransport.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109230000000" remote="130748109230000000" Dst="1" />
+<file name="EsmtpHandler.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109230000000" remote="130748109230000000" Dst="1" />
+<file name="EsmtpTransport.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109230000000" remote="130748109230000000" Dst="1" />
+<file name="FailoverTransport.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109230000000" remote="130748109230000000" Dst="1" />
+<file name="IoBuffer.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109230000000" remote="130748109230000000" Dst="1" />
+<file name="LoadBalancedTransport.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109230000000" remote="130748109230000000" Dst="1" />
+<file name="MailInvoker.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109230000000" remote="130748109230000000" Dst="1" />
+<file name="MailTransport.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109230000000" remote="130748109230000000" Dst="1" />
+<file name="NullTransport.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109230000000" remote="130748109230000000" Dst="1" />
+<file name="SendmailTransport.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109230000000" remote="130748109230000000" Dst="1" />
+<file name="SimpleMailInvoker.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109230000000" remote="130748109230000000" Dst="1" />
+<file name="SmtpAgent.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109230000000" remote="130748109230000000" Dst="1" />
+<file name="SpoolTransport.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109230000000" remote="130748109230000000" Dst="1" />
+<file name="StreamBuffer.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109230000000" remote="130748109230000000" Dst="1" />
+</dwsync>

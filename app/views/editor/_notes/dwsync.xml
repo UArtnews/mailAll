@@ -29,8 +29,8 @@
 <file name="articleEditor.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131898753283590734" remote="131916330400000000" Dst="1" />
 <file name="articleList.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131916049040376153" remote="131916330400000000" Dst="1" />
 <file name="cartModal.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109120000000" remote="131916330400000000" Dst="1" />
-<file name="editorDefault.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131917150373123242" remote="131917150380000000" Dst="1" />
-<file name="editorJavascript.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131915406249033010" remote="131916330400000000" Dst="1" />
+<file name="editorDefault.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131920555110284916" remote="131922092640000000" Dst="1" />
+<file name="editorJavascript.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131920464010052206" remote="131922092650000000" Dst="1" />
 <file name="editorLogin.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131898051371418552" remote="131916320130000000" Dst="1" />
 <file name="editorNav.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131898777574955481" remote="131916330410000000" Dst="1" />
 <file name="editorStyle.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131909139681000677" remote="131916330410000000" Dst="1" />
@@ -42,7 +42,7 @@
 <file name="master.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131909183887089219" remote="131916330410000000" Dst="1" />
 <file name="modalMaster.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131909183590139135" remote="131916320140000000" Dst="1" />
 <file name="newPublicationEditor.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130748109130000000" remote="131916330420000000" Dst="1" />
-<file name="publicationEditor.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131917150269445684" remote="131917150300000000" Dst="1" />
+<file name="publicationEditor.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131920563312305816" remote="131922094150000000" Dst="1" />
 <file name="publicationList.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131916092857833365" remote="131916330420000000" Dst="1" />
 <file name="publicationLog.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131916093505836647" remote="131916320140000000" Dst="1" />
 <file name="reportMigration.blade.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131891030219955128" remote="131916320140000000" Dst="1" />
@@ -54,4 +54,6 @@
 <file name=".ptp-sync-folder" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131825428255051154" remote="131919522010000000" Dst="1" />
 <file name="articleList.blade_kpx34jzump.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131897133620000000" remote="131897133620000000" Dst="1" />
 <file name="editorLogin.php" server="webprd2.uakron.edu//wwws/share/mailAllDevSource/" local="131897967450000000" remote="131897967450000000" Dst="1" />
+<file name="articleList.blade_kpx34jzump.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131897133620000000" remote="131922092640000000" Dst="1" />
+<file name="editorLogin.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="131897967450000000" remote="131922092650000000" Dst="1" />
 </dwsync>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AccessDeniedHttpException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
+<file name="BadRequestHttpException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
+<file name="ConflictHttpException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
+<file name="FatalErrorException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
+<file name="FlattenException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
+<file name="GoneHttpException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
+<file name="HttpException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
+<file name="HttpExceptionInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
+<file name="LengthRequiredHttpException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
+<file name="MethodNotAllowedHttpException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
+<file name="NotAcceptableHttpException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
+<file name="NotFoundHttpException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
+<file name="PreconditionFailedHttpException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
+<file name="PreconditionRequiredHttpException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
+<file name="ServiceUnavailableHttpException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
+<file name="TooManyRequestsHttpException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
+<file name="UnauthorizedHttpException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
+<file name="UnsupportedMediaTypeHttpException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710970000000" remote="130628710970000000" Dst="1" />
+</dwsync>

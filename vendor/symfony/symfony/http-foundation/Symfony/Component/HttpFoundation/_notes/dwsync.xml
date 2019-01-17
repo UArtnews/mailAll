@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name=".gitignore" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710940000000" remote="130628710940000000" Dst="1" />
+<file name="AcceptHeader.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710940000000" remote="130628710940000000" Dst="1" />
+<file name="AcceptHeaderItem.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710940000000" remote="130628710940000000" Dst="1" />
+<file name="ApacheRequest.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710940000000" remote="130628710940000000" Dst="1" />
+<file name="BinaryFileResponse.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710940000000" remote="130628710940000000" Dst="1" />
+<file name="CHANGELOG.md" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710940000000" remote="130628710940000000" Dst="1" />
+<file name="composer.json" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710960000000" remote="130628710960000000" Dst="1" />
+<file name="Cookie.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710940000000" remote="130628710940000000" Dst="1" />
+<file name="ExpressionRequestMatcher.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710940000000" remote="130628710940000000" Dst="1" />
+<file name="FileBag.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710940000000" remote="130628710940000000" Dst="1" />
+<file name="HeaderBag.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710950000000" remote="130628710950000000" Dst="1" />
+<file name="IpUtils.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710950000000" remote="130628710950000000" Dst="1" />
+<file name="JsonResponse.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710950000000" remote="130628710950000000" Dst="1" />
+<file name="LICENSE" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710950000000" remote="130628710950000000" Dst="1" />
+<file name="ParameterBag.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710950000000" remote="130628710950000000" Dst="1" />
+<file name="phpunit.xml.dist" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710960000000" remote="130628710960000000" Dst="1" />
+<file name="README.md" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710950000000" remote="130628710950000000" Dst="1" />
+<file name="RedirectResponse.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710950000000" remote="130628710950000000" Dst="1" />
+<file name="Request.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710950000000" remote="130628710950000000" Dst="1" />
+<file name="RequestMatcher.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710950000000" remote="130628710950000000" Dst="1" />
+<file name="RequestMatcherInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710950000000" remote="130628710950000000" Dst="1" />
+<file name="RequestStack.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710950000000" remote="130628710950000000" Dst="1" />
+<file name="Response.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710950000000" remote="130628710950000000" Dst="1" />
+<file name="ResponseHeaderBag.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710950000000" remote="130628710950000000" Dst="1" />
+<file name="ServerBag.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710950000000" remote="130628710950000000" Dst="1" />
+<file name="StreamedResponse.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710950000000" remote="130628710950000000" Dst="1" />
+</dwsync>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="Autoloader.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710640000000" remote="130628710640000000" Dst="1" />
+<file name="BasicClientInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710640000000" remote="130628710640000000" Dst="1" />
+<file name="Client.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710640000000" remote="130628710640000000" Dst="1" />
+<file name="ClientException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710640000000" remote="130628710640000000" Dst="1" />
+<file name="ClientInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710640000000" remote="130628710640000000" Dst="1" />
+<file name="CommunicationException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710670000000" remote="130628710670000000" Dst="1" />
+<file name="ExecutableContextInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
+<file name="Helpers.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
+<file name="NotSupportedException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
+<file name="PredisException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710680000000" remote="130628710680000000" Dst="1" />
+<file name="ResponseError.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710690000000" remote="130628710690000000" Dst="1" />
+<file name="ResponseErrorInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710690000000" remote="130628710690000000" Dst="1" />
+<file name="ResponseObjectInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710690000000" remote="130628710690000000" Dst="1" />
+<file name="ResponseQueued.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710690000000" remote="130628710690000000" Dst="1" />
+<file name="ServerException.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628710690000000" remote="130628710690000000" Dst="1" />
+</dwsync>

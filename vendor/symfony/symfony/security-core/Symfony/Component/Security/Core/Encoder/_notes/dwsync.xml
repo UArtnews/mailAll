@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="BasePasswordEncoder.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="BCryptPasswordEncoder.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="EncoderFactory.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="EncoderFactoryInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="MessageDigestPasswordEncoder.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="PasswordEncoderInterface.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="Pbkdf2PasswordEncoder.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+<file name="PlaintextPasswordEncoder.php" server="webprd2.uakron.edu//wwws/share/mailAllSource/" local="130628711030000000" remote="130628711030000000" Dst="1" />
+</dwsync>
