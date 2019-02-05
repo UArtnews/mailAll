@@ -15,11 +15,11 @@
 
 		
         //If title or body is empty or boilerplate, don't bother saving the article, alert the user
-        if(title == '[Click here to begin editing Title]' || title.length == 0){
+        if(title.indexOf('[Click here to begin editing Title]') !== -1 || title.length == 0){
             alert('Cannot save empty or boilerplate title');
             return;
         }
-        if(body == '[Click here to begin editing Body]' || body.length == 0){
+        if(body.indexOf('[Click here to begin editing Body]') !== -1 || body.length == 0){
             alert('Cannot save empty or boilerplate content');
             return;
         }
@@ -35,13 +35,31 @@
                 'title': title,
                 'content': body
 				
-        }/*,
-                    error : function(XMLHttpRequest, textStatus, errorThrown) {
-                        alert(XMLHttpRequest.responseText);
-                    }*/
+        },/*,*/
+        error : function(XMLHttpRequest, textStatus, errorThrown) {
+                        //alert(XMLHttpRequest.responseText);
+		    /*var locationURL = window.location.href.split('?')[0];
+			locationURL = locationURL.split('#')[0];
+			location.replace(locationURL + "?status=error");*/
+			
+			var currTitle = $('#newArticleTitle').html();
+			var msgctr = new messageCenter('error','We are sorry, but there has been an error with "' +currTitle + '".');
+			msgctr.response  = XMLHttpRequest.responseText;
+			msgctr.displayMsg();
+        }
         }).done(function(data){
 			//console.log('Ajax End');
-            location.reload();
+            //location.reload();
+			var currTitle = $('#newArticleTitle').html();
+			var msgctr = new messageCenter('success','"' +currTitle + '" has been created.');
+			msgctr.storeSession();
+			location.reload();
+			/*var locationURL = window.location.href.split('?')[0];
+			locationURL = locationURL.split('#')[0];
+			location.replace(locationURL + "?status=saved");*/
+			//$(".newArticle").hide();
+			//$("#newArticleButton").show();
+			
 			
         });
 		
@@ -62,7 +80,10 @@
                     'id': id,
             }
             }).done(function(data){
-                location = '{{ URL::to('edit/'.$instance->name.'/articles') }}'
+				var currTitle = $('#articleTitle'+id).html();
+				var msgctr = new messageCenter('warning','"' +currTitle + '" has been deleted.');
+				msgctr.storeSession();
+                location = '{{ URL::to('edit/'.$instance->name.'/articles') }}';				
             });
         }
     }
@@ -75,6 +96,8 @@
         $('#articleTitle'+id).html(EditorData.contents[id].title);
         $('#articleContent'+id).html(EditorData.contents[id].content);
         getArticleState(id);
+		var msgctr = new messageCenter('success','"' + EditorData.contents[id].title + '" has been reverted.');
+		msgctr.displayMsg();
 
     }
 
@@ -108,11 +131,40 @@
                 }
         }).done(function(data){
             console.log(data);
+			var currTitle = $('#articleTitle'+id).html();
             getArticleState(id);
+			var msgctr = new messageCenter('success','"' +currTitle + '" has been updated.');
+			msgctr.displayMsg();
+			//userMessage('"' +currTitle + '" has been updated.','success');
         });
 
     }
+    ///////////////////////////////////////////////////////////////////
+    //  Update the Cart Modal to reflect any changes                 //
+    //  1. checks against the body of the email   				     //
+    //  2. if article exists in body change button to red to indicate//
+	//	   not available to add to email publication (already added) //
+    ///////////////////////////////////////////////////////////////////
+	function updateCart () {
+		   $('.addCartItem').each(function(index, elem){
+				var elementID = $(elem).attr('id');
+				var articleID = elementID.replace("addCartArticle", "");
+				var compareArticleID = '#article' + articleID;
+				var articleExists = $('.article-container').find(compareArticleID);
+			   console.log(articleExists.length);
+			   if(articleExists.length > 0){
+				  $('#' + elementID + " .btn-success").hide();
+				  $('#' + elementID + " .btn-danger").show();
+			   }else{
+				  $('#' + elementID + " .btn-success").show();
+				  $('#' + elementID + " .btn-danger").hide();
+			   }
+			});
+		var msgctr = new messageCenter('success','');
+		msgctr.destroy();
 
+	}//end updateCart
+	
     ////////////////////////////////////////////////////
     //  Initialize everything                        //
     //  1. Mouse-Over-Hitboxes for save indicators   //
@@ -120,6 +172,25 @@
     ////////////////////////////////////////////////////
     $(document).ready(function(){
 
+		console.log("{{ Input::get('status') }}");
+		//
+		//CONFIGURE USER MESSAGES
+		//++++++++++++++++++++++++++++++++++++++++++++++++
+		var articleStatus = "{{ Input::get('status') }}";
+		var cartElementID = "#addFromCartModal{{ isset($publication->id) ? $publication->id : '' }}";
+		
+		console.log('publication id {{ isset($publication->id) ? $publication->id : '' }} addFromCartModal154431');
+//++++++++++++++++++CHECK STATUS OF ARTICLES FOR CART MODAL+++++++++++++++++++++++++++++++++++++++++
+//+++++++++++++++++LOOK GETTING ELEMENT BY ITS ATTRIBUTE++++++++++++++++++++++++++++++++++++++++++++
+        $("button[data-target='" + cartElementID +"']").click(function(){ 
+				updateCart ();
+        });		
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		var msgctr = new messageCenter('','');
+		msgctr.retrieveSession();
+		//
+		//CONFIGURE USER MESSAGES
+		//++++++++++++++++++++++++++++++++++++++++++++++++
         //Prepare mouseover on side-indicators
         $('.side-indicator-hitbox').hover(function(){
             //Hover On
@@ -141,10 +212,13 @@
 			  inline: true,
 			  menubar: false,
 			  browser_spellcheck: true,
-				  image_advtab: true,
+		      image_advtab: false,
+			  relative_urls : false,
+			  remove_script_host : false,
+			  convert_urls : true,
 			  //file_browser_callback : 'myFileBrowser',
 			  plugins: [
-				'advlist autolink lists link imagetools image charmap print preview anchor textcolor',
+				'advlist autolink lists link image charmap print preview anchor textcolor',
 				'searchreplace visualblocks code fullscreen',
 				'insertdatetime media table contextmenu paste code help wordcount'
 			  ],
@@ -167,10 +241,13 @@
 			  inline: true,
 			  menubar: false,
 			  browser_spellcheck: true,
-				 image_advtab: true,
+			  relative_urls : false,
+			  remove_script_host : false,
+			  convert_urls : true,
+			  image_advtab: false,
 			  //file_browser_callback : 'myFileBrowser',
 			  plugins: [
-				'advlist autolink lists link imagetools image charmap print preview anchor textcolor',
+				'advlist autolink lists link image charmap print preview anchor textcolor',
 				'searchreplace visualblocks code fullscreen',
 				'insertdatetime media table contextmenu paste code help wordcount'
 			  ],
@@ -226,10 +303,13 @@
 				  inline: true,
 				  menubar: false,
 				  browser_spellcheck: true,
-					 image_advtab: true,
+				  image_advtab: false,
+				  relative_urls : false,
+				  remove_script_host : false,
+				  convert_urls : true,
 				  //file_browser_callback : 'myFileBrowser',
 				  plugins: [
-					'advlist autolink lists link imagetools image charmap print preview anchor textcolor',
+					'advlist autolink lists link image charmap print preview anchor textcolor',
 					'searchreplace visualblocks code fullscreen',
 					'insertdatetime media table contextmenu paste code help wordcount'
 				  ],
@@ -518,16 +598,20 @@
             console.log(data);
             if(data['success']){
                 content = '';
+				label='';
                 count = 0;
 
                 $.each(data.cart, function(article_id, article){
                     content += articleListItem(article_id, article);
+					label = article + "," + label;
                     count++;
                 });
 
                 $('.cartList').html(content);
                 $('.cartCountBadge').text(count);
-
+				//+++++++++++++++++++++++ALERT USER THE ADDITION WAS A SUCCESS+++++++++++++++++++++++++
+				var msgctr = new messageCenter('success','"' + label + '" has been added to cart.');
+				msgctr.displayMsg();
                 //Toggle indicator in articles
                 if( '{{ $action }}' == 'articles'){
                     $('.addToCartButton'+idNum).attr('onclick', 'removeArticleFromCart('+idNum+');');
@@ -550,16 +634,20 @@
             console.log(data);
             if(data['success']){
                 content = '';
+				label='';
                 count = 0;
 
                 $.each(data.cart, function(article_id, article){
                     content += articleListItem(article_id, article);
+					label = article + "," + label;
                     count++;
                 });
 
                 $('.cartList').html(content);
                 $('.cartCountBadge').text(count);
-
+				//+++++++++++++++++++++++ALERT USER THE ADDITION WAS A SUCCESS+++++++++++++++++++++++++
+				var msgctr = new messageCenter('success','"' + label + '" has been added to cart.');
+				msgctr.displayMsg();
                 //Toggle indicator in articles
                 if( '{{ $action }}' == 'articles'){
                     $('.addToCartButton'+idNum).attr('onclick', 'removeArticleFromCart('+idNum+');');
@@ -583,17 +671,23 @@
             console.log(data);
             if(data['success']){
                 content = '';
+				label = '';
                 count = 0;
 
                 $.each(data.cart, function(article_id, article){
                     content += articleListItem(article_id, article);
+					label = article + "," + label;
                     count++;
-                });
-
+                });			
                 if(count == 0){
                     content = '<li id="emptyCartItem" class="list-group-item list-group-item-warning">There are no articles in your cart!</li>';
                 }
-
+				if(label.length < 1){ label = "This article";}
+				//+++++++++++++++++++++++ALERT USER THE ADDITION WAS A SUCCESS+++++++++++++++++++++++++
+				var msgctr = new messageCenter('warning','"' + label + '" has been removed to cart.');
+				msgctr.displayContainer = "#cartModal .modal-dialog";
+				msgctr.displayMsg();
+				
                 $('.cartList').html(content);
                 $('.cartCountBadge').text(count);
 
@@ -666,6 +760,9 @@
     function addArticleToExistingPublication(article_id, publication_id, doSave){
 		
         if($('#publication'+publication_id+' #article'+article_id).length > 0){
+			var msgctr = new messageCenter('success','Ooops! That article has already been added to this publication.');
+			msgctr.displayContainer = "#addFromCartModal"+publication_id + " .modal-dialog";
+			msgctr.displayMsg();
             return;
         }
 
@@ -696,6 +793,13 @@
             $('.editorSaveRevert').remove();
             if(doSave)
                 savePublicationOrder(publication_id);
+			//++++++++++ALERT USER THE OPERATION IS COMPLETE ++++++++++++++++++++++++++++++
+			label = $('#articleTitle'+article_id).text();
+			var msgctr = new messageCenter('success','"' + label + '" has been added to publication from cart.');
+			msgctr.displayContainer = "#addFromCartModal"+publication_id + " .modal-dialog";
+			msgctr.displayMsg();
+			
+			
         })
 		.fail(function (jqXHR, textStatus, errorThrown) { console.log(jqXHR) });
     }
@@ -707,13 +811,20 @@
     }
 
     function addArticleCartToExistingPublication(publication_id){
+		label = '';
         $('#addFromCartModal'+publication_id+' .addCartItem').each(function(index, elem){			
             addArticleToExistingPublication($(elem).attr('id').replace('addCartArticle',''), publication_id, false);
-        });
-
+			label = $('#articleTitle' + $(elem).attr('id').replace('addCartArticle','')).text() + "," + label;
+        });		
+		
+		//var msgctr = new messageCenter('success','"' + label + '" has been added to publication from cart.');
+		
+		
         //TODO: Fix this so it's not a dumb timeout
         setTimeout(function(){
             savePublicationOrder(publication_id);
+			updateCart ();
+			//msgctr.displayMsg();
         },5000);
     }
 
@@ -838,6 +949,9 @@
             }
         }).done(function(data){
             console.log(data);
+			var msgctr = new messageCenter('success','This article has been moved.');
+			msgctr.displayMsg();
+			
         });
 
     }
@@ -954,6 +1068,7 @@ var imageFilePicker = function (callback, value, meta) {
 				console.log("derp");
 				var cf = $(".mce-container-body").find( "iframe" );
 				var selectedImage = $( cf ).contents().find("#image_select").val();
+				selectedImage = selectedImage.replace("https:", "http:");
 				var inputs = $( "input" );
 				$(".mce-filepicker").find( inputs ).val( selectedImage );
 				//console.log( "image?" + selectedImage );
@@ -970,5 +1085,177 @@ var imageFilePicker = function (callback, value, meta) {
         },
     });
 };
+	
+//++++++++++++++++++++++MESSAGE CENTER+++++++++++++++++++++++++++++++++++++++++++++++++++++
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+function messageCenter(msgstatus,msg) {
+	var msgObj = this;
+	this.displayElem = '#messageContainer';
+	this.displayContainer = 'body';
+	this.msgStatus = msgstatus; 
+	this.msg  = msg;
+	this.uID  = '';
+	this.response  = '';
+	this.msgCtrKey = 'msgCtrSession';
+	this.sessionExists = false;
+	this.storeSession = function() {
+	//First create an object to be stored decodeURIComponent(uri_enc);		;
+		var msg = msgObj.msg.replace(/<[^>]+>/g, '');
+		var sessionObj = {displayElem:msgObj.displayElem, msgStatus:msgObj.msgStatus, msg:encodeURIComponent(msg), uID:msgObj.uID, response:encodeURIComponent(msgObj.response)};
+		var msgString = JSON.stringify(sessionObj);
+		msgObj.setSession(msgString, .125);
+	};
+	this.displayMsg = function() {
+		msgObj.buildMsgContainer();
+		msgObj.msg = msgObj.msg.replace(/<[^>]+>/g, '');
+		msgObj.processSuccess();
+		msgObj.processWarning();
+		msgObj.processError();
+		//+++++++++++REMOVE OBJ AND ALERT DIV AFTER A FEW SECONDS++++++++++++++++++++++++++++++
+		setTimeout(function(){
+			msgObj.destroy();
+        },3000);
+	};
+	this.retrieveSession = function() {
+		msgObj.checkSession();
+		//console.log('session exists: ' + msgObj.sessionExists);
+		if(msgObj.sessionExists) { 
+			msgObj.displayMsg();
+			msgObj.destroySession();
+		}
+	};
+	this.processSuccess = function() {
+		if(msgObj.msg.length < 2){
+			msgObj.msg = "Your operation was successful.";
+		}
+		if(msgObj.msgStatus == 'success'){
+			var currContainer = $(msgObj.displayElem);
+			currContainer.addClass( "alert alert-success" );
+			currContainer.append( msgObj.msg );		
+			currContainer.show();
+		}		
+	};
+	this.processWarning = function() {
+		if(msgObj.msg.length < 2){
+			msgObj.msg = "This operation was successful, with warning.";
+		}
+		if(msgObj.msgStatus == 'warning'){
+			var currContainer = $(msgObj.displayElem);
+			currContainer.addClass( "alert alert-warning" );
+			currContainer.append( msgObj.msg );		
+			currContainer.show();
+		}
+	};
+	this.processError = function() {
+		if(msgObj.msg.length < 2){
+			msgObj.msg = "An error occurred with this operation.";
+		}
+		if(msgObj.msgStatus == 'error'){
+			   var currContainer = $(msgObj.displayElem);
+			   currContainer.addClass( "alert alert-danger" );
+			   currContainer.append( msgObj.msg );		
+			   currContainer.show();
+		}
+	};
+//++++++++++++++++++++++++SESSION FUNCTIONS++++++++++++++++++++++++++++++++++++++
+	this.convertSession = function(sessionVal) {
+		try {
+			var sessionObj = JSON.parse(sessionVal);
+			msgObj.displayElem = sessionObj.displayElem; 
+			msgObj.msgStatus = sessionObj.msgStatus; 
+			msgObj.msg  = decodeURIComponent(sessionObj.msg);
+			msgObj.uID  = sessionObj.uID;
+			msgObj.response  = decodeURIComponent(sessionObj.response);
+		} catch (e) {
+			msgObj.sessionExists = false;
+			console.log('inside other if ' + msgObj.sessionExists);
+			return {};
+		}
+	};
+	this.setSession = function(svalue, exdays) {
+	  var sname = msgObj.msgCtrKey;
+	  var d = new Date();
+	  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+	  var expires = "expires="+d.toUTCString();
+	  document.cookie = sname + "=" + svalue + ";" + expires + ";path=/";
+	};
+	this.getSession = function() {
+	  var name = msgObj.msgCtrKey + "=";
+	  var ca = document.cookie.split(';');
+	  for(var i = 0; i < ca.length; i++) {
+	    var c = ca[i];
+	    while (c.charAt(0) == ' ') {
+	      c = c.substring(1);
+	    }
+	    if (c.indexOf(name) == 0) {
+	      return c.substring(name.length, c.length);
+	    }
+	  }
+	  return "";
+	};
+	this.checkSession = function() {
+	  var sessionVal = msgObj.getSession(msgObj.msgCtrKey);
+		
+	  if (sessionVal != "") {
+	    msgObj.sessionExists = true;
+		console.log('inside if ' + sessionVal + msgObj.sessionExists);
+	    //update message center object with session values
+	    msgObj.convertSession(sessionVal);
+	  } else {
+	    if (sessionVal == "") {			
+	      msgObj.sessionExists = false;
+	      msgObj.destroySession();
+	    }
+	  }
+	};
+	this.destroySession = function() {
+		msgObj.setSession('', -1);
+		msgObj.sessionExists = false;
+	    //document.cookie = msgObj.msgCtrKey + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+		console.log(document.cookie);
+	};
+	
+	this.funcName = function() {return;};
+	this.buildMsgContainer = function() {
+		$(msgObj.displayElem).remove();
+		var msgContainer = "<div id=\"messageContainer\" style=\"position: fixed; z-index: 1; width: 97%; top: 50px; display:none;\"><a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a></div>";
+		$( msgObj.displayContainer ).prepend(msgContainer);	
+	};
+	this.destroy = function() {
+		$(msgObj.displayElem).remove();
+		msgObj.displayElem = '#messageContainer';
+		msgObj.displayContainer = 'body';
+		msgObj.msgStatus = msgstatus; 
+		msgObj.msg  = msg;
+		msgObj.uID  = '';
+		msgObj.response  = '';
+		msgObj.msgCtrKey = 'msgCtrSession';
+		msgObj.sessionExists = false;
+	};
+	
+	//
+	
+}// END OF OBJECT
+//++++++++++++++++++++++MESSAGE CENTER+++++++++++++++++++++++++++++++++++++++++++++++++++++
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++	
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 </script>

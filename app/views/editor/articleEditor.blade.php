@@ -23,7 +23,10 @@
                         <tr>
                             <td>{{date('m/d/Y', strtotime($article->created_at))}}</td>
                             <td>{{date('m/d/Y', strtotime($article->updated_at))}}</td>
-                            <td>{{ User::where('uanet', $article->author)->first() or '' }}</td>
+                            <td> 
+							{{-- Check out this raw user query within the blade using ternary --}}
+							{{ ( User::where('id', $article->author_id)->exists() ) ? User::where('id', $article->author_id)->first()->uanet : 'System Admin' }}
+							</td>
                             @if($article->submission == 'Y')
                             <td><span class="badge alert-warning">Submitted</span></td>
                             @else

@@ -32,12 +32,14 @@ class ArticleController extends \BaseController {
 	public function store()
 	{
         $article = new Article;
+		$userId = Auth::id();
+		if( strlen($userId) < 1  ){$userId = '1'; }
 
         $article->instance_id = Input::get('instance_id');
-        $article->title = Input::get('title');
+        $article->title = strip_tags(Input::get('title'));
         $article->content = Input::get('content');
 		$article->issue_dates = Input::get('issue_dates');
-        $article->author_id = '1';
+        $article->author_id = $userId;
         $article->published = 'N';
 		$article->_token = Input::get('_token');
 
@@ -56,7 +58,7 @@ class ArticleController extends \BaseController {
 	{
         $article = Article::findOrFail($id);
 
-        return Response::json($article);
+       return Response::json($article);
 	}
 
 	/**
@@ -80,7 +82,7 @@ class ArticleController extends \BaseController {
 	{
         $article = Article::findOrFail($id);
         $article->instance_id = Input::get('instance_id');
-        $article->title = Input::get('title');
+        $article->title = strip_tags(Input::get('title'));
         $article->content = Input::get('content');
         $article->submission =
         $article->save();

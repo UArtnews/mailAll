@@ -12,29 +12,29 @@
     @elseif($isRepeat && $hideRepeat && !$isEditable)
         <a name="articleTitle{{ $article->id }}"></a>
         <a href="{{ preg_replace('/https/','http', URL::to($instanceName.'/archive/'.$article->originalPublication().'#article'.$article->id), 1) }}">
-            <h1 id="articleTitle{{ $article->id }}" class="articleTitle{{ $isEditable ? ' editable' : '' }}"  {{ $h1style }} >{{ $article->getTitle() }}</h1>
+            <h1 id="articleTitle{{ $article->id }}" class="articleTitle{{ $isEditable ? ' editable' : '' }}"  {{ $h1style }}>{{ $article->getTitle() }}</h1>
             <p>[Click to read more]</p>
         </a>
     {{-- Setup Href Headlines for Emails --}}
     @elseif($isEmail)
         <a name="articleTitle{{ $article->id }}"></a>
         <a href="{{ preg_replace('/https/','http', URL::to($instanceName.'/archive/'.$publication->id.'#article'.$article->id), 1) }}">
-            <h1 id="articleTitle{{ $article->id }}" class="articleTitle"  {{ $h1style }}  >{{ $article->getTitle() }} </h1>
+            <h1 id="articleTitle{{ $article->id }}" class="articleTitle well well-sm"  {{ $h1style }} >{{ $article->getTitle() }} </h1>
         </a>
     @elseif($isEditable && isset($publication))
         <a name="articleTitle{{ $article->id }}"></a>
-        <h1 id="articleTitle{{ $article->id }}" class="articleTitle editable" {{ $h1style }} > {{ $article->getTitle() }}</h1>
+        <h1 id="articleTitle{{ $article->id }}" class="articleTitle editable well well-sm" {{ $h1style }}  > {{ $article->getTitle() }}</h1>
         <a href="{{ preg_replace('/https/','http', URL::to($instanceName.'/archive/'.$publication->id.'#article'.$article->id), 1) }}">
         </a>
     @elseif($isEditable)
 	
         <a name="articleTitle{{ $article->id }}"></a>
-        <h1 id="articleTitle{{ $article->id }}" class="articleTitle editable"  {{ $h1style }} > {{ strip_tags($article->getTitle()) }} </h1>
+        <h1 id="articleTitle{{ $article->id }}" class="articleTitle editable  well well-sm"  {{ $h1style }} > {{ strip_tags($article->getTitle()) }} </h1>
         
     @else
         <a name="articleTitle{{ $article->id }}"></a>
         <a href="{{ preg_replace('/https/','http', URL::to($instanceName.'/article/'.$article->id), 1) }}">
-            <h1 id="articleTitle{{ $article->id }}" class="articleTitle{{ $isEditable ? ' editable' : '' }}"   {{ $h1style }}>{{ $article->getTitle() }}</h1>
+            <h1 id="articleTitle{{ $article->id }}" class="articleTitle{{ $isEditable ? ' editable' : '' }}  well well-sm"   {{ $h1style }}>{{ $article->getTitle() }}</h1>
         </a>
     @endif
 
@@ -52,16 +52,16 @@
     {{--  ARTICLE CONTENT BODY  --}}
     {{--                        --}}
     {{-- Email Article Content Body --}}
-
+<!--</div> div end 1 -->
 
     @if($isEmail && $isRepeat && $hideRepeat)
-        {{--<div class="repeatedArticleContent">--}}
+        {{--<div class="repeatedArticleContent well well-lg">--}}
             {{--<p>This article originally appeared on--}}
                 {{--<a href="{{ preg_replace('/https/','http', URL::to($instanceName.'/archive/'.$article->originalPublication().'#articleTitle'.$article->id), 1) }}">{{ date('n-d-Y',strtotime($article->originalPublishDate())); }}</a>--}}
             {{--</p>--}}
         {{--</div>--}}
     @elseif($isEmail)
-        <div id="articleContent{{ $article->id }}" class="articleContent" >
+        <div id="articleContent{{ $article->id }}" class="articleContent well well-lg" >
             <p>
             @if(( isset($tweakables['publication-email-content-preview']) ? $tweakables['publication-email-content-preview'] : $default_tweakables['publication-email-content-preview'] ) == true)
                 {{ $article->getContentPreview() }}&nbsp;&nbsp;
@@ -79,9 +79,9 @@
                 <button type="button" class="btn btn-xs btn-default" onclick="unhideRepeated({{ $article->id }}, '{{ $publication->id or ''}}');">Show Full Article</button>
             @endif
         </{{ $isEditable ? 'div' : 'div' }}>
-        <{{ $isEditable ? 'div' : 'div' }} id="articleContent{{ $article->id }}" class="articleContent{{ $isEditable ? ' editable' : '' }}" style="{{ $hideRepeat?'display:none;':'' }}">{{ $article->getContent() }}</{{ $isEditable ? 'div' : 'div' }}>
+        <{{ $isEditable ? 'div' : 'div' }} id="articleContent{{ $article->id }}" class="articleContent{{ $isEditable ? ' editable' : '' }}  well well-lg" style="{{ $hideRepeat?'display:none;':'' }}">{{ $article->getContent() }}</{{ $isEditable ? 'div' : 'div' }}>
     @else
-        <{{ $isEditable ? 'div' : 'div' }} id="articleContent{{ $article->id }}" class="articleContent{{ $isEditable ? ' editable' : '' }}" >{{ $article->getContent() }}</{{ $isEditable ? 'div' : 'div' }}>
+        <{{ $isEditable ? 'div' : 'div' }} id="articleContent{{ $article->id }}" class="articleContent{{ $isEditable ? ' editable' : '' }} well well-lg" >{{ $article->getContent() }}</{{ $isEditable ? 'div' : 'div' }}>
     @endif
     {{--                         --}}
     {{-- Conditional Share Icons --}}

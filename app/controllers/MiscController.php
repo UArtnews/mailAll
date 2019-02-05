@@ -239,6 +239,15 @@ class MiscController extends BaseController {
             'shareIcons'               => false,
 			'h1style'               => '',
         );
+		//+++++++++++++++++GET STYLING FOR H1 TAG++++++++++++++++++++++++++++++++++++++
+		$util = new Utilities();
+				
+		$data['h1color'] = $util->getTweakableByParam("publication-h1-color", $data['tweakables']);
+		$data['h1fontsize'] = $util->getTweakableByParam("publication-h1-font-size", $data['tweakables']);	
+		$data['h1fontweight'] = $util->getTweakableByParam("publication-h1-font-weight", $data['tweakables']);
+		$data['h1font'] = $util->getTweakableByParam("publication-h1-font", $data['tweakables']);
+		$data['h1style'] = ' Style="color: ' . $data['h1color'] . '; font-size: ' . $data['h1fontsize'] . ';  font-weight: '  . $data['h1fontweight'] .  '; font-family:'. str_replace('"', '', $data['h1font']) . '!important "';
+		//+++++++++++++++++GET STYLING FOR H1 TAG++++++++++++++++++++++++++++++++++++++
 
         if($publication_id != ''){
             $data['publication'] = Publication::where('id', $publication_id)->first();
@@ -262,7 +271,7 @@ class MiscController extends BaseController {
 			'action'				   => "",
 		);
 		if(!Input::hasFile('xlsfile')){return Redirect::back()->withError('Did you select a file to upload?  We never received one, try again.');}
-		
+
 		
 		
 		//return $editorController->callAction('preprocessReportMigration', $data);
